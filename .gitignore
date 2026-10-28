@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AMASS motion capture data
+ACCAD/
+
+# Local body models
+models/
+
+# Local body models and document build dependencies
+smplh/
+tmp/
