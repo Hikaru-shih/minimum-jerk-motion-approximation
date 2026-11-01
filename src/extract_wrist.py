@@ -1,5 +1,3 @@
-"""Extract the complete right-wrist trajectory from the selected AMASS clip."""
-
 import inspect
 from pathlib import Path
 from unittest.mock import patch
@@ -30,8 +28,6 @@ def compatible_lbs(*args, dtype=None, **kwargs):
 
 
 def load_motion():
-    """Read the clip and check its shape, frame rate, and gender."""
-
     with np.load(MOTION) as data:
         poses = data['poses'].copy()
         trans = data['trans'].copy()
@@ -49,8 +45,6 @@ def load_motion():
 
 
 def extract_positions(poses, trans, betas):
-    """Compute global right-wrist positions in small batches."""
-
     model = BodyModel(bm_path=str(MODEL), model_type='smplh', num_betas=16)
 
 
@@ -79,8 +73,6 @@ def extract_positions(poses, trans, betas):
 
 
 def save_trajectory(positions, fps, gender):
-    """Save the trajectory together with timing and source metadata."""
-
     if not np.isfinite(positions).all():
         raise ValueError('Non-finite wrist positions')
     timestamps = np.arange(len(positions), dtype=np.float64) / fps

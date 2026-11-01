@@ -1,0 +1,68 @@
+{
+  "purpose": "Candidate inspection only; no reconstruction or error comparison yet",
+  "motivation": "Choose goals from changes in the original motion rather than fixed intervals",
+  "score": "Magnitude of acceleration vector; rate of change of velocity, not jerk",
+  "smoothing": "None",
+  "derivative": "numpy.gradient twice, original timestamps, edge_order=2",
+  "candidate_rule": "Positive interior local maxima; earliest frame of exact plateau",
+  "score_threshold": null,
+  "ranking": "Descending score, earlier frame breaks ties",
+  "requested_max_goals": 102,
+  "reached_goals": 102,
+  "min_source_time_gap_s": 0.1,
+  "candidate_peak_count": 1945,
+  "goal_count_convention": "Excludes initial position; includes final position",
+  "selection_uses_reconstruction_error": false,
+  "top_candidates": [
+    {
+      "frame": 3773,
+      "time_s": 31.441666666666666,
+      "score_m_s2": 144.34646962159024
+    },
+    {
+      "frame": 2043,
+      "time_s": 17.025,
+      "score_m_s2": 126.41391612988531
+    },
+    {
+      "frame": 5006,
+      "time_s": 41.71666666666667,
+      "score_m_s2": 109.44523732087293
+    },
+    {
+      "frame": 3771,
+      "time_s": 31.425,
+      "score_m_s2": 79.90932479668658
+    },
+    {
+      "frame": 3461,
+      "time_s": 28.841666666666665,
+      "score_m_s2": 79.4837583184056
+    },
+    {
+      "frame": 4601,
+      "time_s": 38.34166666666667,
+      "score_m_s2": 73.51866541909745
+    },
+    {
+      "frame": 2127,
+      "time_s": 17.725,
+      "score_m_s2": 70.98593933301362
+    },
+    {
+      "frame": 3775,
+      "time_s": 31.458333333333332,
+      "score_m_s2": 67.7263278706702
+    },
+    {
+      "frame": 2041,
+      "time_s": 17.008333333333333,
+      "score_m_s2": 64.72640639274366
+    },
+    {
+      "frame": 5004,
+      "time_s": 41.7,
+      "score_m_s2": 57.26148120417543
+    }
+  ]
+}

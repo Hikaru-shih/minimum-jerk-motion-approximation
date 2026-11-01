@@ -1,5 +1,3 @@
-"""Approximate the wrist using fixed sampled goals and overlapping MJ displacements."""
-
 from pathlib import Path
 
 import matplotlib
@@ -15,7 +13,6 @@ OVERLAP = 0.25
 
 
 def minimum_jerk(times, activation, completion):
-    """Unit displacement, held at zero before activation and one after completion."""
     if completion <= activation:
         raise ValueError('Completion must follow activation')
 
@@ -25,7 +22,6 @@ def minimum_jerk(times, activation, completion):
 
 
 def reconstruct(times, initial, goals, activation, completion):
-    """Sum trajectory displacements from the initial wrist position."""
     displacements = np.diff(np.vstack([initial, goals]), axis=0)
     result = np.broadcast_to(initial, (len(times), 3)).copy()
 
@@ -36,9 +32,6 @@ def reconstruct(times, initial, goals, activation, completion):
 
 
 def select_goals(original, times, fps):
-    """Sample positions and expand their intervals to overlap."""
-
-
     step = round(GOAL_INTERVAL * fps)
     indices = np.unique(np.r_[np.arange(0, len(times), step), len(times) - 1])
     sample_times = times[indices]
@@ -55,7 +48,6 @@ def select_goals(original, times, fps):
 def plot_comparisons(
     times, original, approx, original_velocity, approx_velocity, out
 ):
-    """Save full position and velocity comparisons."""
     for filename, ref, fitted, unit, title in [
         ('position_comparison.png', original, approx, 'm', 'Right wrist position'),
         (
@@ -89,8 +81,6 @@ def plot_comparisons(
 
 
 def plot_position_detail(times, original, approx, sample_times, goals, out):
-    """Show 17-23 seconds from the same reconstruction."""
-
     mask = (times >= 17) & (times <= 23)
     fig, axes = plt.subplots(3, 1, figsize=(10, 7), sharex=True)
     for j, ax in enumerate(axes):

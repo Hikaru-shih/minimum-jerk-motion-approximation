@@ -1,0 +1,21 @@
+{
+  "purpose": "One insertion demonstration; not a three-method comparison",
+  "selection": "Largest 3D position error among eligible source frames",
+  "min_source_time_gap_s": 0.1,
+  "overlap_fraction": 0.25,
+  "goal_count_convention": "Excludes initial position; includes final position",
+  "added_frame": 5038,
+  "added_source_time_s": 41.983333333333334,
+  "before": {
+    "goal_count": 1,
+    "position_rmse_m": 0.3658860169210576,
+    "velocity_rmse_m_s": 0.43591544019522743,
+    "max_position_error_m": 0.8237487798980123
+  },
+  "after": {
+    "goal_count": 2,
+    "position_rmse_m": 0.44024341937975164,
+    "velocity_rmse_m_s": 0.4371365314279659,
+    "max_position_error_m": 0.8477215140502996
+  }
+}

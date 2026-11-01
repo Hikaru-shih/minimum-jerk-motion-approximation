@@ -1,0 +1,210 @@
+{
+  "goal_counts": [
+    10,
+    20,
+    40,
+    60,
+    80,
+    102
+  ],
+  "window_s": [
+    17.0,
+    23.0
+  ],
+  "input": "Existing comparison snapshots; no goal selection rerun",
+  "velocity": "numpy.gradient on the full clip before taking the display window; edge_order=2",
+  "axis_limits": "Identical across all six goal counts for each coordinate and quantity",
+  "evaluation": "Global metrics use the full clip; window metrics are separately labelled",
+  "position_limits_m": [
+    [
+      -0.33636026293039323,
+      -0.005564374625682829
+    ],
+    [
+      0.1131316328048706,
+      0.49476803302764893
+    ],
+    [
+      0.8563407164812088,
+      1.3329349654912948
+    ]
+  ],
+  "velocity_limits_m_s": [
+    [
+      -1.2635003328324084,
+      1.5346788167954366
+    ],
+    [
+      -0.9046336443259703,
+      1.0492418894664701
+    ],
+    [
+      -1.1756187691970386,
+      2.2345925254523937
+    ]
+  ],
+  "records": [
+    {
+      "method": "fixed_interval",
+      "goal_count": 10,
+      "position_rmse_m": 0.20639072810427583,
+      "velocity_rmse_m_s": 0.43644172312356333,
+      "max_position_error_m": 0.7956631618782564,
+      "window_position_rmse_m": 0.2891845967294824,
+      "window_velocity_rmse_m_s": 0.5592184910561354
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 10,
+      "position_rmse_m": 0.17635280487483151,
+      "velocity_rmse_m_s": 0.3731602170150807,
+      "max_position_error_m": 0.4724492489010115,
+      "window_position_rmse_m": 0.3385630611456632,
+      "window_velocity_rmse_m_s": 0.5635115518000391
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 10,
+      "position_rmse_m": 0.26980511350318187,
+      "velocity_rmse_m_s": 0.43450481389959267,
+      "max_position_error_m": 0.6543708881971659,
+      "window_position_rmse_m": 0.21321683887151627,
+      "window_velocity_rmse_m_s": 0.5467786047988843
+    },
+    {
+      "method": "fixed_interval",
+      "goal_count": 20,
+      "position_rmse_m": 0.16441036336148868,
+      "velocity_rmse_m_s": 0.4272804811196561,
+      "max_position_error_m": 0.7939659137094041,
+      "window_position_rmse_m": 0.131353906688212,
+      "window_velocity_rmse_m_s": 0.5281895513754281
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 20,
+      "position_rmse_m": 0.10207167115876997,
+      "velocity_rmse_m_s": 0.331096761958899,
+      "max_position_error_m": 0.30469644801603546,
+      "window_position_rmse_m": 0.09215684230825658,
+      "window_velocity_rmse_m_s": 0.41187952541751893
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 20,
+      "position_rmse_m": 0.21234071505517213,
+      "velocity_rmse_m_s": 0.39842062526109673,
+      "max_position_error_m": 0.5351522245904538,
+      "window_position_rmse_m": 0.2446158598714005,
+      "window_velocity_rmse_m_s": 0.5477964697923322
+    },
+    {
+      "method": "fixed_interval",
+      "goal_count": 40,
+      "position_rmse_m": 0.09838164538074597,
+      "velocity_rmse_m_s": 0.3817397070011467,
+      "max_position_error_m": 0.5128004373003759,
+      "window_position_rmse_m": 0.11512874637712774,
+      "window_velocity_rmse_m_s": 0.5020996171953223
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 40,
+      "position_rmse_m": 0.05383637338559863,
+      "velocity_rmse_m_s": 0.24483055819420532,
+      "max_position_error_m": 0.23467373139870193,
+      "window_position_rmse_m": 0.09215709868871239,
+      "window_velocity_rmse_m_s": 0.411887229316929
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 40,
+      "position_rmse_m": 0.1936602431831231,
+      "velocity_rmse_m_s": 0.35649706912259876,
+      "max_position_error_m": 0.5349131335853456,
+      "window_position_rmse_m": 0.15685733586176367,
+      "window_velocity_rmse_m_s": 0.41051449170070137
+    },
+    {
+      "method": "fixed_interval",
+      "goal_count": 60,
+      "position_rmse_m": 0.06795138699532272,
+      "velocity_rmse_m_s": 0.3423130435893279,
+      "max_position_error_m": 0.37473704972106675,
+      "window_position_rmse_m": 0.09493032340052343,
+      "window_velocity_rmse_m_s": 0.492053752346849
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 60,
+      "position_rmse_m": 0.0268549363523809,
+      "velocity_rmse_m_s": 0.20545008014587293,
+      "max_position_error_m": 0.07280619210595032,
+      "window_position_rmse_m": 0.035090553846070884,
+      "window_velocity_rmse_m_s": 0.3212545077445271
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 60,
+      "position_rmse_m": 0.1061486266775517,
+      "velocity_rmse_m_s": 0.3224372869756588,
+      "max_position_error_m": 0.34412686321221175,
+      "window_position_rmse_m": 0.10032951120701411,
+      "window_velocity_rmse_m_s": 0.34131460577816236
+    },
+    {
+      "method": "fixed_interval",
+      "goal_count": 80,
+      "position_rmse_m": 0.0530444889483188,
+      "velocity_rmse_m_s": 0.32223546884155735,
+      "max_position_error_m": 0.3646790193889247,
+      "window_position_rmse_m": 0.06479605659691133,
+      "window_velocity_rmse_m_s": 0.4567578595950705
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 80,
+      "position_rmse_m": 0.020954332298066997,
+      "velocity_rmse_m_s": 0.18532571301925815,
+      "max_position_error_m": 0.0852032521450093,
+      "window_position_rmse_m": 0.02027149816604575,
+      "window_velocity_rmse_m_s": 0.24409523729064783
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 80,
+      "position_rmse_m": 0.08704124944987392,
+      "velocity_rmse_m_s": 0.2930769196197254,
+      "max_position_error_m": 0.2959740909054929,
+      "window_position_rmse_m": 0.09955060291287054,
+      "window_velocity_rmse_m_s": 0.3381484358037237
+    },
+    {
+      "method": "fixed_interval",
+      "goal_count": 102,
+      "position_rmse_m": 0.03816594541683841,
+      "velocity_rmse_m_s": 0.2846085444078418,
+      "max_position_error_m": 0.31203948149257904,
+      "window_position_rmse_m": 0.05493557593103535,
+      "window_velocity_rmse_m_s": 0.4370829824832058
+    },
+    {
+      "method": "error_first_improvement",
+      "goal_count": 102,
+      "position_rmse_m": 0.01477857305978666,
+      "velocity_rmse_m_s": 0.17128097907464154,
+      "max_position_error_m": 0.05845554933701422,
+      "window_position_rmse_m": 0.01706793048354508,
+      "window_velocity_rmse_m_s": 0.23620176352496924
+    },
+    {
+      "method": "motion_acceleration",
+      "goal_count": 102,
+      "position_rmse_m": 0.05530969095554437,
+      "velocity_rmse_m_s": 0.242709479415877,
+      "max_position_error_m": 0.19566640466577054,
+      "window_position_rmse_m": 0.043578234226162374,
+      "window_velocity_rmse_m_s": 0.27832712875174004
+    }
+  ]
+}

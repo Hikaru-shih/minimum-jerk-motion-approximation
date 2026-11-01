@@ -1,9 +1,3 @@
-"""Check the MJ formula, displacement sum, and saved wrist extraction.
-
-Run in the project's WSL environment: python3 src/verify_results.py
-This reads existing outputs; it does not regenerate or modify them.
-"""
-
 from unittest.mock import patch
 
 import numpy as np
@@ -23,8 +17,6 @@ from extract_wrist import (
 
 
 def check_minimum_jerk():
-    """Check known values, time normalization, and endpoint derivatives."""
-
     times = np.array([1.0, 2.0, 3.0, 4.0, 5.0])
     expected = np.array([0.0, 0.0, 0.5, 1.0, 1.0])
     actual = minimum_jerk(times, 2.0, 4.0)
@@ -51,7 +43,6 @@ def check_minimum_jerk():
 
 
 def check_displacement_sum():
-    """Use literal, hand-calculated coordinates in an overlapping example."""
     initial = np.array([1.0, 2.0, 3.0])
     goals = np.array([[3.0, 2.0, 3.0], [3.0, 6.0, 3.0]])
     activation = np.array([0.0, 1.0])
@@ -73,7 +64,6 @@ def check_displacement_sum():
 
 
 def check_wrist_extraction():
-    """Compare individual frames, a fresh batch, and the saved full-clip output."""
     poses, trans, betas, fps, _ = load_motion()
 
     indices = np.array([0, 31, 32, 3000, len(poses) - 1])

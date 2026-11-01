@@ -1,5 +1,3 @@
-"""Inspect the selected motion clip before extracting its wrist trajectory."""
-
 from pathlib import Path
 
 import numpy as np
@@ -11,7 +9,6 @@ MOTION_PATH = (
 
 
 def main():
-    """Print the available arrays and basic timing information."""
     with np.load(MOTION_PATH) as data:
         print("Keys in the NPZ file:")
         print(data.files)

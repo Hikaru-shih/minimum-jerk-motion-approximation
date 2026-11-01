@@ -1,0 +1,1037 @@
+{
+  "method": "First improving candidate in descending current position-error order",
+  "tie_break": "Earlier source frame first",
+  "requested_max_goals": 102,
+  "reached_goals": 102,
+  "stop_reason": "goal_budget",
+  "min_source_time_gap_s": 0.1,
+  "overlap_fraction": 0.25,
+  "improvement_atol_m": 1e-10,
+  "accuracy_threshold": null,
+  "acceptance_metric": "Global 3D position RMSE over all source timestamps",
+  "goal_count_convention": "Excludes initial position; includes final position",
+  "total_candidate_trials": 6283,
+  "rejected_trials": 6182,
+  "history": [
+    {
+      "goal_count": 1,
+      "added_frame": null,
+      "added_source_time_s": null,
+      "candidate_rank": null,
+      "trials_in_round": 0,
+      "position_rmse_m": 0.3658860169210576,
+      "velocity_rmse_m_s": 0.43591544019522743,
+      "max_position_error_m": 0.8237487798980123
+    },
+    {
+      "goal_count": 2,
+      "added_frame": 5020,
+      "added_source_time_s": 41.833333333333336,
+      "candidate_rank": 30,
+      "trials_in_round": 30,
+      "position_rmse_m": 0.3655985526887122,
+      "velocity_rmse_m_s": 0.4370717667329498,
+      "max_position_error_m": 0.7407416201657742
+    },
+    {
+      "goal_count": 3,
+      "added_frame": 4535,
+      "added_source_time_s": 37.791666666666664,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.3142099908274489,
+      "velocity_rmse_m_s": 0.437349349902055,
+      "max_position_error_m": 0.6011159470028052
+    },
+    {
+      "goal_count": 4,
+      "added_frame": 3276,
+      "added_source_time_s": 27.3,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.29588447385685696,
+      "velocity_rmse_m_s": 0.4373220795402598,
+      "max_position_error_m": 0.5893922490474239
+    },
+    {
+      "goal_count": 5,
+      "added_frame": 5171,
+      "added_source_time_s": 43.09166666666667,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.2588967497622753,
+      "velocity_rmse_m_s": 0.4300460785826115,
+      "max_position_error_m": 0.5782431525883972
+    },
+    {
+      "goal_count": 6,
+      "added_frame": 4926,
+      "added_source_time_s": 41.05,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.24197507007454497,
+      "velocity_rmse_m_s": 0.4162940575204691,
+      "max_position_error_m": 0.5306073498115252
+    },
+    {
+      "goal_count": 7,
+      "added_frame": 5915,
+      "added_source_time_s": 49.291666666666664,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.21251292900856253,
+      "velocity_rmse_m_s": 0.41088855084259596,
+      "max_position_error_m": 0.518695257632399
+    },
+    {
+      "goal_count": 8,
+      "added_frame": 5066,
+      "added_source_time_s": 42.21666666666667,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.2066363647013325,
+      "velocity_rmse_m_s": 0.3890215594978844,
+      "max_position_error_m": 0.5089139598024552
+    },
+    {
+      "goal_count": 9,
+      "added_frame": 2934,
+      "added_source_time_s": 24.45,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.2049300804771132,
+      "velocity_rmse_m_s": 0.3881980509621901,
+      "max_position_error_m": 0.5433391445731834
+    },
+    {
+      "goal_count": 10,
+      "added_frame": 3362,
+      "added_source_time_s": 28.016666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.17635280487483151,
+      "velocity_rmse_m_s": 0.3731602170150807,
+      "max_position_error_m": 0.4724492489010115
+    },
+    {
+      "goal_count": 11,
+      "added_frame": 4285,
+      "added_source_time_s": 35.708333333333336,
+      "candidate_rank": 78,
+      "trials_in_round": 78,
+      "position_rmse_m": 0.1573648513809039,
+      "velocity_rmse_m_s": 0.3725288330210347,
+      "max_position_error_m": 0.4724492489010115
+    },
+    {
+      "goal_count": 12,
+      "added_frame": 2781,
+      "added_source_time_s": 23.175,
+      "candidate_rank": 474,
+      "trials_in_round": 474,
+      "position_rmse_m": 0.1572546704009141,
+      "velocity_rmse_m_s": 0.3702094107017335,
+      "max_position_error_m": 0.39584119135113494
+    },
+    {
+      "goal_count": 13,
+      "added_frame": 2395,
+      "added_source_time_s": 19.958333333333332,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.14793759976614484,
+      "velocity_rmse_m_s": 0.36848055910358557,
+      "max_position_error_m": 0.4914260341717727
+    },
+    {
+      "goal_count": 14,
+      "added_frame": 3040,
+      "added_source_time_s": 25.333333333333332,
+      "candidate_rank": 286,
+      "trials_in_round": 286,
+      "position_rmse_m": 0.14290019903231538,
+      "velocity_rmse_m_s": 0.3625777438721697,
+      "max_position_error_m": 0.4914260341717727
+    },
+    {
+      "goal_count": 15,
+      "added_frame": 2337,
+      "added_source_time_s": 19.475,
+      "candidate_rank": 286,
+      "trials_in_round": 286,
+      "position_rmse_m": 0.1428361900776624,
+      "velocity_rmse_m_s": 0.3539921551695904,
+      "max_position_error_m": 0.34050647207229917
+    },
+    {
+      "goal_count": 16,
+      "added_frame": 1681,
+      "added_source_time_s": 14.008333333333333,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.11028851600937342,
+      "velocity_rmse_m_s": 0.3525652900345218,
+      "max_position_error_m": 0.3200788748261842
+    },
+    {
+      "goal_count": 17,
+      "added_frame": 2590,
+      "added_source_time_s": 21.583333333333332,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.10902761927608315,
+      "velocity_rmse_m_s": 0.3520866538529279,
+      "max_position_error_m": 0.3061359284304995
+    },
+    {
+      "goal_count": 18,
+      "added_frame": 2545,
+      "added_source_time_s": 21.208333333333332,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.10514252223456919,
+      "velocity_rmse_m_s": 0.3387133432098222,
+      "max_position_error_m": 0.24961059522619672
+    },
+    {
+      "goal_count": 19,
+      "added_frame": 4348,
+      "added_source_time_s": 36.233333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.10273474356930905,
+      "velocity_rmse_m_s": 0.3319297182989891,
+      "max_position_error_m": 0.25327808731018947
+    },
+    {
+      "goal_count": 20,
+      "added_frame": 3967,
+      "added_source_time_s": 33.05833333333333,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.10207167115876997,
+      "velocity_rmse_m_s": 0.331096761958899,
+      "max_position_error_m": 0.30469644801603546
+    },
+    {
+      "goal_count": 21,
+      "added_frame": 3787,
+      "added_source_time_s": 31.558333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.09487261629369924,
+      "velocity_rmse_m_s": 0.3312699756024248,
+      "max_position_error_m": 0.2871570221327044
+    },
+    {
+      "goal_count": 22,
+      "added_frame": 3855,
+      "added_source_time_s": 32.125,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.09123506493483839,
+      "velocity_rmse_m_s": 0.32226922689855725,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 23,
+      "added_frame": 2992,
+      "added_source_time_s": 24.933333333333334,
+      "candidate_rank": 8,
+      "trials_in_round": 8,
+      "position_rmse_m": 0.08938777674680569,
+      "velocity_rmse_m_s": 0.31376678977075545,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 24,
+      "added_frame": 4992,
+      "added_source_time_s": 41.6,
+      "candidate_rank": 12,
+      "trials_in_round": 12,
+      "position_rmse_m": 0.08766471748041235,
+      "velocity_rmse_m_s": 0.30328330491035704,
+      "max_position_error_m": 0.24072728341986158
+    },
+    {
+      "goal_count": 25,
+      "added_frame": 5042,
+      "added_source_time_s": 42.016666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.08699028792989248,
+      "velocity_rmse_m_s": 0.2872020275906129,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 26,
+      "added_frame": 5997,
+      "added_source_time_s": 49.975,
+      "candidate_rank": 41,
+      "trials_in_round": 41,
+      "position_rmse_m": 0.0838978828815271,
+      "velocity_rmse_m_s": 0.2828625789906532,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 27,
+      "added_frame": 4046,
+      "added_source_time_s": 33.71666666666667,
+      "candidate_rank": 110,
+      "trials_in_round": 110,
+      "position_rmse_m": 0.07908344943675599,
+      "velocity_rmse_m_s": 0.27824089866777585,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 28,
+      "added_frame": 719,
+      "added_source_time_s": 5.991666666666666,
+      "candidate_rank": 110,
+      "trials_in_round": 110,
+      "position_rmse_m": 0.07902432260046577,
+      "velocity_rmse_m_s": 0.2782861519699285,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 29,
+      "added_frame": 3462,
+      "added_source_time_s": 28.85,
+      "candidate_rank": 28,
+      "trials_in_round": 28,
+      "position_rmse_m": 0.07898176516278331,
+      "velocity_rmse_m_s": 0.2749983626978014,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 30,
+      "added_frame": 4606,
+      "added_source_time_s": 38.38333333333333,
+      "candidate_rank": 27,
+      "trials_in_round": 27,
+      "position_rmse_m": 0.07869159714293752,
+      "velocity_rmse_m_s": 0.2721582957036708,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 31,
+      "added_frame": 4738,
+      "added_source_time_s": 39.483333333333334,
+      "candidate_rank": 20,
+      "trials_in_round": 20,
+      "position_rmse_m": 0.07364247275499111,
+      "velocity_rmse_m_s": 0.268987720515998,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 32,
+      "added_frame": 5109,
+      "added_source_time_s": 42.575,
+      "candidate_rank": 35,
+      "trials_in_round": 35,
+      "position_rmse_m": 0.07138047522121817,
+      "velocity_rmse_m_s": 0.26418055685516395,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 33,
+      "added_frame": 784,
+      "added_source_time_s": 6.533333333333333,
+      "candidate_rank": 56,
+      "trials_in_round": 56,
+      "position_rmse_m": 0.06585726336165759,
+      "velocity_rmse_m_s": 0.26091198504746327,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 34,
+      "added_frame": 567,
+      "added_source_time_s": 4.725,
+      "candidate_rank": 67,
+      "trials_in_round": 67,
+      "position_rmse_m": 0.06115942892426115,
+      "velocity_rmse_m_s": 0.25965867342941673,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 35,
+      "added_frame": 4008,
+      "added_source_time_s": 33.4,
+      "candidate_rank": 130,
+      "trials_in_round": 130,
+      "position_rmse_m": 0.060247311480101144,
+      "velocity_rmse_m_s": 0.25532737497222124,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 36,
+      "added_frame": 3509,
+      "added_source_time_s": 29.241666666666667,
+      "candidate_rank": 152,
+      "trials_in_round": 152,
+      "position_rmse_m": 0.05698991127921197,
+      "velocity_rmse_m_s": 0.25417756691322035,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 37,
+      "added_frame": 4257,
+      "added_source_time_s": 35.475,
+      "candidate_rank": 160,
+      "trials_in_round": 160,
+      "position_rmse_m": 0.05551702870562475,
+      "velocity_rmse_m_s": 0.25110054312971736,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 38,
+      "added_frame": 3416,
+      "added_source_time_s": 28.466666666666665,
+      "candidate_rank": 190,
+      "trials_in_round": 190,
+      "position_rmse_m": 0.05477524464228209,
+      "velocity_rmse_m_s": 0.2484097267876681,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 39,
+      "added_frame": 6034,
+      "added_source_time_s": 50.28333333333333,
+      "candidate_rank": 207,
+      "trials_in_round": 207,
+      "position_rmse_m": 0.05418777881305017,
+      "velocity_rmse_m_s": 0.24658755706039123,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 40,
+      "added_frame": 3817,
+      "added_source_time_s": 31.808333333333334,
+      "candidate_rank": 213,
+      "trials_in_round": 213,
+      "position_rmse_m": 0.05383637338559863,
+      "velocity_rmse_m_s": 0.24483055819420532,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 41,
+      "added_frame": 4313,
+      "added_source_time_s": 35.94166666666667,
+      "candidate_rank": 225,
+      "trials_in_round": 225,
+      "position_rmse_m": 0.05326724851616005,
+      "velocity_rmse_m_s": 0.24277641426415866,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 42,
+      "added_frame": 4955,
+      "added_source_time_s": 41.291666666666664,
+      "candidate_rank": 230,
+      "trials_in_round": 230,
+      "position_rmse_m": 0.05293793182381503,
+      "velocity_rmse_m_s": 0.2443854839656726,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 43,
+      "added_frame": 625,
+      "added_source_time_s": 5.208333333333333,
+      "candidate_rank": 237,
+      "trials_in_round": 237,
+      "position_rmse_m": 0.05208853851171786,
+      "velocity_rmse_m_s": 0.2423984664367363,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 44,
+      "added_frame": 3165,
+      "added_source_time_s": 26.375,
+      "candidate_rank": 259,
+      "trials_in_round": 259,
+      "position_rmse_m": 0.050025310603573285,
+      "velocity_rmse_m_s": 0.24202809903719466,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 45,
+      "added_frame": 3748,
+      "added_source_time_s": 31.233333333333334,
+      "candidate_rank": 378,
+      "trials_in_round": 378,
+      "position_rmse_m": 0.04887877159764989,
+      "velocity_rmse_m_s": 0.2404413176496943,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 46,
+      "added_frame": 2573,
+      "added_source_time_s": 21.441666666666666,
+      "candidate_rank": 386,
+      "trials_in_round": 386,
+      "position_rmse_m": 0.04870936251759459,
+      "velocity_rmse_m_s": 0.24006374769611746,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 47,
+      "added_frame": 4471,
+      "added_source_time_s": 37.25833333333333,
+      "candidate_rank": 387,
+      "trials_in_round": 387,
+      "position_rmse_m": 0.04779346435710781,
+      "velocity_rmse_m_s": 0.23884022199894772,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 48,
+      "added_frame": 5134,
+      "added_source_time_s": 42.78333333333333,
+      "candidate_rank": 408,
+      "trials_in_round": 408,
+      "position_rmse_m": 0.047434520160051015,
+      "velocity_rmse_m_s": 0.2377779382849645,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 49,
+      "added_frame": 4968,
+      "added_source_time_s": 41.4,
+      "candidate_rank": 409,
+      "trials_in_round": 409,
+      "position_rmse_m": 0.04731523316736088,
+      "velocity_rmse_m_s": 0.23638989547591926,
+      "max_position_error_m": 0.23467373139870193
+    },
+    {
+      "goal_count": 50,
+      "added_frame": 2318,
+      "added_source_time_s": 19.316666666666666,
+      "candidate_rank": 413,
+      "trials_in_round": 413,
+      "position_rmse_m": 0.04727880560975611,
+      "velocity_rmse_m_s": 0.23706855476378982,
+      "max_position_error_m": 0.21589096577745173
+    },
+    {
+      "goal_count": 51,
+      "added_frame": 1973,
+      "added_source_time_s": 16.441666666666666,
+      "candidate_rank": 66,
+      "trials_in_round": 66,
+      "position_rmse_m": 0.047268766969204214,
+      "velocity_rmse_m_s": 0.23679390174961076,
+      "max_position_error_m": 0.3181018634973139
+    },
+    {
+      "goal_count": 52,
+      "added_frame": 2069,
+      "added_source_time_s": 17.241666666666667,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.04298853290454382,
+      "velocity_rmse_m_s": 0.22944333883074072,
+      "max_position_error_m": 0.19922437350926744
+    },
+    {
+      "goal_count": 53,
+      "added_frame": 2107,
+      "added_source_time_s": 17.558333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.037572012246816514,
+      "velocity_rmse_m_s": 0.22533620778508726,
+      "max_position_error_m": 0.2016666897781145
+    },
+    {
+      "goal_count": 54,
+      "added_frame": 2021,
+      "added_source_time_s": 16.841666666666665,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.03388565851562478,
+      "velocity_rmse_m_s": 0.21585081584687998,
+      "max_position_error_m": 0.10115731253019414
+    },
+    {
+      "goal_count": 55,
+      "added_frame": 2043,
+      "added_source_time_s": 17.025,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.033577417726933394,
+      "velocity_rmse_m_s": 0.21448223323539903,
+      "max_position_error_m": 0.09033044130407036
+    },
+    {
+      "goal_count": 56,
+      "added_frame": 2361,
+      "added_source_time_s": 19.675,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.033045298401381325,
+      "velocity_rmse_m_s": 0.2124718792829571,
+      "max_position_error_m": 0.08168379252032353
+    },
+    {
+      "goal_count": 57,
+      "added_frame": 2858,
+      "added_source_time_s": 23.816666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.03236989055995944,
+      "velocity_rmse_m_s": 0.2116091408596708,
+      "max_position_error_m": 0.08165550059015343
+    },
+    {
+      "goal_count": 58,
+      "added_frame": 1569,
+      "added_source_time_s": 13.075,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02773443779787862,
+      "velocity_rmse_m_s": 0.21120981636555716,
+      "max_position_error_m": 0.07803059141598712
+    },
+    {
+      "goal_count": 59,
+      "added_frame": 4943,
+      "added_source_time_s": 41.19166666666667,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02747998340792025,
+      "velocity_rmse_m_s": 0.2069034226560184,
+      "max_position_error_m": 0.07671851240578996
+    },
+    {
+      "goal_count": 60,
+      "added_frame": 5966,
+      "added_source_time_s": 49.71666666666667,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.0268549363523809,
+      "velocity_rmse_m_s": 0.20545008014587293,
+      "max_position_error_m": 0.07280619210595032
+    },
+    {
+      "goal_count": 61,
+      "added_frame": 2561,
+      "added_source_time_s": 21.341666666666665,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.026667046578328704,
+      "velocity_rmse_m_s": 0.20266292086360838,
+      "max_position_error_m": 0.0716122115504585
+    },
+    {
+      "goal_count": 62,
+      "added_frame": 3020,
+      "added_source_time_s": 25.166666666666668,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02651954950722792,
+      "velocity_rmse_m_s": 0.20186209927768148,
+      "max_position_error_m": 0.0689472842573884
+    },
+    {
+      "goal_count": 63,
+      "added_frame": 2806,
+      "added_source_time_s": 23.383333333333333,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.026380288594067557,
+      "velocity_rmse_m_s": 0.20167819772472212,
+      "max_position_error_m": 0.06808349550458642
+    },
+    {
+      "goal_count": 64,
+      "added_frame": 2629,
+      "added_source_time_s": 21.908333333333335,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02630965141038895,
+      "velocity_rmse_m_s": 0.2010199540011454,
+      "max_position_error_m": 0.07503138458261319
+    },
+    {
+      "goal_count": 65,
+      "added_frame": 2610,
+      "added_source_time_s": 21.75,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.026162654567187915,
+      "velocity_rmse_m_s": 0.19667709956640553,
+      "max_position_error_m": 0.0744014897047676
+    },
+    {
+      "goal_count": 66,
+      "added_frame": 2648,
+      "added_source_time_s": 22.066666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.025755508445400862,
+      "velocity_rmse_m_s": 0.194173005647108,
+      "max_position_error_m": 0.06794805381530718
+    },
+    {
+      "goal_count": 67,
+      "added_frame": 5008,
+      "added_source_time_s": 41.733333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02563495372888011,
+      "velocity_rmse_m_s": 0.19263165185964673,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 68,
+      "added_frame": 3080,
+      "added_source_time_s": 25.666666666666668,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02487679779913926,
+      "velocity_rmse_m_s": 0.1918811942297207,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 69,
+      "added_frame": 272,
+      "added_source_time_s": 2.2666666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.024127894528089062,
+      "velocity_rmse_m_s": 0.19170140736226182,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 70,
+      "added_frame": 3831,
+      "added_source_time_s": 31.925,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.024066101643379544,
+      "velocity_rmse_m_s": 0.191900024232015,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 71,
+      "added_frame": 3805,
+      "added_source_time_s": 31.708333333333332,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02391019004063698,
+      "velocity_rmse_m_s": 0.1898503652112645,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 72,
+      "added_frame": 2883,
+      "added_source_time_s": 24.025,
+      "candidate_rank": 5,
+      "trials_in_round": 5,
+      "position_rmse_m": 0.0234899213704886,
+      "velocity_rmse_m_s": 0.18861931851750663,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 73,
+      "added_frame": 2432,
+      "added_source_time_s": 20.266666666666666,
+      "candidate_rank": 5,
+      "trials_in_round": 5,
+      "position_rmse_m": 0.023168690084343996,
+      "velocity_rmse_m_s": 0.18749245238520745,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 74,
+      "added_frame": 2089,
+      "added_source_time_s": 17.408333333333335,
+      "candidate_rank": 5,
+      "trials_in_round": 5,
+      "position_rmse_m": 0.022988176739404037,
+      "velocity_rmse_m_s": 0.1862710835845538,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 75,
+      "added_frame": 4674,
+      "added_source_time_s": 38.95,
+      "candidate_rank": 6,
+      "trials_in_round": 6,
+      "position_rmse_m": 0.022409426544938583,
+      "velocity_rmse_m_s": 0.18556452050301897,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 76,
+      "added_frame": 5079,
+      "added_source_time_s": 42.325,
+      "candidate_rank": 13,
+      "trials_in_round": 13,
+      "position_rmse_m": 0.02220522504493297,
+      "velocity_rmse_m_s": 0.1839180451740448,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 77,
+      "added_frame": 2142,
+      "added_source_time_s": 17.85,
+      "candidate_rank": 17,
+      "trials_in_round": 17,
+      "position_rmse_m": 0.021433048392212377,
+      "velocity_rmse_m_s": 0.18340315600701362,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 78,
+      "added_frame": 3238,
+      "added_source_time_s": 26.983333333333334,
+      "candidate_rank": 20,
+      "trials_in_round": 20,
+      "position_rmse_m": 0.021417827373184452,
+      "velocity_rmse_m_s": 0.18285004179351338,
+      "max_position_error_m": 0.08253992296117335
+    },
+    {
+      "goal_count": 79,
+      "added_frame": 3320,
+      "added_source_time_s": 27.666666666666668,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.020973631215793476,
+      "velocity_rmse_m_s": 0.1849699060320931,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 80,
+      "added_frame": 3342,
+      "added_source_time_s": 27.85,
+      "candidate_rank": 5,
+      "trials_in_round": 5,
+      "position_rmse_m": 0.020954332298066997,
+      "velocity_rmse_m_s": 0.18532571301925815,
+      "max_position_error_m": 0.0852032521450093
+    },
+    {
+      "goal_count": 81,
+      "added_frame": 3301,
+      "added_source_time_s": 27.508333333333333,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.02041088873600182,
+      "velocity_rmse_m_s": 0.182353127187533,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 82,
+      "added_frame": 2378,
+      "added_source_time_s": 19.816666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.020256166100236585,
+      "velocity_rmse_m_s": 0.1813661781680851,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 83,
+      "added_frame": 758,
+      "added_source_time_s": 6.316666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.020211325993031316,
+      "velocity_rmse_m_s": 0.18183035599433814,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 84,
+      "added_frame": 742,
+      "added_source_time_s": 6.183333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.020016301495703166,
+      "velocity_rmse_m_s": 0.18004562164658877,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 85,
+      "added_frame": 3442,
+      "added_source_time_s": 28.683333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.019957339706757622,
+      "velocity_rmse_m_s": 0.17939463832061822,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 86,
+      "added_frame": 3483,
+      "added_source_time_s": 29.025,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.019746431525069653,
+      "velocity_rmse_m_s": 0.17810033276470078,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 87,
+      "added_frame": 5281,
+      "added_source_time_s": 44.00833333333333,
+      "candidate_rank": 3,
+      "trials_in_round": 3,
+      "position_rmse_m": 0.01866493701433812,
+      "velocity_rmse_m_s": 0.17788852593917087,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 88,
+      "added_frame": 1764,
+      "added_source_time_s": 14.7,
+      "candidate_rank": 7,
+      "trials_in_round": 7,
+      "position_rmse_m": 0.01785013751078782,
+      "velocity_rmse_m_s": 0.17761661190072,
+      "max_position_error_m": 0.07169213944788054
+    },
+    {
+      "goal_count": 89,
+      "added_frame": 5054,
+      "added_source_time_s": 42.11666666666667,
+      "candidate_rank": 7,
+      "trials_in_round": 7,
+      "position_rmse_m": 0.017650783997210873,
+      "velocity_rmse_m_s": 0.1763384243513878,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 90,
+      "added_frame": 4327,
+      "added_source_time_s": 36.05833333333333,
+      "candidate_rank": 8,
+      "trials_in_round": 8,
+      "position_rmse_m": 0.017560293976369077,
+      "velocity_rmse_m_s": 0.17626718051282939,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 91,
+      "added_frame": 4300,
+      "added_source_time_s": 35.833333333333336,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.017438692770834065,
+      "velocity_rmse_m_s": 0.17480296856691926,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 92,
+      "added_frame": 212,
+      "added_source_time_s": 1.7666666666666666,
+      "candidate_rank": 9,
+      "trials_in_round": 9,
+      "position_rmse_m": 0.017060669411373162,
+      "velocity_rmse_m_s": 0.17439692800738757,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 93,
+      "added_frame": 380,
+      "added_source_time_s": 3.1666666666666665,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.016981641203380513,
+      "velocity_rmse_m_s": 0.1743990149262643,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 94,
+      "added_frame": 355,
+      "added_source_time_s": 2.9583333333333335,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.016545920627862327,
+      "velocity_rmse_m_s": 0.17309808606402463,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 95,
+      "added_frame": 3988,
+      "added_source_time_s": 33.233333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.016400089313075034,
+      "velocity_rmse_m_s": 0.17296087085597653,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 96,
+      "added_frame": 3008,
+      "added_source_time_s": 25.066666666666666,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.01633750302604626,
+      "velocity_rmse_m_s": 0.1736952507126247,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 97,
+      "added_frame": 4570,
+      "added_source_time_s": 38.083333333333336,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.01611311109327491,
+      "velocity_rmse_m_s": 0.17371900314389024,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 98,
+      "added_frame": 2006,
+      "added_source_time_s": 16.716666666666665,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.015943102618558292,
+      "velocity_rmse_m_s": 0.17285573865071285,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 99,
+      "added_frame": 4803,
+      "added_source_time_s": 40.025,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.015457580546271258,
+      "velocity_rmse_m_s": 0.17264088026894395,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 100,
+      "added_frame": 4025,
+      "added_source_time_s": 33.541666666666664,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.015337326501445245,
+      "velocity_rmse_m_s": 0.17220621037144063,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 101,
+      "added_frame": 2760,
+      "added_source_time_s": 23.0,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.014992316839484045,
+      "velocity_rmse_m_s": 0.17176432619097337,
+      "max_position_error_m": 0.05845554933701422
+    },
+    {
+      "goal_count": 102,
+      "added_frame": 3898,
+      "added_source_time_s": 32.483333333333334,
+      "candidate_rank": 1,
+      "trials_in_round": 1,
+      "position_rmse_m": 0.01477857305978666,
+      "velocity_rmse_m_s": 0.17128097907464154,
+      "max_position_error_m": 0.05845554933701422
+    }
+  ]
+}

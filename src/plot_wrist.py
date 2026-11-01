@@ -1,5 +1,3 @@
-"""Plot the saved original wrist trajectory (no approximation yet)."""
-
 from pathlib import Path
 
 import matplotlib
@@ -13,7 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def plot_3d_path(positions, name, out):
-    """Plot the complete path with its start and end positions."""
     fig = plt.figure(figsize=(8, 7))
     ax = fig.add_subplot(111, projection='3d')
     ax.plot(*positions.T, linewidth=0.7, label='Original')
@@ -35,7 +32,6 @@ def plot_3d_path(positions, name, out):
 
 
 def plot_positions(times, positions, name, out):
-    """Plot each coordinate against time."""
     fig, axes = plt.subplots(3, 1, figsize=(10, 7), sharex=True)
     for i, axis in enumerate(axes):
         axis.plot(times, positions[:, i], linewidth=0.8)
