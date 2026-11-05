@@ -1,0 +1,48 @@
+{
+  "scope": "Prespecified finite extension through K=12, not a final count selector",
+  "settings": {
+    "length_scale_m": 0.3,
+    "minimum_duration_s": 0.016666666666666666,
+    "max_nfev": 1000,
+    "seed": 23,
+    "jitters_per_seed": 4,
+    "jitter_fraction": 0.2,
+    "overlap_fraction": 0.25
+  },
+  "counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "weights": [
+    0,
+    1e-06
+  ],
+  "source_hashes": {
+    "summary.json": "b39af58d3b689ec508f94304abb74707769945e1d9aa6074aaa24c876b984714",
+    "fits.npz": "385133fc4e4bb478b5f85dfd1c97190fc461eadc58c846fca7f67538bef2d301"
+  },
+  "new_counts": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "planned_new_solves": 240,
+  "selection": "Lowest own objective among eligible fits; no fallback",
+  "upper_limit_reason": "User-authorized finite computational boundary, not physiological evidence",
+  "fairness": "Same ten start recipe and per-fit nfev cap; dimension and actual compute grow with K",
+  "score_limit": "IID Gaussian BIC-style screen only; temporal dependence and degeneracy remain",
+  "workers": 2
+}

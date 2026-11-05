@@ -1,0 +1,30 @@
+{
+  "window_s": [
+    30,
+    33
+  ],
+  "source_sha256": "28c29d7fabc79ce7ca6183d784e00f0ff5e1e8054a1e58b091d13b9171dea15d",
+  "weights": [
+    0,
+    1e-07,
+    3e-07,
+    1e-06,
+    3e-06,
+    1e-05,
+    3e-05,
+    0.0001
+  ],
+  "settings": {
+    "component_count": 4,
+    "length_scale_m": 0.3,
+    "minimum_duration_s": 0.016666666666666666,
+    "max_nfev": 1000,
+    "seed": 23,
+    "jitters_per_seed": 4,
+    "jitter_fraction": 0.2,
+    "overlap_fraction": 0.25
+  },
+  "reason": "Contains previously inspected 31-33 s movement; prepend one second for the same 3 s duration as the first window; selected before these fits",
+  "selection": "Lowest own total objective among eligible results per weight; no cross-weight winner",
+  "scope": "Another window of the same clip, not another subject, clip or independent generalization test"
+}

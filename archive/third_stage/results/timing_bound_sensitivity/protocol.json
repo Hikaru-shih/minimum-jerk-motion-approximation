@@ -1,0 +1,36 @@
+{
+  "purpose": "Timing-bound sensitivity only; fixed nominal detector, K, knots and raw targets",
+  "settings": [
+    {
+      "name": "narrow",
+      "outward": 0.3,
+      "inward": 0.1
+    },
+    {
+      "name": "nominal",
+      "outward": 0.45,
+      "inward": 0.2
+    },
+    {
+      "name": "wide",
+      "outward": 0.6,
+      "inward": 0.3
+    }
+  ],
+  "choice_reason": "Narrower and wider nested neighborhoods around the existing nominal setting, selected before new fits; not tuned for best results",
+  "starts": 4,
+  "seed": 23,
+  "max_nfev": 1000,
+  "objective": "Raw XYZ position least squares, no opposition penalty",
+  "initialization": "Identical boundary extension .25 for start 0; same normalized random draws for starts 1..3, mapped into each feasible box",
+  "scope": "18-21 s K4 and 30-33 s K3 only; not all count partitions, filter settings, full clip or multiple subjects",
+  "selection": "Lowest position RMSE among successful endpoint-valid fits; no replacing nominal setting by whichever setting scores best",
+  "source_sha256": {
+    "summary.json": "64296d78a2a8a3a75036e212bedaec1f2e8e725900a91a83f0fd0eb90d173bdf",
+    "fits.npz": "aa2345f2b2baab0d0e287374368cde662b915f42ac5a26e86cfe37f7c18993c4"
+  },
+  "code_sha256": {
+    "timing_bound_sensitivity.py": "e90dfe3774d62fc678d5c868ca954dca8703e4bcfbdd9e91b11181820d5c1628",
+    "fixed_times.py": "e043e3098ad1ec91418170410cf434949ae70446921d9e27ca12406ed97a89bc"
+  }
+}

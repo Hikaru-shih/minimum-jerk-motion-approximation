@@ -1,0 +1,128 @@
+{
+  "scope": "Synthetic position-only least squares with fixed times and fixed initial position",
+  "units": "seconds and meters",
+  "endpoint_constraint": "None; endpoints are recovered here because the data follow the exact model",
+  "noise": "None",
+  "identifiable_case": {
+    "frames": 409,
+    "initial": [
+      0.2,
+      -0.1,
+      0.4
+    ],
+    "activation": [
+      0.2,
+      1.2
+    ],
+    "completion": [
+      2.2,
+      3.2
+    ],
+    "known_displacements": [
+      [
+        0.3,
+        0.1,
+        -0.05
+      ],
+      [
+        -0.12,
+        0.2,
+        0.08
+      ]
+    ],
+    "fitted_displacements": [
+      [
+        0.30000000000000004,
+        0.0999999999999999,
+        -0.050000000000000024
+      ],
+      [
+        -0.12000000000000005,
+        0.2000000000000001,
+        0.08000000000000006
+      ]
+    ],
+    "known_goals": [
+      [
+        0.5,
+        0.0,
+        0.35000000000000003
+      ],
+      [
+        0.38,
+        0.20000000000000004,
+        0.43000000000000005
+      ]
+    ],
+    "fitted_goals": [
+      [
+        0.5,
+        -1.1102230246251565e-16,
+        0.35
+      ],
+      [
+        0.38,
+        0.19999999999999998,
+        0.43000000000000005
+      ]
+    ],
+    "rank": 2,
+    "singular_values": [
+      18.287985031687505,
+      4.754108907945746
+    ],
+    "condition_number": 3.84677452405897,
+    "position_rmse_m": 1.809720465510505e-16,
+    "maximum_displacement_component_error_m": 1.1102230246251565e-16
+  },
+  "nonidentifiable_case": {
+    "activation": [
+      0.2,
+      0.2
+    ],
+    "completion": [
+      2.2,
+      2.2
+    ],
+    "known_displacements": [
+      [
+        0.3,
+        0.1,
+        -0.05
+      ],
+      [
+        -0.12,
+        0.2,
+        0.08
+      ]
+    ],
+    "alternative_displacements": [
+      [
+        0.35,
+        0.13,
+        -0.07
+      ],
+      [
+        -0.16999999999999998,
+        0.17,
+        0.1
+      ]
+    ],
+    "fitted_displacements": [
+      [
+        0.0900000000000001,
+        0.15000000000000002,
+        0.015000000000000003
+      ],
+      [
+        0.09000000000000008,
+        0.15000000000000002,
+        0.015
+      ]
+    ],
+    "rank": 1,
+    "unique_displacements": false,
+    "position_rmse_m": 2.0043747447128722e-16,
+    "explanation": "Identical basis columns determine only the sum of the two displacements"
+  }
+}

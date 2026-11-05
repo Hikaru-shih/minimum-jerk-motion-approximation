@@ -1,0 +1,34 @@
+{
+  "scope": "Same-window, same-K baseline comparison; no new count selector",
+  "windows": [
+    "18_21",
+    "30_33"
+  ],
+  "counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "weight": 1e-06,
+  "length_scale_m": 0.3,
+  "minimum_duration_s": 0.016666666666666666,
+  "max_nfev": 1000,
+  "uniform_times": "K equal intervals; extend internal sides by 0.25 interval, clamp to crop",
+  "sampled_goals": "Linear interpolation of observed XYZ at uniform interval ends",
+  "fitted_control": "Same fixed timing, endpoint-constrained fitted displacement with same opposition objective",
+  "fairness_limit": "Adaptive fits have ten timing starts; fixed-time control has one linear-LS displacement start; not equal compute or proof of global optimum",
+  "crop_limit": "All methods independently reconstruct each 3 s crop with observed endpoints; not a crop of the original full-clip reconstruction",
+  "source_hashes": {
+    "summary.json": "4d6d371ca19f932597fab24a90bcc1e76c0b324eb338eec9c3b206460396cf74",
+    "fits.npz": "ad3c47d01847a7bbbfeb9b75ebda070cbd763a35bbd5a293126fc07ce55b112e"
+  }
+}

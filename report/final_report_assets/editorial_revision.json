@@ -1,0 +1,17 @@
+{
+  "format_reference": "archive/report_revisions/before_condensing_user_format_9455611a8f.docx",
+  "format_reference_sha256": "9455611a8fa5995a57aa4403a1b99b875854e2fb06faab12a3b4084ecf225f76",
+  "scope": "Concise external report with supplementary joint position/velocity experiment; main position-only method retained.",
+  "pages_in_word_image_preview": 10,
+  "editable_equations": 13,
+  "figures": 6,
+  "tables": 2,
+  "pdf_generated": false,
+  "fitting_or_objective_changed": false,
+  "velocity_supplement_backup": {
+    "backup": "archive/report_revisions/before_velocity_supplement_ada0300bcf.docx",
+    "backup_sha256": "ada0300bcfe9a308fd56cd1f266f4d31990ad3279d41f379712eacbd4ab82621"
+  },
+  "supplementary_joint_objective_added": true,
+  "author_exported_pdf_reviewed": true
+}

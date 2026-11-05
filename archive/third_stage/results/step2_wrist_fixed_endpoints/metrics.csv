@@ -1,0 +1,3 @@
+method,goal_count,position_rmse_m,velocity_rmse_m_s,max_position_error_m,initial_error_m,final_error_m
+sampled_goals,102,0.03816594541683841,0.28460854440784183,0.31203948149257904,0.0,0.0
+fitted_goals_fixed_endpoints,102,0.03146361539506203,0.2916295282008188,0.2111411829461647,0.0,0.0

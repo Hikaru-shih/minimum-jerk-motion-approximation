@@ -1,0 +1,48 @@
+{
+  "method": "Prominent speed lobes propose count; intervening speed minima seed times; free timing with endpoint-constrained linear LS at every residual evaluation",
+  "counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "windows": [
+    [
+      18,
+      21
+    ],
+    [
+      30,
+      33
+    ]
+  ],
+  "filter_samples": 17,
+  "polynomial_order": 3,
+  "relative_prominence": 0.1,
+  "minimum_peak_gap_s": 0.15,
+  "minimum_duration_s": 0.016666666666666666,
+  "initial_overlap_fraction": 0.25,
+  "starts_per_count": 4,
+  "max_nfev": 1000,
+  "objective": "Raw XYZ position squared error only; no opposition penalty",
+  "selection": "Count from nominal detector, never adjusted from fitted error; lowest RMSE successful endpoint-valid fit at that count",
+  "initializations": "Uniform base/jitter and motion seed base/jitter; at proposed K use detected-valley seed, at other K use speed-minimum slots; seed 23",
+  "fairness": "Identical target, endpoints and prescribed K. Four nonlinear timing starts versus one exact linear fixed-time solve; unequal compute. Starts depend on K; no global-optimum claim.",
+  "scope": "Two 3 s windows from the same original clip; not full-clip conversion or biological unit identification",
+  "source_sha256": "28c29d7fabc79ce7ca6183d784e00f0ff5e1e8054a1e58b091d13b9171dea15d",
+  "code_sha256": {
+    "final_pipeline.py": "76da6996c6ffc4a0d69d43d30e5ac637b754dc9793776c72f58332307b5ef9f7",
+    "timing_fit.py": "d7155b41b39b75d40840e2a8eec6197f89c8a642c9251b652cc5e0558dbe81fb",
+    "fixed_times.py": "e043e3098ad1ec91418170410cf434949ae70446921d9e27ca12406ed97a89bc",
+    "goal_count_selection.py": "0363a6e74e30d8ee535a43521f00421791c68224ad20d50f0c89cd1c330d585c",
+    "initialization.py": "a52bb155b1904ba6757bb972044ffd51084a4d89c907dee9b0ab00c556426e72"
+  }
+}

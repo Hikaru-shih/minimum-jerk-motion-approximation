@@ -1,0 +1,19 @@
+{
+  "weights": [
+    0.0,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "objective": "mean(||position_error||^2)/L^2 + lambda*mean(||velocity_error||^2)/V^2",
+  "scales": "L=RMS centered raw position; V=RMS raw velocity; floor 1e-12; fixed per window across weights",
+  "derivative": "numpy.gradient edge_order=2 for both linear basis and raw targets; same as evaluation",
+  "controls": "Nominal K and knots, bounds .45/.20, four identical initial timings seed23, max_nfev1000, fixed position endpoints, no opposition penalty",
+  "selection": "Lowest joint objective among successful endpoint-valid starts; no preferred weight selected after results",
+  "scope": "Exploratory in-sample comparison; no held-out validation or physiological claim",
+  "source_sha256": {
+    "summary.json": "be2d7b4c221963bd5b8d5beee4371efe06baf56742d7a9453e414a84f58c6c12",
+    "fits.npz": "aa2345f2b2baab0d0e287374368cde662b915f42ac5a26e86cfe37f7c18993c4"
+  },
+  "numpy": "2.1.3"
+}

@@ -1,0 +1,5525 @@
+{
+  "scope": "K=4 same-window weight sensitivity; no final weight selection",
+  "source_hashes": {
+    "results/step6_joint_real/summary.json": "ef2133d940fc2e7955ef882dc9ddcc327f861ab3fcf401fb993149a0a4d06bb0",
+    "results/step6_joint_real/fits.npz": "9b3a57b670b490ce3359610bb74d3fc907f00a35bd52d1aeb545159ddd5adc62",
+    "results/step5_real_window/window.npz": "4d5f0b18f695ed0ac67cf62fa91a2a9a87a853a0e74762e69d8da1137a6eada8"
+  },
+  "weights": [
+    0,
+    1e-07,
+    3e-07,
+    1e-06,
+    3e-06,
+    1e-05,
+    3e-05,
+    0.0001
+  ],
+  "length_scale_m": 0.3,
+  "scale_identity": "For fixed T, penalty strength depends on lambda/L^2; scaling L by c and lambda by c^2 leaves objective unchanged",
+  "settings": {
+    "length_scale_m": 0.3,
+    "minimum_duration_s": 0.016666666666666666,
+    "max_nfev": 1000,
+    "seed": 23,
+    "jitters_per_seed": 4,
+    "jitter_fraction": 0.2,
+    "overlap_fraction": 0.25
+  },
+  "reuse": "30 existing fits at 0,1e-6,1e-4; 50 new fits at prespecified intermediate weights, same ten starts and no warm starts",
+  "reference": {
+    "weight": 1e-06,
+    "index": 7
+  },
+  "selection": "Lowest own total objective among eligible results within each weight, no cross-weight winner",
+  "selections": [
+    {
+      "weight": 0,
+      "effective_weight_per_m2": 0.0,
+      "eligible_count": 1,
+      "best_index": 3,
+      "selected": {
+        "weight": 0,
+        "index": 3,
+        "initialization": "uniform_3",
+        "reused_saved_fit": true,
+        "eligible": true,
+        "position_rmse_m": 0.013565969626139833,
+        "velocity_rmse_m_s": 0.13495328807339554,
+        "max_position_error_m": 0.03744536967044681,
+        "opposition_cost_m2": 0.0034667889902020473,
+        "objective_m2": 0.00018403553189734852,
+        "sum_displacement_norms_m": 0.5485924677909734,
+        "relative_component_length_excess": 0.033104343837987216,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 26,
+        "residual_evaluations": 843,
+        "optimality": 4.2101583489012355e-10,
+        "velocity_signature_rmse_m_s": 0.2769020398697929,
+        "maximum_activation_difference_s": 0.9310527599753442,
+        "maximum_completion_difference_s": 1.2428091019647347,
+        "maximum_displacement_vector_difference_m": 0.37234322130265474,
+        "trajectory_difference_rmse_m": 0.009911812511256765,
+        "maximum_trajectory_difference_m": 0.021664157677434185
+      },
+      "all_position_rmse_range_m": [
+        0.011107724113979386,
+        0.013565969626139833
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "effective_weight_per_m2": 1.111111111111111e-06,
+      "eligible_count": 10,
+      "best_index": 8,
+      "selected": {
+        "weight": 1e-07,
+        "index": 8,
+        "initialization": "speed_minimum_seed_3",
+        "reused_saved_fit": false,
+        "eligible": true,
+        "position_rmse_m": 0.011195139145131542,
+        "velocity_rmse_m_s": 0.12109856554983821,
+        "max_position_error_m": 0.019922648664804043,
+        "opposition_cost_m2": 9.353269389302795,
+        "objective_m2": 0.00012626646741778686,
+        "sum_displacement_norms_m": 1.4364858555744178,
+        "relative_component_length_excess": 0.5949449017707529,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 70,
+        "residual_evaluations": 1975,
+        "optimality": 8.639954859563357e-11,
+        "velocity_signature_rmse_m_s": 0.07839783851020128,
+        "maximum_activation_difference_s": 0.04126498825741365,
+        "maximum_completion_difference_s": 0.07619539346445592,
+        "maximum_displacement_vector_difference_m": 0.10954619520292004,
+        "trajectory_difference_rmse_m": 0.0009433094337706481,
+        "maximum_trajectory_difference_m": 0.0028779191747711056
+      },
+      "all_position_rmse_range_m": [
+        0.011195139145131542,
+        0.01356596963376527
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "effective_weight_per_m2": 3.3333333333333333e-06,
+      "eligible_count": 10,
+      "best_index": 4,
+      "selected": {
+        "weight": 3e-07,
+        "index": 4,
+        "initialization": "uniform_4",
+        "reused_saved_fit": false,
+        "eligible": true,
+        "position_rmse_m": 0.011218279876137757,
+        "velocity_rmse_m_s": 0.12069907391561881,
+        "max_position_error_m": 0.019527024141782895,
+        "opposition_cost_m2": 6.2382532341343,
+        "objective_m2": 0.00012772127934959767,
+        "sum_displacement_norms_m": 1.3113296222771127,
+        "relative_component_length_excess": 0.5556067223385414,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 72,
+        "residual_evaluations": 2147,
+        "optimality": 6.945532951106422e-11,
+        "velocity_signature_rmse_m_s": 0.03246532733256588,
+        "maximum_activation_difference_s": 0.024535129644686293,
+        "maximum_completion_difference_s": 0.029457501243236095,
+        "maximum_displacement_vector_difference_m": 0.046465183790946,
+        "trajectory_difference_rmse_m": 0.0005665847638477106,
+        "maximum_trajectory_difference_m": 0.0015042042898158823
+      },
+      "all_position_rmse_range_m": [
+        0.01121827985546917,
+        0.013565969694666048
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "effective_weight_per_m2": 1.1111111111111112e-05,
+      "eligible_count": 10,
+      "best_index": 7,
+      "selected": {
+        "weight": 1e-06,
+        "index": 7,
+        "initialization": "speed_minimum_seed_2",
+        "reused_saved_fit": true,
+        "eligible": true,
+        "position_rmse_m": 0.011269547297539598,
+        "velocity_rmse_m_s": 0.12102152681730155,
+        "max_position_error_m": 0.019335620706607968,
+        "opposition_cost_m2": 4.249614865949599,
+        "objective_m2": 0.00013125231115743166,
+        "sum_displacement_norms_m": 1.2177844000852647,
+        "relative_component_length_excess": 0.5238797414204077,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 39,
+        "residual_evaluations": 1060,
+        "optimality": 5.865359571090651e-11,
+        "velocity_signature_rmse_m_s": 0.0,
+        "maximum_activation_difference_s": 0.0,
+        "maximum_completion_difference_s": 0.0,
+        "maximum_displacement_vector_difference_m": 0.0,
+        "trajectory_difference_rmse_m": 0.0,
+        "maximum_trajectory_difference_m": 0.0
+      },
+      "all_position_rmse_range_m": [
+        0.011269547161977537,
+        0.013565970377000141
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "effective_weight_per_m2": 3.3333333333333335e-05,
+      "eligible_count": 10,
+      "best_index": 5,
+      "selected": {
+        "weight": 3e-06,
+        "index": 5,
+        "initialization": "speed_minimum_seed_0",
+        "reused_saved_fit": false,
+        "eligible": true,
+        "position_rmse_m": 0.011412127287961883,
+        "velocity_rmse_m_s": 0.1222947311417555,
+        "max_position_error_m": 0.020360874422565456,
+        "opposition_cost_m2": 2.4537283363817326,
+        "objective_m2": 0.00013759783424578946,
+        "sum_displacement_norms_m": 1.1235158408634158,
+        "relative_component_length_excess": 0.4896498038370804,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 42,
+        "residual_evaluations": 1131,
+        "optimality": 6.637713908250534e-11,
+        "velocity_signature_rmse_m_s": 0.03353261618916636,
+        "maximum_activation_difference_s": 0.03768694301805198,
+        "maximum_completion_difference_s": 0.015857123030688314,
+        "maximum_displacement_vector_difference_m": 0.04899226033487898,
+        "trajectory_difference_rmse_m": 0.000878561925645542,
+        "maximum_trajectory_difference_m": 0.002074055037707106
+      },
+      "all_position_rmse_range_m": [
+        0.011412126741443393,
+        0.013565976113329364
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "effective_weight_per_m2": 0.00011111111111111113,
+      "eligible_count": 10,
+      "best_index": 7,
+      "selected": {
+        "weight": 1e-05,
+        "index": 7,
+        "initialization": "speed_minimum_seed_2",
+        "reused_saved_fit": false,
+        "eligible": true,
+        "position_rmse_m": 0.011753033871169698,
+        "velocity_rmse_m_s": 0.12467309949295464,
+        "max_position_error_m": 0.02210090388500741,
+        "opposition_cost_m2": 1.018931072791291,
+        "objective_m2": 0.00014832311590477504,
+        "sum_displacement_norms_m": 1.0041005761008719,
+        "relative_component_length_excess": 0.4377849246435278,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 39,
+        "residual_evaluations": 1230,
+        "optimality": 6.056816003873356e-11,
+        "velocity_signature_rmse_m_s": 0.0766637305297411,
+        "maximum_activation_difference_s": 0.1112929575851318,
+        "maximum_completion_difference_s": 0.02818703931034605,
+        "maximum_displacement_vector_difference_m": 0.1097038208205567,
+        "trajectory_difference_rmse_m": 0.0020808210026435794,
+        "maximum_trajectory_difference_m": 0.004877897223188181
+      },
+      "all_position_rmse_range_m": [
+        0.011753033871169698,
+        0.013566032782174844
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "effective_weight_per_m2": 0.0003333333333333334,
+      "eligible_count": 10,
+      "best_index": 9,
+      "selected": {
+        "weight": 3e-05,
+        "index": 9,
+        "initialization": "speed_minimum_seed_4",
+        "reused_saved_fit": false,
+        "eligible": true,
+        "position_rmse_m": 0.01356638725580189,
+        "velocity_rmse_m_s": 0.1349840969630592,
+        "max_position_error_m": 0.037420010778347036,
+        "opposition_cost_m2": 0.0026076273506361997,
+        "objective_m2": 0.000184125091994903,
+        "sum_displacement_norms_m": 0.547194845955771,
+        "relative_component_length_excess": 0.03086117931250847,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 21,
+        "residual_evaluations": 736,
+        "optimality": 2.3446493823646843e-10,
+        "velocity_signature_rmse_m_s": 0.2770668456460031,
+        "maximum_activation_difference_s": 0.9306116679664456,
+        "maximum_completion_difference_s": 1.2500828713739836,
+        "maximum_displacement_vector_difference_m": 0.37262484403999524,
+        "trajectory_difference_rmse_m": 0.009891906232809392,
+        "maximum_trajectory_difference_m": 0.021640033844749655
+      },
+      "all_position_rmse_range_m": [
+        0.013566387253005633,
+        0.013696939334208229
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "effective_weight_per_m2": 0.0011111111111111111,
+      "eligible_count": 10,
+      "best_index": 1,
+      "selected": {
+        "weight": 0.0001,
+        "index": 1,
+        "initialization": "uniform_1",
+        "reused_saved_fit": true,
+        "eligible": true,
+        "position_rmse_m": 0.01356828211405913,
+        "velocity_rmse_m_s": 0.13504680427610216,
+        "max_position_error_m": 0.03738745592463775,
+        "opposition_cost_m2": 0.0017436026443760466,
+        "objective_m2": 0.0001842726397911345,
+        "sum_displacement_norms_m": 0.5454107757648872,
+        "relative_component_length_excess": 0.028076700547966314,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 20,
+        "residual_evaluations": 701,
+        "optimality": 2.832869937656907e-10,
+        "velocity_signature_rmse_m_s": 0.2772820973455312,
+        "maximum_activation_difference_s": 0.9300933207043727,
+        "maximum_completion_difference_s": 1.2591430403952408,
+        "maximum_displacement_vector_difference_m": 0.37297775395181604,
+        "trajectory_difference_rmse_m": 0.009866928498202986,
+        "maximum_trajectory_difference_m": 0.021608839426044205
+      },
+      "all_position_rmse_range_m": [
+        0.013568282051854254,
+        0.013782891106986562
+      ]
+    }
+  ],
+  "details": [
+    {
+      "weight": 0,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107730093140778,
+      "velocity_rmse_m_s": 0.12179234590120566,
+      "max_position_error_m": 0.020392800117751117,
+      "opposition_cost_m2": 8864735544106.535,
+      "objective_m2": 0.00012338166782206524,
+      "sum_displacement_norms_m": 984.5950476995929,
+      "relative_component_length_excess": 0.9994160327404594,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 27827,
+      "optimality": 0.00011994472218525787,
+      "velocity_signature_rmse_m_s": 343.8629801112005,
+      "maximum_activation_difference_s": 0.1721153518511258,
+      "maximum_completion_difference_s": 0.27783008032100653,
+      "maximum_displacement_vector_difference_m": 491.70380518038513,
+      "trajectory_difference_rmse_m": 0.0025713697652696627,
+      "maximum_trajectory_difference_m": 0.007526827472274586,
+      "activation": [
+        18.0,
+        19.05781230982218,
+        19.058117842100256,
+        19.23035370676857
+      ],
+      "completion": [
+        18.31987758876134,
+        20.999860603444684,
+        21.0,
+        20.02914579060068
+      ],
+      "displacements": [
+        [
+          0.011906241822328578,
+          -0.002866814033545562,
+          0.011116943937819345
+        ],
+        [
+          453.8248459749164,
+          -50.35951422371823,
+          183.50667754565475
+        ],
+        [
+          -453.7192416070419,
+          50.44278848678901,
+          -183.4158681141325
+        ],
+        [
+          -0.011437408994164146,
+          -0.31295795086066586,
+          -0.377293695043969
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107729363544806,
+      "velocity_rmse_m_s": 0.12179234120457394,
+      "max_position_error_m": 0.02039290831354717,
+      "opposition_cost_m2": 9740121432302.232,
+      "objective_m2": 0.0001233816516137555,
+      "sum_displacement_norms_m": 1008.0390052258804,
+      "relative_component_length_excess": 0.9994296134470061,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28065,
+      "optimality": 2.6865657154275964e-05,
+      "velocity_signature_rmse_m_s": 352.060380839237,
+      "maximum_activation_difference_s": 0.17211875087317452,
+      "maximum_completion_difference_s": 0.27783332364009894,
+      "maximum_displacement_vector_difference_m": 503.4257840919561,
+      "trajectory_difference_rmse_m": 0.0025714251505523996,
+      "maximum_trajectory_difference_m": 0.007527048931046437,
+      "activation": [
+        18.0,
+        19.057816016902844,
+        19.058114443078207,
+        19.23035369686834
+      ],
+      "completion": [
+        18.31987759552058,
+        20.999863846763777,
+        21.0,
+        20.029145720002333
+      ],
+      "displacements": [
+        [
+          0.011906241995559633,
+          -0.0028668156785800866,
+          0.011116943454079181
+        ],
+        [
+          464.63500160554673,
+          -51.559949180022656,
+          187.87752170612075
+        ],
+        [
+          -464.5293973327534,
+          51.6432233771388,
+          -187.78671229850949
+        ],
+        [
+          -0.011437314086253052,
+          -0.3129578832609908,
+          -0.37729367064924907
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107730534328893,
+      "velocity_rmse_m_s": 0.12179235370455056,
+      "max_position_error_m": 0.020392903773182355,
+      "opposition_cost_m2": 8364960817914.709,
+      "objective_m2": 0.00012338167762326242,
+      "sum_displacement_norms_m": 970.4212452477702,
+      "relative_component_length_excess": 0.9994075026884864,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 27725,
+      "optimality": 3.1897528253484436e-05,
+      "velocity_signature_rmse_m_s": 338.9069743170486,
+      "maximum_activation_difference_s": 0.17211324111204718,
+      "maximum_completion_difference_s": 0.27782804182595555,
+      "maximum_displacement_vector_difference_m": 484.61690387918355,
+      "trajectory_difference_rmse_m": 0.002571387091856688,
+      "maximum_trajectory_difference_m": 0.007526939663074703,
+      "activation": [
+        18.0,
+        19.057809954369404,
+        19.058119952839334,
+        19.23035372503708
+      ],
+      "completion": [
+        18.319877582223683,
+        20.999858564949633,
+        21.0,
+        20.02914582201281
+      ],
+      "displacements": [
+        [
+          0.011906241544837687,
+          -0.002866812662852156,
+          0.0111169440723532
+        ],
+        [
+          447.2892204558126,
+          -49.63380137334321,
+          180.8641201870971
+        ],
+        [
+          -447.18361603953963,
+          49.71707565729021,
+          -180.7733107561102
+        ],
+        [
+          -0.011437457115152294,
+          -0.3129579731075751,
+          -0.3772936946431229
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013565969626139833,
+      "velocity_rmse_m_s": 0.13495328807339554,
+      "max_position_error_m": 0.03744536967044681,
+      "opposition_cost_m2": 0.0034667889902020473,
+      "objective_m2": 0.00018403553189734852,
+      "sum_displacement_norms_m": 0.5485924677909734,
+      "relative_component_length_excess": 0.033104343837987216,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 26,
+      "residual_evaluations": 843,
+      "optimality": 4.2101583489012355e-10,
+      "velocity_signature_rmse_m_s": 0.2769020398697929,
+      "maximum_activation_difference_s": 0.9310527599753442,
+      "maximum_completion_difference_s": 1.2428091019647347,
+      "maximum_displacement_vector_difference_m": 0.37234322130265474,
+      "trajectory_difference_rmse_m": 0.009911812511256765,
+      "maximum_trajectory_difference_m": 0.021664157677434185,
+      "activation": [
+        18.0,
+        19.03518261550206,
+        19.231054482847615,
+        20.161285953926726
+      ],
+      "completion": [
+        18.26906202853518,
+        19.479221421158943,
+        19.982677827131337,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01296006322047023,
+          -0.0009781156281493735,
+          0.008171366272719187
+        ],
+        [
+          0.02948235981267986,
+          -0.011883948927724033,
+          0.03584569654323385
+        ],
+        [
+          0.10884235522675587,
+          -0.2587531828936143,
+          -0.3198696195412055
+        ],
+        [
+          -0.0452115775572387,
+          0.039064745626062436,
+          0.00048523714135967344
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107730198243917,
+      "velocity_rmse_m_s": 0.12179234683663802,
+      "max_position_error_m": 0.020392787019480704,
+      "opposition_cost_m2": 8747622577425.043,
+      "objective_m2": 0.00012338167015697987,
+      "sum_displacement_norms_m": 981.3285176446213,
+      "relative_component_length_excess": 0.9994140889741987,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 27793,
+      "optimality": 0.00013075943714503728,
+      "velocity_signature_rmse_m_s": 342.7208070489399,
+      "maximum_activation_difference_s": 0.1721148657863445,
+      "maximum_completion_difference_s": 0.27782961608865264,
+      "maximum_displacement_vector_difference_m": 490.07054013297915,
+      "trajectory_difference_rmse_m": 0.0025713626410160065,
+      "maximum_trajectory_difference_m": 0.0075267995211104905,
+      "activation": [
+        18.0,
+        19.057811778767682,
+        19.058118328165037,
+        19.23035370972021
+      ],
+      "completion": [
+        18.319877587145392,
+        20.99986013921233,
+        21.0,
+        20.02914579892657
+      ],
+      "displacements": [
+        [
+          0.01190624180502854,
+          -0.0028668137457217107,
+          0.01111694398429782
+        ],
+        [
+          452.3186286632723,
+          -50.19225903654474,
+          182.89767033152597
+        ],
+        [
+          -452.21302428190694,
+          50.27553330627871,
+          -182.8068608978667
+        ],
+        [
+          -0.011437422467737884,
+          -0.3129579578116741,
+          -0.3772936972274539
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107725514432228,
+      "velocity_rmse_m_s": 0.12179229099658004,
+      "max_position_error_m": 0.020392620523943274,
+      "opposition_cost_m2": 16951341430967.35,
+      "objective_m2": 0.0001233815661039687,
+      "sum_displacement_norms_m": 1157.7381388264052,
+      "relative_component_length_excess": 0.9995033681185934,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28371,
+      "optimality": 0.00031049480868753726,
+      "velocity_signature_rmse_m_s": 404.40409723002927,
+      "maximum_activation_difference_s": 0.17213717877760715,
+      "maximum_completion_difference_s": 0.2778509419558688,
+      "maximum_displacement_vector_difference_m": 578.2753516348515,
+      "trajectory_difference_rmse_m": 0.0025714605427340667,
+      "maximum_trajectory_difference_m": 0.007526971821205698,
+      "activation": [
+        18.0,
+        19.05783619276072,
+        19.058096015173774,
+        19.23035358605769
+      ],
+      "completion": [
+        18.31987761797455,
+        20.999881465079547,
+        21.0,
+        20.029145396611955
+      ],
+      "displacements": [
+        [
+          0.011906242726947187,
+          -0.002866826222434981,
+          0.011116941006254873
+        ],
+        [
+          533.6621881792612,
+          -59.224955019399964,
+          215.7872492717308
+        ],
+        [
+          -533.5565844033746,
+          59.30822895929717,
+          -215.69643993105092
+        ],
+        [
+          -0.011436817910872135,
+          -0.3129576154981944,
+          -0.37729360127002565
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107725980694075,
+      "velocity_rmse_m_s": 0.12179230344883456,
+      "max_position_error_m": 0.02039288798684206,
+      "opposition_cost_m2": 15674146153081.441,
+      "objective_m2": 0.00012338157646218614,
+      "sum_displacement_norms_m": 1135.2953814377026,
+      "relative_component_length_excess": 0.9994935490426703,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28235,
+      "optimality": 4.298183761627595e-05,
+      "velocity_signature_rmse_m_s": 396.5567799206956,
+      "maximum_activation_difference_s": 0.17213467755654932,
+      "maximum_completion_difference_s": 0.2778485951505516,
+      "maximum_displacement_vector_difference_m": 567.0539728372818,
+      "trajectory_difference_rmse_m": 0.0025715248502821367,
+      "maximum_trajectory_difference_m": 0.007527315241282234,
+      "activation": [
+        18.0,
+        19.057833551545148,
+        19.058098516394832,
+        19.23035360918872
+      ],
+      "completion": [
+        18.31987762746007,
+        20.99987911827423,
+        21.0,
+        20.029145433004206
+      ],
+      "displacements": [
+        [
+          0.01190624317064874,
+          -0.002866824599223572,
+          0.011116941630935217
+        ],
+        [
+          523.3136994545752,
+          -58.07585159162591,
+          211.6030309715566
+        ],
+        [
+          -523.2080955938505,
+          58.159125547916474,
+          -211.51222162394487
+        ],
+        [
+          -0.011436903192600354,
+          -0.3129576335147661,
+          -0.37729360882656404
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107725751890457,
+      "velocity_rmse_m_s": 0.12179229746292752,
+      "max_position_error_m": 0.02039275351409606,
+      "opposition_cost_m2": 16262290272762.445,
+      "objective_m2": 0.0001233815713792104,
+      "sum_displacement_norms_m": 1145.7942298942266,
+      "relative_component_length_excess": 0.9994981903955278,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28235,
+      "optimality": 0.00017593702701672523,
+      "velocity_signature_rmse_m_s": 400.22780181951777,
+      "maximum_activation_difference_s": 0.17213583453629866,
+      "maximum_completion_difference_s": 0.2778497045342192,
+      "maximum_displacement_vector_difference_m": 572.3033971074932,
+      "trajectory_difference_rmse_m": 0.0025714919744532065,
+      "maximum_trajectory_difference_m": 0.007527140924693933,
+      "activation": [
+        18.0,
+        19.057834825436903,
+        19.058097359415083,
+        19.230353597772957
+      ],
+      "completion": [
+        18.319877628086317,
+        20.999880227657897,
+        21.0,
+        20.029145417074044
+      ],
+      "displacements": [
+        [
+          0.011906243203195737,
+          -0.0028668253812608757,
+          0.011116941505439492
+        ],
+        [
+          528.1547811625572,
+          -58.61340163295409,
+          213.56043301094581
+        ],
+        [
+          -528.0491773315724,
+          58.6966755809748,
+          -213.46962366296776
+        ],
+        [
+          -0.011436873485265687,
+          -0.31295762446287273,
+          -0.3772936090673865
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107726552131473,
+      "velocity_rmse_m_s": 0.12179230636998763,
+      "max_position_error_m": 0.020392762624938637,
+      "opposition_cost_m2": 14437071755674.861,
+      "objective_m2": 0.00012338158915692655,
+      "sum_displacement_norms_m": 1112.2092822363163,
+      "relative_component_length_excess": 0.9994830373249137,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28133,
+      "optimality": 0.0001637622330467861,
+      "velocity_signature_rmse_m_s": 388.4845064160127,
+      "maximum_activation_difference_s": 0.17213205894689665,
+      "maximum_completion_difference_s": 0.2778460853727047,
+      "maximum_displacement_vector_difference_m": 555.5109231261963,
+      "trajectory_difference_rmse_m": 0.0025714696172680533,
+      "maximum_trajectory_difference_m": 0.007527083972996604,
+      "activation": [
+        18.0,
+        19.057830670789112,
+        19.058101135004485,
+        19.230353617904054
+      ],
+      "completion": [
+        18.319877621303785,
+        20.999876608496383,
+        21.0,
+        20.029145485908526
+      ],
+      "displacements": [
+        [
+          0.011906242960376179,
+          -0.0028668232532382916,
+          0.011116941933135113
+        ],
+        [
+          512.6685543202616,
+          -56.89375356459969,
+          207.29890219791127
+        ],
+        [
+          -512.562950391434,
+          56.97702756976451,
+          -207.20809283445212
+        ],
+        [
+          -0.011436971085201576,
+          -0.31295768373500876,
+          -0.3772936249761788
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 0,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": true,
+      "eligible": false,
+      "position_rmse_m": 0.011107724113979386,
+      "velocity_rmse_m_s": 0.12179227690567014,
+      "max_position_error_m": 0.020392665412905752,
+      "opposition_cost_m2": 21054064035223.09,
+      "objective_m2": 0.00012338153499227915,
+      "sum_displacement_norms_m": 1222.1759868197646,
+      "relative_component_length_excess": 0.9995295523492725,
+      "status": 0,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 1000,
+      "residual_evaluations": 28643,
+      "optimality": 0.0002771074945259977,
+      "velocity_signature_rmse_m_s": 426.9354016016892,
+      "maximum_activation_difference_s": 0.17214370096463938,
+      "maximum_completion_difference_s": 0.2778571949755424,
+      "maximum_displacement_vector_difference_m": 610.4942758957579,
+      "trajectory_difference_rmse_m": 0.0025715174072940246,
+      "maximum_trajectory_difference_m": 0.007527158453227351,
+      "activation": [
+        18.0,
+        19.057843372539086,
+        19.058089492986742,
+        19.230353552782372
+      ],
+      "completion": [
+        18.319877632323447,
+        20.99988771809922,
+        21.0,
+        20.029145276346544
+      ],
+      "displacements": [
+        [
+          0.01190624320249477,
+          -0.002866829795996638,
+          0.011116940240391037
+        ],
+        [
+          563.3748763779008,
+          -62.52437409087954,
+          227.80095246487335
+        ],
+        [
+          -563.2692727712392,
+          62.60764792725075,
+          -227.71014315091008
+        ],
+        [
+          -0.011436649161426265,
+          -0.3129575083986382,
+          -0.3772935737875469
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139534838042,
+      "velocity_rmse_m_s": 0.12109855909360404,
+      "max_position_error_m": 0.019922646821153626,
+      "opposition_cost_m2": 9.353182134380674,
+      "objective_m2": 0.00012626646741793177,
+      "sum_displacement_norms_m": 1.4364827067629502,
+      "relative_component_length_excess": 0.5949439826901148,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 77,
+      "residual_evaluations": 2220,
+      "optimality": 1.0360892458840577e-10,
+      "velocity_signature_rmse_m_s": 0.07839669884021326,
+      "maximum_activation_difference_s": 0.041263846533787785,
+      "maximum_completion_difference_s": 0.07619468536136154,
+      "maximum_displacement_vector_difference_m": 0.10954444837509952,
+      "trajectory_difference_rmse_m": 0.0009433045624925599,
+      "maximum_trajectory_difference_m": 0.0028778987362540493,
+      "activation": [
+        18.0,
+        18.926863766678917,
+        19.188969347417594,
+        19.225241866144575
+      ],
+      "completion": [
+        18.310314185856473,
+        20.79822520848504,
+        21.0,
+        20.037424005084656
+      ],
+      "displacements": [
+        [
+          0.011634755863217928,
+          -0.003032463966471456,
+          0.010801491273915418
+        ],
+        [
+          0.4729832354805937,
+          -0.004894494337396742,
+          0.22224551628182745
+        ],
+        [
+          -0.3614377798846595,
+          0.09733762553365732,
+          -0.12037314807312399
+        ],
+        [
+          -0.01710701075648486,
+          -0.3219611690532144,
+          -0.3880411790665117
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139352427238,
+      "velocity_rmse_m_s": 0.12109855726672626,
+      "max_position_error_m": 0.019922649856095282,
+      "opposition_cost_m2": 9.353222975834573,
+      "objective_m2": 0.00012626646741784842,
+      "sum_displacement_norms_m": 1.4364841315905146,
+      "relative_component_length_excess": 0.5949443853247945,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 81,
+      "residual_evaluations": 2258,
+      "optimality": 1.0983253812827429e-10,
+      "velocity_signature_rmse_m_s": 0.07839719114284983,
+      "maximum_activation_difference_s": 0.041264511246279056,
+      "maximum_completion_difference_s": 0.07619489331581875,
+      "maximum_displacement_vector_difference_m": 0.10954521009658606,
+      "trajectory_difference_rmse_m": 0.0009433070503901386,
+      "maximum_trajectory_difference_m": 0.0028779075101042534,
+      "activation": [
+        18.0,
+        18.926863816859097,
+        19.188968682705102,
+        19.225241860160875
+      ],
+      "completion": [
+        18.310314176731794,
+        20.798225416439497,
+        21.0,
+        20.037424009497347
+      ],
+      "displacements": [
+        [
+          0.011634754993920617,
+          -0.0030324634887928166,
+          0.010801490984870007
+        ],
+        [
+          0.4729838464423031,
+          -0.004894585462091541,
+          0.2222457786609447
+        ],
+        [
+          -0.36143848292229225,
+          0.09733774374829868,
+          -0.12037343139533282
+        ],
+        [
+          -0.01710691781126426,
+          -0.3219611966208396,
+          -0.3880411578343747
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139725089004,
+      "velocity_rmse_m_s": 0.1210985484209976,
+      "max_position_error_m": 0.019922643827942326,
+      "opposition_cost_m2": 9.35313953800105,
+      "objective_m2": 0.00012626646741806602,
+      "sum_displacement_norms_m": 1.4364814636372525,
+      "relative_component_length_excess": 0.594943615850688,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 84,
+      "residual_evaluations": 2329,
+      "optimality": 7.703925776953352e-11,
+      "velocity_signature_rmse_m_s": 0.07839619614779055,
+      "maximum_activation_difference_s": 0.04126439951559391,
+      "maximum_completion_difference_s": 0.07619398927860033,
+      "maximum_displacement_vector_difference_m": 0.10954381337297672,
+      "trajectory_difference_rmse_m": 0.000943299798767926,
+      "maximum_trajectory_difference_m": 0.0028778824594104316,
+      "activation": [
+        18.0,
+        18.926863568129637,
+        19.188968794435787,
+        19.225241830770372
+      ],
+      "completion": [
+        18.310314163817907,
+        20.798224512402278,
+        21.0,
+        20.037424051655897
+      ],
+      "displacements": [
+        [
+          0.011634754371222463,
+          -0.003032464838690378,
+          0.010801489552298708
+        ],
+        [
+          0.4729825584362322,
+          -0.004894431167902149,
+          0.22224529856674732
+        ],
+        [
+          -0.3614371952489458,
+          0.09733764560171598,
+          -0.12037289601735293
+        ],
+        [
+          -0.01710691685584164,
+          -0.32196125141854876,
+          -0.3880412116855859
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01356596963376527,
+      "velocity_rmse_m_s": 0.13495339261387934,
+      "max_position_error_m": 0.037445259329626286,
+      "opposition_cost_m2": 0.0034626332621393845,
+      "objective_m2": 0.00018403587836756765,
+      "sum_displacement_norms_m": 0.5485863247846311,
+      "relative_component_length_excess": 0.03309438911664689,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 26,
+      "residual_evaluations": 843,
+      "optimality": 4.5903664887307257e-10,
+      "velocity_signature_rmse_m_s": 0.2769027553948363,
+      "maximum_activation_difference_s": 0.9310507949796616,
+      "maximum_completion_difference_s": 1.242841233017792,
+      "maximum_displacement_vector_difference_m": 0.372344464487647,
+      "trajectory_difference_rmse_m": 0.009911724769780016,
+      "maximum_trajectory_difference_m": 0.021664052972661187,
+      "activation": [
+        18.0,
+        19.035201917381794,
+        19.23106164843537,
+        20.161283988931043
+      ],
+      "completion": [
+        18.269063675079387,
+        19.479189290105886,
+        19.982675500642635,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01295999908680902,
+          -0.0009780271164696404,
+          0.008171586093892054
+        ],
+        [
+          0.02948267392091001,
+          -0.011885766191809916,
+          0.035841682191431884
+        ],
+        [
+          0.10884219920517545,
+          -0.25875153875178936,
+          -0.3198657252654498
+        ],
+        [
+          -0.04521167151022723,
+          0.039064830236643644,
+          0.00048513739623307073
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139334080458,
+      "velocity_rmse_m_s": 0.1210985539359815,
+      "max_position_error_m": 0.019922647681482893,
+      "opposition_cost_m2": 9.35322708472471,
+      "objective_m2": 0.0001262664674179479,
+      "sum_displacement_norms_m": 1.4364845186514064,
+      "relative_component_length_excess": 0.5949444986846596,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 85,
+      "residual_evaluations": 2330,
+      "optimality": 1.8795829993460725e-10,
+      "velocity_signature_rmse_m_s": 0.07839729903426342,
+      "maximum_activation_difference_s": 0.04126537359959315,
+      "maximum_completion_difference_s": 0.07619469055484629,
+      "maximum_displacement_vector_difference_m": 0.10954547563896183,
+      "trajectory_difference_rmse_m": 0.000943305514983015,
+      "maximum_trajectory_difference_m": 0.002877904175507025,
+      "activation": [
+        18.0,
+        18.926863751236723,
+        19.188967820351788,
+        19.225241865560577
+      ],
+      "completion": [
+        18.310314167210294,
+        20.798225213678524,
+        21.0,
+        20.03742400696232
+      ],
+      "displacements": [
+        [
+          0.011634753807305135,
+          -0.0030324636082970963,
+          0.010801490196737677
+        ],
+        [
+          0.4729839717600002,
+          -0.004894697026045904,
+          0.22224578046643056
+        ],
+        [
+          -0.36143874579821866,
+          0.09733788963664836,
+          -0.12037347993848599
+        ],
+        [
+          -0.017106779066419366,
+          -0.32196123082573064,
+          -0.3880411103085751
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139611415035,
+      "velocity_rmse_m_s": 0.12109855097937171,
+      "max_position_error_m": 0.019922645044937196,
+      "opposition_cost_m2": 9.35316498921704,
+      "objective_m2": 0.00012626646741799565,
+      "sum_displacement_norms_m": 1.4364823343760702,
+      "relative_component_length_excess": 0.5949438673287647,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 72,
+      "residual_evaluations": 2045,
+      "optimality": 7.424801173809446e-11,
+      "velocity_signature_rmse_m_s": 0.07839651389728822,
+      "maximum_activation_difference_s": 0.041264618497031336,
+      "maximum_completion_difference_s": 0.07619421345735589,
+      "maximum_displacement_vector_difference_m": 0.10954428397681533,
+      "trajectory_difference_rmse_m": 0.0009433016742755716,
+      "maximum_trajectory_difference_m": 0.0028778891378462117,
+      "activation": [
+        18.0,
+        18.92686362293286,
+        19.18896857545435,
+        19.225241844499326
+      ],
+      "completion": [
+        18.310314151714216,
+        20.798224736581034,
+        21.0,
+        20.037424032665264
+      ],
+      "displacements": [
+        [
+          0.011634753975088018,
+          -0.0030324644414141664,
+          0.010801489660764897
+        ],
+        [
+          0.4729829726597178,
+          -0.004894502792352007,
+          0.22224543277188286
+        ],
+        [
+          -0.3614376348322581,
+          0.09733770621476445,
+          -0.1203730609060148
+        ],
+        [
+          -0.017106891099880426,
+          -0.32196124080442357,
+          -0.38804118111052577
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139695429561,
+      "velocity_rmse_m_s": 0.12109854960110615,
+      "max_position_error_m": 0.019922643617218704,
+      "opposition_cost_m2": 9.35314617873836,
+      "objective_m2": 0.00012626646741805653,
+      "sum_displacement_norms_m": 1.4364816952299606,
+      "relative_component_length_excess": 0.5949436782201767,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 76,
+      "residual_evaluations": 2083,
+      "optimality": 1.2392443049422817e-10,
+      "velocity_signature_rmse_m_s": 0.07839627784644701,
+      "maximum_activation_difference_s": 0.041264507476039824,
+      "maximum_completion_difference_s": 0.07619398425605439,
+      "maximum_displacement_vector_difference_m": 0.10954393224010862,
+      "trajectory_difference_rmse_m": 0.0009433008479739662,
+      "maximum_trajectory_difference_m": 0.0028778853749820803,
+      "activation": [
+        18.0,
+        18.926863587101934,
+        19.18896868647534,
+        19.225241838517903
+      ],
+      "completion": [
+        18.310314155935334,
+        20.798224507379732,
+        21.0,
+        20.037424042552963
+      ],
+      "displacements": [
+        [
+          0.01163475407953317,
+          -0.0030324642987846905,
+          0.010801489534392663
+        ],
+        [
+          0.4729826779042982,
+          -0.0048944925115762235,
+          0.2222453258196369
+        ],
+        [
+          -0.36143730902171584,
+          0.0973376904835982,
+          -0.12037292848867928
+        ],
+        [
+          -0.017106922259448314,
+          -0.32196123549666256,
+          -0.3880412064492431
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01119513947017141,
+      "velocity_rmse_m_s": 0.12109856130832072,
+      "max_position_error_m": 0.019922646595183426,
+      "opposition_cost_m2": 9.353196613070093,
+      "objective_m2": 0.00012626646741789683,
+      "sum_displacement_norms_m": 1.436483212208961,
+      "relative_component_length_excess": 0.5949441420019617,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 74,
+      "residual_evaluations": 2183,
+      "optimality": 7.878863881777862e-11,
+      "velocity_signature_rmse_m_s": 0.07839689996006854,
+      "maximum_activation_difference_s": 0.041263783530055775,
+      "maximum_completion_difference_s": 0.07619496669656556,
+      "maximum_displacement_vector_difference_m": 0.10954473847266348,
+      "trajectory_difference_rmse_m": 0.0009433048919817398,
+      "maximum_trajectory_difference_m": 0.0028779020562045912,
+      "activation": [
+        18.0,
+        18.926863823911134,
+        19.188969410421326,
+        19.22524187605931
+      ],
+      "completion": [
+        18.310314242984195,
+        20.798225489820243,
+        21.0,
+        20.03742399399961
+      ],
+      "displacements": [
+        [
+          0.011634756830047948,
+          -0.0030324635856284346,
+          0.010801492078871917
+        ],
+        [
+          0.47298347826212706,
+          -0.004894548150607998,
+          0.22224560435445345
+        ],
+        [
+          -0.3614380455349792,
+          0.09733765034965408,
+          -0.12037326273869217
+        ],
+        [
+          -0.017106988854528563,
+          -0.32196114043684293,
+          -0.388041153278526
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139145131542,
+      "velocity_rmse_m_s": 0.12109856554983821,
+      "max_position_error_m": 0.019922648664804043,
+      "opposition_cost_m2": 9.353269389302795,
+      "objective_m2": 0.00012626646741778686,
+      "sum_displacement_norms_m": 1.4364858555744178,
+      "relative_component_length_excess": 0.5949449017707529,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 70,
+      "residual_evaluations": 1975,
+      "optimality": 8.639954859563357e-11,
+      "velocity_signature_rmse_m_s": 0.07839783851020128,
+      "maximum_activation_difference_s": 0.04126498825741365,
+      "maximum_completion_difference_s": 0.07619539346445592,
+      "maximum_displacement_vector_difference_m": 0.10954619520292004,
+      "trajectory_difference_rmse_m": 0.0009433094337706481,
+      "maximum_trajectory_difference_m": 0.0028779191747711056,
+      "activation": [
+        18.0,
+        18.926863941906984,
+        19.188968205693968,
+        19.225241913101
+      ],
+      "completion": [
+        18.310314211983773,
+        20.798225916588134,
+        21.0,
+        20.03742394687607
+      ],
+      "displacements": [
+        [
+          0.01163475532214408,
+          -0.003032462438673308,
+          0.010801492132972776
+        ],
+        [
+          0.4729846959012242,
+          -0.004894827750191021,
+          0.22224597430097215
+        ],
+        [
+          -0.3614394170927554,
+          0.09733792288388587,
+          -0.1203737402573895
+        ],
+        [
+          -0.01710683342794568,
+          -0.3219611345184468,
+          -0.38804104576044823
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-07,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011195139305826088,
+      "velocity_rmse_m_s": 0.1210985621479542,
+      "max_position_error_m": 0.019922646514974225,
+      "opposition_cost_m2": 9.353233409622705,
+      "objective_m2": 0.0001262664674178145,
+      "sum_displacement_norms_m": 1.4364846547882055,
+      "relative_component_length_excess": 0.5949445542273387,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 76,
+      "residual_evaluations": 2083,
+      "optimality": 6.609515659232591e-11,
+      "velocity_signature_rmse_m_s": 0.07839739682454472,
+      "maximum_activation_difference_s": 0.04126477288913577,
+      "maximum_completion_difference_s": 0.07619504536351229,
+      "maximum_displacement_vector_difference_m": 0.1095455513449536,
+      "trajectory_difference_rmse_m": 0.0009433067483836072,
+      "maximum_trajectory_difference_m": 0.002877909398770101,
+      "activation": [
+        18.0,
+        18.92686385060447,
+        19.188968421062246,
+        19.225241896657117
+      ],
+      "completion": [
+        18.310314194021576,
+        20.79822556848719,
+        21.0,
+        20.037423970028446
+      ],
+      "displacements": [
+        [
+          0.011634755209020447,
+          -0.0030324629580717895,
+          0.010801491741079552
+        ],
+        [
+          0.4729841301064756,
+          -0.004894738793211871,
+          0.22224576823059491
+        ],
+        [
+          -0.361438821483974,
+          0.0973378527279527,
+          -0.12037350055863033
+        ],
+        [
+          -0.017106863128854836,
+          -0.32196115280009435,
+          -0.38804107899693696
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218279961379054,
+      "velocity_rmse_m_s": 0.12069907417612823,
+      "max_position_error_m": 0.01952702647471603,
+      "opposition_cost_m2": 6.238246859074125,
+      "objective_m2": 0.0001277212793496011,
+      "sum_displacement_norms_m": 1.3113290716016146,
+      "relative_component_length_excess": 0.5556065366525385,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 67,
+      "residual_evaluations": 2006,
+      "optimality": 7.24238894216802e-11,
+      "velocity_signature_rmse_m_s": 0.03246515869095468,
+      "maximum_activation_difference_s": 0.024534376991535822,
+      "maximum_completion_difference_s": 0.029457623062935312,
+      "maximum_displacement_vector_difference_m": 0.04646497486326282,
+      "trajectory_difference_rmse_m": 0.0005665843623695431,
+      "maximum_trajectory_difference_m": 0.0015042027826608505,
+      "activation": [
+        18.0,
+        18.91680374048451,
+        19.205698816959845,
+        19.22413624896534
+      ],
+      "completion": [
+        18.309236904669728,
+        20.751488146186613,
+        21.0,
+        20.038967267964022
+      ],
+      "displacements": [
+        [
+          0.011618929308685291,
+          -0.0030829648456083595,
+          0.010745961496650153
+        ],
+        [
+          0.41378385618094543,
+          0.0016886324136636958,
+          0.19942341109477543
+        ],
+        [
+          -0.3003371984654888,
+          0.09235794078274895,
+          -0.09475056773360313
+        ],
+        [
+          -0.01899238632147473,
+          -0.3235141101742296,
+          -0.3907861244417153
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218279953942324,
+      "velocity_rmse_m_s": 0.12069907201225263,
+      "max_position_error_m": 0.019527023941283715,
+      "opposition_cost_m2": 6.238247415278082,
+      "objective_m2": 0.00012772127934960762,
+      "sum_displacement_norms_m": 1.3113293024678097,
+      "relative_component_length_excess": 0.555606616040157,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 68,
+      "residual_evaluations": 2109,
+      "optimality": 8.787577219833684e-11,
+      "velocity_signature_rmse_m_s": 0.03246521684836679,
+      "maximum_activation_difference_s": 0.02453501648730949,
+      "maximum_completion_difference_s": 0.029457430611380175,
+      "maximum_displacement_vector_difference_m": 0.046465028944330786,
+      "trajectory_difference_rmse_m": 0.0005665833511648741,
+      "maximum_trajectory_difference_m": 0.0015041996042292785,
+      "activation": [
+        18.0,
+        18.916803733989,
+        19.205698177464072,
+        19.224136258855303
+      ],
+      "completion": [
+        18.309236933270565,
+        20.751487953735058,
+        21.0,
+        20.038967260026705
+      ],
+      "displacements": [
+        [
+          0.011618928555653255,
+          -0.0030829644192256725,
+          0.01074596122300535
+        ],
+        [
+          0.4137839402518825,
+          0.0016885327766623637,
+          0.19942340341808523
+        ],
+        [
+          -0.3003373517382587,
+          0.09235804980172224,
+          -0.0947505860657224
+        ],
+        [
+          -0.01899231636660982,
+          -0.3235141199825842,
+          -0.390786098159261
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01121827985546917,
+      "velocity_rmse_m_s": 0.12069906932037762,
+      "max_position_error_m": 0.01952702774188249,
+      "opposition_cost_m2": 6.238254779968604,
+      "objective_m2": 0.00012772127934961597,
+      "sum_displacement_norms_m": 1.3113293954700982,
+      "relative_component_length_excess": 0.5556066236814334,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 72,
+      "residual_evaluations": 2147,
+      "optimality": 5.933479711927261e-11,
+      "velocity_signature_rmse_m_s": 0.032465248622346794,
+      "maximum_activation_difference_s": 0.024534847780707025,
+      "maximum_completion_difference_s": 0.02945742376156346,
+      "maximum_displacement_vector_difference_m": 0.04646511149048977,
+      "trajectory_difference_rmse_m": 0.0005665865828739528,
+      "maximum_trajectory_difference_m": 0.0015042054217237128,
+      "activation": [
+        18.0,
+        18.91680373983306,
+        19.205698346170674,
+        19.22413623015123
+      ],
+      "completion": [
+        18.309236856117906,
+        20.75148794688524,
+        21.0,
+        20.038967291028076
+      ],
+      "displacements": [
+        [
+          0.011618927591813974,
+          -0.0030829648277294042,
+          0.010745960479816194
+        ],
+        [
+          0.4137839722555025,
+          0.0016886368826389843,
+          0.19942348406988183
+        ],
+        [
+          -0.30033731805394237,
+          0.09235798550174557,
+          -0.09475060733323723
+        ],
+        [
+          -0.01899238109070691,
+          -0.32351415938008043,
+          -0.3907861568003536
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013565969694666048,
+      "velocity_rmse_m_s": 0.1349536008351378,
+      "max_position_error_m": 0.03744503771666734,
+      "opposition_cost_m2": 0.0034543595882230837,
+      "objective_m2": 0.00018403657006447408,
+      "sum_displacement_norms_m": 0.5485740831530339,
+      "relative_component_length_excess": 0.03307454587172983,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 24,
+      "residual_evaluations": 807,
+      "optimality": 4.0705707547350086e-10,
+      "velocity_signature_rmse_m_s": 0.2769041805261253,
+      "maximum_activation_difference_s": 0.9310468012451771,
+      "maximum_completion_difference_s": 1.242905299768431,
+      "maximum_displacement_vector_difference_m": 0.372346943234534,
+      "trajectory_difference_rmse_m": 0.009911549271191384,
+      "maximum_trajectory_difference_m": 0.02166384269808794,
+      "activation": [
+        18.0,
+        19.035240418686065,
+        19.231075933196074,
+        20.16127999519656
+      ],
+      "completion": [
+        18.269067011839528,
+        19.479125223355247,
+        19.982670864851194,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012959871458621165,
+          -0.0009778507812649969,
+          0.008172024732279721
+        ],
+        [
+          0.029483299990028265,
+          -0.011889388172549583,
+          0.03583367896068508
+        ],
+        [
+          0.10884188874621234,
+          -0.25874826403892914,
+          -0.3198579619578436
+        ],
+        [
+          -0.04521185949219453,
+          0.039065001169318436,
+          0.00048493868098598014
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218279876137757,
+      "velocity_rmse_m_s": 0.12069907391561881,
+      "max_position_error_m": 0.019527024141782895,
+      "opposition_cost_m2": 6.2382532341343,
+      "objective_m2": 0.00012772127934959767,
+      "sum_displacement_norms_m": 1.3113296222771127,
+      "relative_component_length_excess": 0.5556067223385414,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 72,
+      "residual_evaluations": 2147,
+      "optimality": 6.945532951106422e-11,
+      "velocity_signature_rmse_m_s": 0.03246532733256588,
+      "maximum_activation_difference_s": 0.024535129644686293,
+      "maximum_completion_difference_s": 0.029457501243236095,
+      "maximum_displacement_vector_difference_m": 0.046465183790946,
+      "trajectory_difference_rmse_m": 0.0005665847638477106,
+      "maximum_trajectory_difference_m": 0.0015042042898158823,
+      "activation": [
+        18.0,
+        18.91680376643269,
+        19.205698064306695,
+        19.224136267184505
+      ],
+      "completion": [
+        18.309236912886018,
+        20.751488024366914,
+        21.0,
+        20.03896725028612
+      ],
+      "displacements": [
+        [
+          0.011618928134625894,
+          -0.003082963809095844,
+          0.010745961377833669
+        ],
+        [
+          0.4137841082964341,
+          0.0016884796909416482,
+          0.19942344225092867
+        ],
+        [
+          -0.3003375112272056,
+          0.092358086519924,
+          -0.09475063694879443
+        ],
+        [
+          -0.018992324501187176,
+          -0.3235141042251951,
+          -0.39078608626386074
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01121827999338029,
+      "velocity_rmse_m_s": 0.12069906962338704,
+      "max_position_error_m": 0.019527023887193365,
+      "opposition_cost_m2": 6.238244465855059,
+      "objective_m2": 0.00012772127934963302,
+      "sum_displacement_norms_m": 1.3113291026467915,
+      "relative_component_length_excess": 0.5556065427615663,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 62,
+      "residual_evaluations": 1797,
+      "optimality": 9.530505803382275e-11,
+      "velocity_signature_rmse_m_s": 0.03246514241672982,
+      "maximum_activation_difference_s": 0.024535017094489575,
+      "maximum_completion_difference_s": 0.02945730503156696,
+      "maximum_displacement_vector_difference_m": 0.04646493077561497,
+      "trajectory_difference_rmse_m": 0.0005665829678453805,
+      "maximum_trajectory_difference_m": 0.0015041970482585355,
+      "activation": [
+        18.0,
+        18.916803714453263,
+        19.20569817685689,
+        19.224136248713457
+      ],
+      "completion": [
+        18.30923692524666,
+        20.751487828155245,
+        21.0,
+        20.03896727168899
+      ],
+      "displacements": [
+        [
+          0.01161892846938286,
+          -0.0030829647081286617,
+          0.010745960876930697
+        ],
+        [
+          0.41378382900092764,
+          0.0016885685750883707,
+          0.19942338569309223
+        ],
+        [
+          -0.3003372385557006,
+          0.09235803325638159,
+          -0.0947505482578884
+        ],
+        [
+          -0.01899231821194261,
+          -0.3235141389467666,
+          -0.39078611789602735
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218280065777027,
+      "velocity_rmse_m_s": 0.12069906486602895,
+      "max_position_error_m": 0.019527024273766323,
+      "opposition_cost_m2": 6.238239051598201,
+      "objective_m2": 0.0001277212793496897,
+      "sum_displacement_norms_m": 1.3113286503510875,
+      "relative_component_length_excess": 0.5556063721137756,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 63,
+      "residual_evaluations": 1866,
+      "optimality": 6.637650363754127e-11,
+      "velocity_signature_rmse_m_s": 0.03246497672362353,
+      "maximum_activation_difference_s": 0.024534896730759925,
+      "maximum_completion_difference_s": 0.029457041261288452,
+      "maximum_displacement_vector_difference_m": 0.046464725316586235,
+      "trajectory_difference_rmse_m": 0.0005665830164834583,
+      "maximum_trajectory_difference_m": 0.001504193391434744,
+      "activation": [
+        18.0,
+        18.916803680341193,
+        19.20569829722062,
+        19.22413622354256
+      ],
+      "completion": [
+        18.309236893254226,
+        20.751487564384966,
+        21.0,
+        20.038967301576875
+      ],
+      "displacements": [
+        [
+          0.011618928189552808,
+          -0.003082965401118956,
+          0.010745960198683978
+        ],
+        [
+          0.4137835932726617,
+          0.0016886643581784683,
+          0.19942334836013617
+        ],
+        [
+          -0.3003369664249234,
+          0.09235797786977284,
+          -0.09475045749696115
+        ],
+        [
+          -0.018992354334623797,
+          -0.32351417865025767,
+          -0.39078617064575183
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218280043309341,
+      "velocity_rmse_m_s": 0.12069907509167302,
+      "max_position_error_m": 0.019527026400857767,
+      "opposition_cost_m2": 6.238240732021733,
+      "objective_m2": 0.00012772127934971913,
+      "sum_displacement_norms_m": 1.3113285728709587,
+      "relative_component_length_excess": 0.5556063563917681,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 61,
+      "residual_evaluations": 1694,
+      "optimality": 1.295855415500096e-10,
+      "velocity_signature_rmse_m_s": 0.032464992166965335,
+      "maximum_activation_difference_s": 0.024533903265758994,
+      "maximum_completion_difference_s": 0.029457521074309767,
+      "maximum_displacement_vector_difference_m": 0.04646478085778526,
+      "trajectory_difference_rmse_m": 0.0005665849682066961,
+      "maximum_trajectory_difference_m": 0.0015042022233556981,
+      "activation": [
+        18.00000000000655,
+        18.91680372466592,
+        19.205699290685622,
+        19.22413624629244
+      ],
+      "completion": [
+        18.30923691750472,
+        20.751488044197988,
+        21.0,
+        20.03896726833522
+      ],
+      "displacements": [
+        [
+          0.01161892917182365,
+          -0.0030829651284388325,
+          0.010745961345352417
+        ],
+        [
+          0.4137836541759082,
+          0.0016886941892217883,
+          0.19942335015464904
+        ],
+        [
+          -0.30033691047425337,
+          0.09235786626884768,
+          -0.09475047159727751
+        ],
+        [
+          -0.01899247217081124,
+          -0.3235140971530559,
+          -0.39078615948661677
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011218279861427271,
+      "velocity_rmse_m_s": 0.12069906937886106,
+      "max_position_error_m": 0.019527027791638462,
+      "opposition_cost_m2": 6.238254334373608,
+      "objective_m2": 0.00012772127934961675,
+      "sum_displacement_norms_m": 1.3113293622046502,
+      "relative_component_length_excess": 0.555606612032717,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 61,
+      "residual_evaluations": 1864,
+      "optimality": 6.698540829297712e-11,
+      "velocity_signature_rmse_m_s": 0.032465237744262944,
+      "maximum_activation_difference_s": 0.024534817148264665,
+      "maximum_completion_difference_s": 0.029457420617198693,
+      "maximum_displacement_vector_difference_m": 0.046465098169772893,
+      "trajectory_difference_rmse_m": 0.0005665865789654473,
+      "maximum_trajectory_difference_m": 0.0015042052726445556,
+      "activation": [
+        18.0,
+        18.916803737609854,
+        19.205698376803117,
+        19.224136229796517
+      ],
+      "completion": [
+        18.309236851901627,
+        20.751487943740877,
+        21.0,
+        20.03896729116219
+      ],
+      "displacements": [
+        [
+          0.011618927575943568,
+          -0.0030829648822023113,
+          0.010745960452153822
+        ],
+        [
+          0.41378395853148214,
+          0.001688644330419262,
+          0.1994234789255659
+        ],
+        [
+          -0.30033729998632275,
+          0.09235797887671993,
+          -0.09475060099029381
+        ],
+        [
+          -0.018992385418435707,
+          -0.32351416014836215,
+          -0.3907861579713187
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 3e-07,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01121828002164086,
+      "velocity_rmse_m_s": 0.1206990734240972,
+      "max_position_error_m": 0.01952702707537326,
+      "opposition_cost_m2": 6.238242352381348,
+      "objective_m2": 0.00012772127934966088,
+      "sum_displacement_norms_m": 1.311328654719788,
+      "relative_component_length_excess": 0.5556063836351643,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 61,
+      "residual_evaluations": 1694,
+      "optimality": 1.3226262322776507e-10,
+      "velocity_signature_rmse_m_s": 0.03246501714005688,
+      "maximum_activation_difference_s": 0.024534027124690994,
+      "maximum_completion_difference_s": 0.02945751240806871,
+      "maximum_displacement_vector_difference_m": 0.04646480879059125,
+      "trajectory_difference_rmse_m": 0.0005665848756233871,
+      "maximum_trajectory_difference_m": 0.0015042018409893233,
+      "activation": [
+        18.0,
+        18.916803719406314,
+        19.20569916682669,
+        19.224136240787683
+      ],
+      "completion": [
+        18.3092369202664,
+        20.751488035531747,
+        21.0,
+        20.038967273378585
+      ],
+      "displacements": [
+        [
+          0.011618929198493628,
+          -0.0030829651831171395,
+          0.0107459609931342
+        ],
+        [
+          0.4137836640462501,
+          0.0016886993778529556,
+          0.19942338580253174
+        ],
+        [
+          -0.30033694652541376,
+          0.09235787517456312,
+          -0.09475049855542145
+        ],
+        [
+          -0.018992446016662713,
+          -0.3235141111927242,
+          -0.39078616782413733
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547565707734,
+      "velocity_rmse_m_s": 0.12102152573603045,
+      "max_position_error_m": 0.01933562185962243,
+      "opposition_cost_m2": 4.249608821719315,
+      "objective_m2": 0.0001312523111574684,
+      "sum_displacement_norms_m": 1.217783723102151,
+      "relative_component_length_excess": 0.52387947375588,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 49,
+      "residual_evaluations": 1342,
+      "optimality": 1.347424984876093e-10,
+      "velocity_signature_rmse_m_s": 2.826314154673503e-07,
+      "maximum_activation_difference_s": 6.847382074681718e-07,
+      "maximum_completion_difference_s": 2.1569903907447951e-07,
+      "maximum_displacement_vector_difference_m": 4.03309656230391e-07,
+      "trajectory_difference_rmse_m": 3.6202981568467756e-09,
+      "maximum_trajectory_difference_m": 1.1243030606053051e-08,
+      "activation": [
+        18.0,
+        18.9112740733829,
+        19.227112143877818,
+        19.23023387868959
+      ],
+      "completion": [
+        18.311350760410043,
+        20.72203043535422,
+        20.035665784434308,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01168840959485918,
+          -0.0030525033957123737,
+          0.010811172455307091
+        ],
+        [
+          0.37491489402762485,
+          -0.003974832303134847,
+          0.1746010667079914
+        ],
+        [
+          -0.018667140293526042,
+          -0.31800071520951456,
+          -0.38580802045457857
+        ],
+        [
+          -0.2618629626262907,
+          0.0924775490849365,
+          -0.07497153829261272
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013565970377000141,
+      "velocity_rmse_m_s": 0.134954330635786,
+      "max_position_error_m": 0.03744427178461261,
+      "opposition_cost_m2": 0.0034258145093831894,
+      "objective_m2": 0.00018403897808415474,
+      "sum_displacement_norms_m": 0.5485316869763676,
+      "relative_component_length_excess": 0.03300585243076849,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 25,
+      "residual_evaluations": 842,
+      "optimality": 3.6188150838634795e-10,
+      "velocity_signature_rmse_m_s": 0.2769091203200781,
+      "maximum_activation_difference_s": 0.9310330641012285,
+      "maximum_completion_difference_s": 1.2431271118420746,
+      "maximum_displacement_vector_difference_m": 0.3723555251254125,
+      "trajectory_difference_rmse_m": 0.009910942257517827,
+      "maximum_trajectory_difference_m": 0.02166311585834241,
+      "activation": [
+        18.0,
+        19.035373796224803,
+        19.23112544365963,
+        20.16126625805261
+      ],
+      "completion": [
+        18.269078548552827,
+        19.478903411281603,
+        19.982654786145527,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01295942968998964,
+          -0.000977238968365979,
+          0.008173545525072488
+        ],
+        [
+          0.029485474298298307,
+          -0.011901943720083585,
+          0.035805958354126505
+        ],
+        [
+          0.10884080618242475,
+          -0.25873690909788505,
+          -0.3198310736352423
+        ],
+        [
+          -0.04521250946804545,
+          0.03906558996290932,
+          0.00048425017215047994
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547420980883,
+      "velocity_rmse_m_s": 0.12102152373700463,
+      "max_position_error_m": 0.019335620409731476,
+      "opposition_cost_m2": 4.249612083720002,
+      "objective_m2": 0.00013125231115745684,
+      "sum_displacement_norms_m": 1.2177842383845658,
+      "relative_component_length_excess": 0.523879678383425,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 55,
+      "residual_evaluations": 1518,
+      "optimality": 8.443651948599148e-11,
+      "velocity_signature_rmse_m_s": 9.049075954678144e-08,
+      "maximum_activation_difference_s": 1.922095513862132e-07,
+      "maximum_completion_difference_s": 2.0804896649906368e-07,
+      "maximum_displacement_vector_difference_m": 1.0511347199305952e-07,
+      "trajectory_difference_rmse_m": 2.506663106905816e-09,
+      "maximum_trajectory_difference_m": 7.2304715308765444e-09,
+      "activation": [
+        18.0,
+        18.911274141381213,
+        19.227112157906507,
+        19.23023300174183
+      ],
+      "completion": [
+        18.311350962298462,
+        20.72203031507471,
+        20.03566577576982,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011688409679183965,
+          -0.0030525030123268984,
+          0.010811173848850377
+        ],
+        [
+          0.3749151137607781,
+          -0.003974938799657053,
+          0.17460108025802593
+        ],
+        [
+          -0.01866705870488738,
+          -0.318000737365088,
+          -0.38580797713790477
+        ],
+        [
+          -0.2618632640324074,
+          0.09247767735364665,
+          -0.07497159655286437
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013565970376935571,
+      "velocity_rmse_m_s": 0.1349543315459192,
+      "max_position_error_m": 0.03744427349848835,
+      "opposition_cost_m2": 0.0034258162729014375,
+      "objective_m2": 0.00018403897808416637,
+      "sum_displacement_norms_m": 0.5485316857053388,
+      "relative_component_length_excess": 0.03300585831578793,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 24,
+      "residual_evaluations": 807,
+      "optimality": 4.909118466933886e-10,
+      "velocity_signature_rmse_m_s": 0.27690912150195346,
+      "maximum_activation_difference_s": 0.931033144107591,
+      "maximum_completion_difference_s": 1.2431270779863333,
+      "maximum_displacement_vector_difference_m": 0.3723555238774764,
+      "trajectory_difference_rmse_m": 0.009910942905460591,
+      "maximum_trajectory_difference_m": 0.02166311745847694,
+      "activation": [
+        18.0,
+        19.03537376951535,
+        19.231125443708734,
+        20.161266338058972
+      ],
+      "completion": [
+        18.269078501216345,
+        19.478903445137345,
+        19.98265478311929,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012959429552757593,
+          -0.0009772388104780248,
+          0.008173545201640535
+        ],
+        [
+          0.029485474808662485,
+          -0.011901944617021841,
+          0.03580596048309804
+        ],
+        [
+          0.10884080503219336,
+          -0.25873690594048254,
+          -0.31983107534070215
+        ],
+        [
+          -0.0452125086909462,
+          0.039065587544557134,
+          0.00048425007207075765
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013565970376968104,
+      "velocity_rmse_m_s": 0.13495433098668555,
+      "max_position_error_m": 0.037444272566901034,
+      "opposition_cost_m2": 0.0034258153834456,
+      "objective_m2": 0.00018403897808415956,
+      "sum_displacement_norms_m": 0.5485316865528828,
+      "relative_component_length_excess": 0.03300585518704893,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 25,
+      "residual_evaluations": 842,
+      "optimality": 4.2020814487975777e-10,
+      "velocity_signature_rmse_m_s": 0.2769091208423047,
+      "maximum_activation_difference_s": 0.9310331006979631,
+      "maximum_completion_difference_s": 1.2431270986155702,
+      "maximum_displacement_vector_difference_m": 0.37235552459292115,
+      "trajectory_difference_rmse_m": 0.009910942550033778,
+      "maximum_trajectory_difference_m": 0.02166311658830508,
+      "activation": [
+        18.0,
+        19.035373787824405,
+        19.2311254432914,
+        20.161266294649344
+      ],
+      "completion": [
+        18.269078536010728,
+        19.478903424508108,
+        19.98265478514984,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012959429672421726,
+          -0.0009772389206139452,
+          0.00817354543086196
+        ],
+        [
+          0.029485474485696557,
+          -0.011901944031961034,
+          0.03580595933409881
+        ],
+        [
+          0.10884080566352543,
+          -0.2587369077456782,
+          -0.31983107449932263
+        ],
+        [
+          -0.04521250911897648,
+          0.03906558887482786,
+          0.0004842501504690455
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547379346385,
+      "velocity_rmse_m_s": 0.12102152440003633,
+      "max_position_error_m": 0.019335618824238815,
+      "opposition_cost_m2": 4.249613022116623,
+      "objective_m2": 0.00013125231115744963,
+      "sum_displacement_norms_m": 1.217784239422289,
+      "relative_component_length_excess": 0.523879672417439,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 43,
+      "residual_evaluations": 1234,
+      "optimality": 6.278418493477259e-11,
+      "velocity_signature_rmse_m_s": 8.211712233294597e-08,
+      "maximum_activation_difference_s": 9.098266673390754e-08,
+      "maximum_completion_difference_s": 2.0561802571705812e-07,
+      "maximum_displacement_vector_difference_m": 9.747236881043068e-08,
+      "trajectory_difference_rmse_m": 2.201758649832947e-09,
+      "maximum_trajectory_difference_m": 5.565424527313305e-09,
+      "activation": [
+        18.0,
+        18.911274151288175,
+        19.22711215612615,
+        19.230233102968715
+      ],
+      "completion": [
+        18.311351058262865,
+        20.722030317505652,
+        20.03566577588678,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011688409590352106,
+          -0.0030525031141267057,
+          0.010811174528576231
+        ],
+        [
+          0.3749151302674267,
+          -0.003974927338521443,
+          0.1746010800183304
+        ],
+        [
+          -0.01866708863385171,
+          -0.31800073510743077,
+          -0.3858079825421935
+        ],
+        [
+          -0.26186325052125986,
+          0.09247766373665361,
+          -0.07497159158860595
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547161977537,
+      "velocity_rmse_m_s": 0.12102152547028117,
+      "max_position_error_m": 0.019335620712653424,
+      "opposition_cost_m2": 4.249617921403792,
+      "objective_m2": 0.00013125231115743976,
+      "sum_displacement_norms_m": 1.2177845693998037,
+      "relative_component_length_excess": 0.5238798084390653,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 46,
+      "residual_evaluations": 1203,
+      "optimality": 9.45054579196494e-11,
+      "velocity_signature_rmse_m_s": 7.436333915268351e-08,
+      "maximum_activation_difference_s": 3.868082387725735e-08,
+      "maximum_completion_difference_s": 1.272364400506376e-07,
+      "maximum_displacement_vector_difference_m": 9.318189208600754e-08,
+      "trajectory_difference_rmse_m": 2.2982785623322103e-09,
+      "maximum_trajectory_difference_m": 4.813210398425721e-09,
+      "activation": [
+        18.0,
+        18.911274143187555,
+        19.227112152426713,
+        19.230233155270557
+      ],
+      "completion": [
+        18.31135090916879,
+        20.722030650360118,
+        20.035665776105287,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011688409607170599,
+          -0.0030525030909329797,
+          0.010811173426382494
+        ],
+        [
+          0.3749152592952778,
+          -0.00397490467342915,
+          0.17460117958623686
+        ],
+        [
+          -0.01866705566601875,
+          -0.31800074230652514,
+          -0.3858079833529004
+        ],
+        [
+          -0.26186341253376244,
+          0.09247764824746196,
+          -0.07497168924361178
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547297539598,
+      "velocity_rmse_m_s": 0.12102152681730155,
+      "max_position_error_m": 0.019335620706607968,
+      "opposition_cost_m2": 4.249614865949599,
+      "objective_m2": 0.00013125231115743166,
+      "sum_displacement_norms_m": 1.2177844000852647,
+      "relative_component_length_excess": 0.5238797414204077,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 39,
+      "residual_evaluations": 1060,
+      "optimality": 5.865359571090651e-11,
+      "velocity_signature_rmse_m_s": 0.0,
+      "maximum_activation_difference_s": 0.0,
+      "maximum_completion_difference_s": 0.0,
+      "maximum_displacement_vector_difference_m": 0.0,
+      "trajectory_difference_rmse_m": 0.0,
+      "maximum_trajectory_difference_m": 0.0,
+      "activation": [
+        18.0,
+        18.91127414414336,
+        19.227112161979665,
+        19.23023319395138
+      ],
+      "completion": [
+        18.311350976109082,
+        20.722030523123678,
+        20.035665766624803,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01168840924311193,
+          -0.003052502703112096,
+          0.010811174021147011
+        ],
+        [
+          0.3749152120020489,
+          -0.003974945081710493,
+          0.17460111710949133
+        ],
+        [
+          -0.018667083967483858,
+          -0.31800071716825973,
+          -0.38580797335206407
+        ],
+        [
+          -0.26186333657500976,
+          0.09247766312965705,
+          -0.07497163736246709
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547495195388,
+      "velocity_rmse_m_s": 0.12102152984155519,
+      "max_position_error_m": 0.019335620790276495,
+      "opposition_cost_m2": 4.2496104109765005,
+      "objective_m2": 0.00013125231115744114,
+      "sum_displacement_norms_m": 1.217783988363791,
+      "relative_component_length_excess": 0.523879586510001,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 46,
+      "residual_evaluations": 1339,
+      "optimality": 4.0170052319346084e-11,
+      "velocity_signature_rmse_m_s": 1.7959835220904053e-07,
+      "maximum_activation_difference_s": 6.2568836156629e-07,
+      "maximum_completion_difference_s": 1.1165287361336595e-07,
+      "maximum_displacement_vector_difference_m": 2.327604470540988e-07,
+      "trajectory_difference_rmse_m": 2.4446497354939116e-09,
+      "maximum_trajectory_difference_m": 6.756795855573765e-09,
+      "activation": [
+        18.0,
+        18.911274109709932,
+        19.227112160508035,
+        19.230233819639743
+      ],
+      "completion": [
+        18.31135108177754,
+        20.72203063477655,
+        20.03566576546405,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011688410494820646,
+          -0.0030525038296969507,
+          0.01081117508137843
+        ],
+        [
+          0.37491505258204877,
+          -0.003974866515178496,
+          0.1746010540090172
+        ],
+        [
+          -0.018667129602103524,
+          -0.3180007001947408,
+          -0.38580797236832437
+        ],
+        [
+          -0.26186313277209866,
+          0.09247756871619095,
+          -0.0749715763059641
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-06,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.011269547279529736,
+      "velocity_rmse_m_s": 0.1210215257135833,
+      "max_position_error_m": 0.019335620500617632,
+      "opposition_cost_m2": 4.249615271880179,
+      "objective_m2": 0.00013125231115743627,
+      "sum_displacement_norms_m": 1.2177842576121012,
+      "relative_component_length_excess": 0.5238796828193173,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 43,
+      "residual_evaluations": 1098,
+      "optimality": 7.858371344497868e-11,
+      "velocity_signature_rmse_m_s": 1.0445104697830517e-07,
+      "maximum_activation_difference_s": 2.933692826445622e-07,
+      "maximum_completion_difference_s": 8.101610760036237e-08,
+      "maximum_displacement_vector_difference_m": 1.3229566982823914e-07,
+      "trajectory_difference_rmse_m": 2.553805666633096e-09,
+      "maximum_trajectory_difference_m": 5.3665493089081095e-09,
+      "activation": [
+        18.0,
+        18.911274110244353,
+        19.227112147428983,
+        19.230233487320664
+      ],
+      "completion": [
+        18.311350911918957,
+        20.722030604139785,
+        20.035665778250873,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011688409486824178,
+          -0.0030525035372335812,
+          0.0108111731800868
+        ],
+        [
+          0.3749151232759479,
+          -0.00397485206846233,
+          0.17460114838822083
+        ],
+        [
+          -0.018667092914284675,
+          -0.3180007395317112,
+          -0.38580800181485414
+        ],
+        [
+          -0.26186323914582016,
+          0.09247759331398181,
+          -0.0749716393373463
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412127158799173,
+      "velocity_rmse_m_s": 0.12229473029541137,
+      "max_position_error_m": 0.020360874836632892,
+      "opposition_cost_m2": 2.4537293190653267,
+      "objective_m2": 0.00013759783424579768,
+      "sum_displacement_norms_m": 1.123515889616485,
+      "relative_component_length_excess": 0.48964982270227986,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 53,
+      "residual_evaluations": 1482,
+      "optimality": 1.1661878691662775e-10,
+      "velocity_signature_rmse_m_s": 0.0335325978056513,
+      "maximum_activation_difference_s": 0.03768696224549117,
+      "maximum_completion_difference_s": 0.015857091156956216,
+      "maximum_displacement_vector_difference_m": 0.048992228372533454,
+      "trajectory_difference_rmse_m": 0.0008785612416602104,
+      "maximum_trajectory_difference_m": 0.0020740537733252955,
+      "activation": [
+        18.0,
+        18.904010552677082,
+        19.23390573387414,
+        19.267920156196872
+      ],
+      "completion": [
+        18.31581990390051,
+        20.70617343196672,
+        20.02779337402831,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011804808981322967,
+          -0.002951021043149823,
+          0.010973901380101235
+        ],
+        [
+          0.3398042089932501,
+          -0.01803871735730615,
+          0.14346165311277523
+        ],
+        [
+          -0.01543029533925825,
+          -0.305823067350507,
+          -0.373328497397825
+        ],
+        [
+          -0.23010552193264755,
+          0.0942623039275377,
+          -0.05647437667894431
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013565976112698486,
+      "velocity_rmse_m_s": 0.1349564168307682,
+      "max_position_error_m": 0.03744214976607555,
+      "opposition_cost_m2": 0.003347597068805388,
+      "objective_m2": 0.00018404575068151237,
+      "sum_displacement_norms_m": 0.5484142383736024,
+      "relative_component_length_excess": 0.03281574033584195,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 22,
+      "residual_evaluations": 771,
+      "optimality": 3.565521497591017e-10,
+      "velocity_signature_rmse_m_s": 0.2769228294975169,
+      "maximum_activation_difference_s": 0.9309951729059698,
+      "maximum_completion_difference_s": 1.243741313761781,
+      "maximum_displacement_vector_difference_m": 0.3723792881871986,
+      "trajectory_difference_rmse_m": 0.00990926204576368,
+      "maximum_trajectory_difference_m": 0.02166110156175093,
+      "activation": [
+        18.0,
+        19.035743807936264,
+        19.23126292438033,
+        20.16122836685735
+      ],
+      "completion": [
+        18.269110767126755,
+        19.478289209361897,
+        19.98261006930946,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012958208958364201,
+          -0.0009755360593080645,
+          0.008177775067135514
+        ],
+        [
+          0.029491544059794123,
+          -0.01193681716031982,
+          0.03572911673098632
+        ],
+        [
+          0.10883775502428894,
+          -0.25870536185049864,
+          -0.3197565523015479
+        ],
+        [
+          -0.04521430733978002,
+          0.039067213246701205,
+          0.00048234091953325287
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412127357424168,
+      "velocity_rmse_m_s": 0.12229473116453381,
+      "max_position_error_m": 0.020360877547786607,
+      "opposition_cost_m2": 2.4537278079191913,
+      "objective_m2": 0.0001375978342458267,
+      "sum_displacement_norms_m": 1.1235156501191998,
+      "relative_component_length_excess": 0.4896497200335822,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 53,
+      "residual_evaluations": 1482,
+      "optimality": 2.09079010781056e-10,
+      "velocity_signature_rmse_m_s": 0.033532657844764474,
+      "maximum_activation_difference_s": 0.03768739346466177,
+      "maximum_completion_difference_s": 0.0158569584854078,
+      "maximum_displacement_vector_difference_m": 0.04899229502215436,
+      "trajectory_difference_rmse_m": 0.0008785618177806864,
+      "maximum_trajectory_difference_m": 0.002074055174717761,
+      "activation": [
+        18.0,
+        18.90401048886033,
+        19.233905725129745,
+        19.267920587416043
+      ],
+      "completion": [
+        18.31581971124478,
+        20.70617356463827,
+        20.02779337895138,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01180480972307389,
+          -0.0029510214415157227,
+          0.010973900083216043
+        ],
+        [
+          0.33980408728689376,
+          -0.0180386580584603,
+          0.14346165869926475
+        ],
+        [
+          -0.015430295443519636,
+          -0.3058230636731215,
+          -0.37332851052095734
+        ],
+        [
+          -0.23010540086378078,
+          0.09426224134967226,
+          -0.05647436784541629
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013565976113329364,
+      "velocity_rmse_m_s": 0.13495641959082305,
+      "max_position_error_m": 0.03744215140548587,
+      "opposition_cost_m2": 0.003347591366304788,
+      "objective_m2": 0.0001840457506815218,
+      "sum_displacement_norms_m": 0.5484142241303033,
+      "relative_component_length_excess": 0.03281573096245401,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 22,
+      "residual_evaluations": 771,
+      "optimality": 4.665496616780297e-10,
+      "velocity_signature_rmse_m_s": 0.276922831169514,
+      "maximum_activation_difference_s": 0.9309952540010791,
+      "maximum_completion_difference_s": 1.2437412817764617,
+      "maximum_displacement_vector_difference_m": 0.3723792883052967,
+      "trajectory_difference_rmse_m": 0.009909262515305042,
+      "maximum_trajectory_difference_m": 0.02166110308643448,
+      "activation": [
+        18.0,
+        19.035743752577254,
+        19.23126294510857,
+        20.16122844795246
+      ],
+      "completion": [
+        18.269110758253284,
+        19.478289241347216,
+        19.98261005364196,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012958208573922846,
+          -0.0009755355008166202,
+          0.008177774931474851
+        ],
+        [
+          0.029491546115325593,
+          -0.011936823395811343,
+          0.03572911165897548
+        ],
+        [
+          0.10883775245726512,
+          -0.25870535332584327,
+          -0.3197565463665076
+        ],
+        [
+          -0.04521430644384633,
+          0.039067210399045926,
+          0.00048234019216442103
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013565976111586603,
+      "velocity_rmse_m_s": 0.13495641674782377,
+      "max_position_error_m": 0.03744215352907977,
+      "opposition_cost_m2": 0.003347607135033225,
+      "objective_m2": 0.0001840457506815435,
+      "sum_displacement_norms_m": 0.548414247020702,
+      "relative_component_length_excess": 0.032815765305819644,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 22,
+      "residual_evaluations": 771,
+      "optimality": 6.903848674713277e-10,
+      "velocity_signature_rmse_m_s": 0.27692283158988845,
+      "maximum_activation_difference_s": 0.9309953457720468,
+      "maximum_completion_difference_s": 1.2437412600639135,
+      "maximum_displacement_vector_difference_m": 0.3723792847182515,
+      "trajectory_difference_rmse_m": 0.009909263565065074,
+      "maximum_trajectory_difference_m": 0.0216611050759537,
+      "activation": [
+        18.0,
+        19.03574380643912,
+        19.23126290491568,
+        20.161228539723428
+      ],
+      "completion": [
+        18.269110699230918,
+        19.478289263059764,
+        19.98261007609339,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012958209197171963,
+          -0.0009755362326944666,
+          0.008177774643591254
+        ],
+        [
+          0.02949154360195605,
+          -0.011936814069714516,
+          0.035729126994431884
+        ],
+        [
+          0.10883775370941197,
+          -0.25870536001828653,
+          -0.31975656262782576
+        ],
+        [
+          -0.04521430580587274,
+          0.039067208497270245,
+          0.000482341405909803
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412127287961883,
+      "velocity_rmse_m_s": 0.1222947311417555,
+      "max_position_error_m": 0.020360874422565456,
+      "opposition_cost_m2": 2.4537283363817326,
+      "objective_m2": 0.00013759783424578946,
+      "sum_displacement_norms_m": 1.1235158408634158,
+      "relative_component_length_excess": 0.4896498038370804,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 42,
+      "residual_evaluations": 1131,
+      "optimality": 6.637713908250534e-11,
+      "velocity_signature_rmse_m_s": 0.03353261618916636,
+      "maximum_activation_difference_s": 0.03768694301805198,
+      "maximum_completion_difference_s": 0.015857123030688314,
+      "maximum_displacement_vector_difference_m": 0.04899226033487898,
+      "trajectory_difference_rmse_m": 0.000878561925645542,
+      "maximum_trajectory_difference_m": 0.002074055037707106,
+      "activation": [
+        18.0,
+        18.904010567303853,
+        19.233905739142866,
+        19.267920136969433
+      ],
+      "completion": [
+        18.31582006795739,
+        20.70617340009299,
+        20.027793369746067,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01180480992612741,
+          -0.002951021488950284,
+          0.010973902654448735
+        ],
+        [
+          0.339804193878844,
+          -0.018038717217112508,
+          0.14346161980468533
+        ],
+        [
+          -0.015430290516690138,
+          -0.3058230681241424,
+          -0.37332848159424986
+        ],
+        [
+          -0.230105512585614,
+          0.0942623050067799,
+          -0.05647436044877702
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412126981743646,
+      "velocity_rmse_m_s": 0.12229473177486037,
+      "max_position_error_m": 0.020360874902901668,
+      "opposition_cost_m2": 2.4537306661264493,
+      "objective_m2": 0.0001375978342458207,
+      "sum_displacement_norms_m": 1.1235161182209459,
+      "relative_component_length_excess": 0.48964992897858917,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 43,
+      "residual_evaluations": 1132,
+      "optimality": 1.439426550450476e-10,
+      "velocity_signature_rmse_m_s": 0.0335325372037722,
+      "maximum_activation_difference_s": 0.037686772877318475,
+      "maximum_completion_difference_s": 0.015857005490527598,
+      "maximum_displacement_vector_difference_m": 0.04899215049653609,
+      "trajectory_difference_rmse_m": 0.0008785608902100536,
+      "maximum_trajectory_difference_m": 0.0020740529463197594,
+      "activation": [
+        18.0,
+        18.904010582155976,
+        19.23390574362421,
+        19.2679199668287
+      ],
+      "completion": [
+        18.315819822783496,
+        20.70617351763315,
+        20.02779336644441,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01180480873165523,
+          -0.002951020425931513,
+          0.010973901222255701
+        ],
+        [
+          0.33980432542572137,
+          -0.01803876181575744,
+          0.14346166443333397
+        ],
+        [
+          -0.015430286947278115,
+          -0.30582306206144366,
+          -0.3733284788650013
+        ],
+        [
+          -0.23010564650743126,
+          0.09426234247970733,
+          -0.05647440637448117
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412127065404384,
+      "velocity_rmse_m_s": 0.12229472681408562,
+      "max_position_error_m": 0.020360872973120295,
+      "opposition_cost_m2": 2.4537300296270836,
+      "objective_m2": 0.00013759783424581654,
+      "sum_displacement_norms_m": 1.1235160087387306,
+      "relative_component_length_excess": 0.4896498713519948,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 39,
+      "residual_evaluations": 1060,
+      "optimality": 9.380730693275341e-11,
+      "velocity_signature_rmse_m_s": 0.0335325655386865,
+      "maximum_activation_difference_s": 0.03768651447511573,
+      "maximum_completion_difference_s": 0.015857305727390525,
+      "maximum_displacement_vector_difference_m": 0.04899221211431196,
+      "trajectory_difference_rmse_m": 0.0008785614118688066,
+      "maximum_trajectory_difference_m": 0.00207405370775065,
+      "activation": [
+        18.0,
+        18.90401062239657,
+        19.233905732413376,
+        19.267919708426497
+      ],
+      "completion": [
+        18.31582006183526,
+        20.706173217396287,
+        20.027793381218284,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011804809710063799,
+          -0.0029510210103966465,
+          0.010973902449405762
+        ],
+        [
+          0.3398042398296036,
+          -0.01803873269115989,
+          0.14346165084823687
+        ],
+        [
+          -0.015430266858981457,
+          -0.3058230989164918,
+          -0.3733284961579458
+        ],
+        [
+          -0.23010558197801873,
+          0.09426235079462303,
+          -0.05647437672358968
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412127596776225,
+      "velocity_rmse_m_s": 0.12229473152589086,
+      "max_position_error_m": 0.020360874611562243,
+      "opposition_cost_m2": 2.4537259868996566,
+      "objective_m2": 0.00013759783424580044,
+      "sum_displacement_norms_m": 1.1235154869300343,
+      "relative_component_length_excess": 0.4896496418415059,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 45,
+      "residual_evaluations": 1202,
+      "optimality": 8.775386588043407e-11,
+      "velocity_signature_rmse_m_s": 0.03353271380246402,
+      "maximum_activation_difference_s": 0.03768735098736542,
+      "maximum_completion_difference_s": 0.0158571864344772,
+      "maximum_displacement_vector_difference_m": 0.04899237847442581,
+      "trajectory_difference_rmse_m": 0.0008785623664289568,
+      "maximum_trajectory_difference_m": 0.0020740561493640163,
+      "activation": [
+        18.0,
+        18.904010520669463,
+        19.23390573222218,
+        19.267920544938747
+      ],
+      "completion": [
+        18.315820096492875,
+        20.7061733366892,
+        20.02779337358113,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011804810466369036,
+          -0.0029510222227805143,
+          0.010973902674569472
+        ],
+        [
+          0.33980403769896605,
+          -0.018038665499258276,
+          0.1434615866753797
+        ],
+        [
+          -0.015430321250375306,
+          -0.3058230573726576,
+          -0.37332849754648134
+        ],
+        [
+          -0.23010532621229257,
+          0.09426224327127108,
+          -0.05647431138736064
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-06,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011412126741443393,
+      "velocity_rmse_m_s": 0.12229473092460501,
+      "max_position_error_m": 0.02036087359101541,
+      "opposition_cost_m2": 2.4537324943660344,
+      "objective_m2": 0.0001375978342458655,
+      "sum_displacement_norms_m": 1.123516281148758,
+      "relative_component_length_excess": 0.4896500096091956,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 42,
+      "residual_evaluations": 1097,
+      "optimality": 2.1838241044058137e-10,
+      "velocity_signature_rmse_m_s": 0.03353247349253195,
+      "maximum_activation_difference_s": 0.037686835955948794,
+      "maximum_completion_difference_s": 0.015856717695619693,
+      "maximum_displacement_vector_difference_m": 0.048992065060223196,
+      "trajectory_difference_rmse_m": 0.0008785607661604938,
+      "maximum_trajectory_difference_m": 0.002074050662950425,
+      "activation": [
+        18.0,
+        18.904010584715806,
+        19.23390573184395,
+        19.26792002990733
+      ],
+      "completion": [
+        18.315820207409928,
+        20.706173805428058,
+        20.027793373362215,
+        20.99999999999999
+      ],
+      "displacements": [
+        [
+          0.01180481101554946,
+          -0.002951022275045958,
+          0.010973903493835927
+        ],
+        [
+          0.3398043663588594,
+          -0.018038683624682823,
+          0.1434617173837391
+        ],
+        [
+          -0.015430237058145332,
+          -0.30582310151277187,
+          -0.37332847706713085
+        ],
+        [
+          -0.23010573961359632,
+          0.09426230558907533,
+          -0.05647446339433701
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753034619205252,
+      "velocity_rmse_m_s": 0.12467310636564317,
+      "max_position_error_m": 0.022100908148687936,
+      "opposition_cost_m2": 1.018929314458042,
+      "objective_m2": 0.00014832311590481755,
+      "sum_displacement_norms_m": 1.0041002904127425,
+      "relative_component_length_excess": 0.437784776865757,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 67,
+      "residual_evaluations": 2074,
+      "optimality": 3.076195091731299e-10,
+      "velocity_signature_rmse_m_s": 0.07666382165402162,
+      "maximum_activation_difference_s": 0.11129361047253994,
+      "maximum_completion_difference_s": 0.028186714952820324,
+      "maximum_displacement_vector_difference_m": 0.10970391027910842,
+      "trajectory_difference_rmse_m": 0.002080822112762649,
+      "maximum_trajectory_difference_m": 0.004877900734834544,
+      "activation": [
+        18.0,
+        18.884625297115786,
+        19.243118566543693,
+        19.34152680442392
+      ],
+      "completion": [
+        18.320392025802477,
+        20.693843808170858,
+        20.01652432989597,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881883935002915,
+          -0.0028075255383450404,
+          0.011166817234722206
+        ],
+        [
+          0.2942548459326343,
+          -0.03398399097288449,
+          0.10656943007487407
+        ],
+        [
+          -0.010188273574176464,
+          -0.28820515188153883,
+          -0.35630862938882274
+        ],
+        [
+          -0.1898752555907935,
+          0.09244616656934307,
+          -0.036794937504666364
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566032782174844,
+      "velocity_rmse_m_s": 0.1349637197730765,
+      "max_position_error_m": 0.037435381144225066,
+      "opposition_cost_m2": 0.0031068416715232137,
+      "objective_m2": 0.00018406831386375775,
+      "sum_displacement_norms_m": 0.5480402584437188,
+      "relative_component_length_excess": 0.032212477554059676,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 3.5615031867655366e-10,
+      "velocity_signature_rmse_m_s": 0.27696667464989194,
+      "maximum_activation_difference_s": 0.9308756400736122,
+      "maximum_completion_difference_s": 1.2456935278943035,
+      "maximum_displacement_vector_difference_m": 0.37245483489915404,
+      "trajectory_difference_rmse_m": 0.00990392142993022,
+      "maximum_trajectory_difference_m": 0.021654670865407597,
+      "activation": [
+        18.0,
+        19.03692639604248,
+        19.231703962338685,
+        20.161108834024994
+      ],
+      "completion": [
+        18.269216550316695,
+        19.476336995229374,
+        19.982465884815007,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012954351813340093,
+          -0.0009700312695652048,
+          0.008191406165698998
+        ],
+        [
+          0.029511343958996936,
+          -0.012048789190546685,
+          0.035483954178527725
+        ],
+        [
+          0.10882751103758696,
+          -0.2586039952784277,
+          -0.3195189185882331
+        ],
+        [
+          -0.04522000610725674,
+          0.03907231391511429,
+          0.0004762386601135926
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753034883043719,
+      "velocity_rmse_m_s": 0.12467310366145325,
+      "max_position_error_m": 0.022100908740371135,
+      "opposition_cost_m2": 1.0189286942834854,
+      "objective_m2": 0.00014832311590487734,
+      "sum_displacement_norms_m": 1.0041001360518316,
+      "relative_component_length_excess": 0.43778468401933557,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 69,
+      "residual_evaluations": 2042,
+      "optimality": 4.1986344832753024e-10,
+      "velocity_signature_rmse_m_s": 0.07666386647668516,
+      "maximum_activation_difference_s": 0.1112932027974054,
+      "maximum_completion_difference_s": 0.02818736630691987,
+      "maximum_displacement_vector_difference_m": 0.10970400018818445,
+      "trajectory_difference_rmse_m": 0.002080822718403415,
+      "maximum_trajectory_difference_m": 0.004877903281540963,
+      "activation": [
+        18.0,
+        18.884625407232267,
+        19.243118582190426,
+        19.341526396748787
+      ],
+      "completion": [
+        18.320391244935053,
+        20.693843156816758,
+        20.01652432765455,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881882897977964,
+          -0.002807522997422508,
+          0.011166812167963319
+        ],
+        [
+          0.2942547610052647,
+          -0.03398406249730196,
+          0.10656941733488777
+        ],
+        [
+          -0.010188291509885844,
+          -0.2882051284923487,
+          -0.3563086557098979
+        ],
+        [
+          -0.18987515169068958,
+          0.09244621216364785,
+          -0.03679489337684602
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566032778228732,
+      "velocity_rmse_m_s": 0.134963719457045,
+      "max_position_error_m": 0.03743538581748925,
+      "opposition_cost_m2": 0.003106852381388533,
+      "objective_m2": 0.00018406831386379025,
+      "sum_displacement_norms_m": 0.5480402673190146,
+      "relative_component_length_excess": 0.03221250544023539,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 7.138227060868817e-10,
+      "velocity_signature_rmse_m_s": 0.27696667727232194,
+      "maximum_activation_difference_s": 0.9308758569018352,
+      "maximum_completion_difference_s": 1.2456934796823695,
+      "maximum_displacement_vector_difference_m": 0.3724548309849313,
+      "trajectory_difference_rmse_m": 0.00990392327138507,
+      "maximum_trajectory_difference_m": 0.021654675223128864,
+      "activation": [
+        18.0,
+        19.036926418584486,
+        19.231703939666442,
+        20.161109050853216
+      ],
+      "completion": [
+        18.269216513477513,
+        19.47633704344131,
+        19.98246589367158,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012954352295984965,
+          -0.0009700315684713578,
+          0.008191406012301368
+        ],
+        [
+          0.029511343595064982,
+          -0.01204878580862309,
+          0.035483965365282824
+        ],
+        [
+          0.10882750901975528,
+          -0.2586039924721184,
+          -0.31951893029093315
+        ],
+        [
+          -0.04522000420813799,
+          0.03907230802578754,
+          0.00047623932945611847
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566032777732882,
+      "velocity_rmse_m_s": 0.13496371591900488,
+      "max_position_error_m": 0.037435381644106175,
+      "opposition_cost_m2": 0.0031068537233472616,
+      "objective_m2": 0.0001840683138637564,
+      "sum_displacement_norms_m": 0.5480402802027606,
+      "relative_component_length_excess": 0.03221250294611261,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 22,
+      "residual_evaluations": 771,
+      "optimality": 4.421073104214709e-10,
+      "velocity_signature_rmse_m_s": 0.27696667365412825,
+      "maximum_activation_difference_s": 0.930875658933477,
+      "maximum_completion_difference_s": 1.2456935585679823,
+      "maximum_displacement_vector_difference_m": 0.37245483315621675,
+      "trajectory_difference_rmse_m": 0.009903921766707697,
+      "maximum_trajectory_difference_m": 0.02165467132939599,
+      "activation": [
+        18.0,
+        19.036926507973984,
+        19.23170392437933,
+        20.16110885288486
+      ],
+      "completion": [
+        18.26921666704072,
+        19.476336964555696,
+        19.982465910416654,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.0129543530526154,
+          -0.0009700323167480121,
+          0.008191406922226472
+        ],
+        [
+          0.029511341124769296,
+          -0.012048779759615508,
+          0.03548396533441127
+        ],
+        [
+          0.1088275127193816,
+          -0.25860400403956707,
+          -0.31951893189452035
+        ],
+        [
+          -0.04522000619409905,
+          0.039072314292505295,
+          0.00047624005398977376
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753034263840542,
+      "velocity_rmse_m_s": 0.12467309826837304,
+      "max_position_error_m": 0.02210090454004516,
+      "opposition_cost_m2": 1.0189301497798653,
+      "objective_m2": 0.00014832311590480844,
+      "sum_displacement_norms_m": 1.004100387602619,
+      "relative_component_length_excess": 0.43778481870413477,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 45,
+      "residual_evaluations": 1236,
+      "optimality": 8.134327362127424e-11,
+      "velocity_signature_rmse_m_s": 0.07666378399983574,
+      "maximum_activation_difference_s": 0.11129287200324,
+      "maximum_completion_difference_s": 0.02818736129325572,
+      "maximum_displacement_vector_difference_m": 0.10970391024194857,
+      "trajectory_difference_rmse_m": 0.0020808220291026604,
+      "maximum_trajectory_difference_m": 0.004877899569649311,
+      "activation": [
+        18.0,
+        18.88462554467736,
+        19.243118567326444,
+        19.34152606595462
+      ],
+      "completion": [
+        18.32039198320752,
+        20.693843161830422,
+        20.016524349593542,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881886129494803,
+          -0.002807524441694348,
+          0.011166817124015462
+        ],
+        [
+          0.29425485276720975,
+          -0.033984049281674554,
+          0.10656944775178775
+        ],
+        [
+          -0.010188268871611816,
+          -0.28820516762442633,
+          -0.35630866368798186
+        ],
+        [
+          -0.1898752693224255,
+          0.09244623952436992,
+          -0.036794920771714174
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753034146946789,
+      "velocity_rmse_m_s": 0.12467309956052201,
+      "max_position_error_m": 0.022100908510305627,
+      "opposition_cost_m2": 1.0189304245506943,
+      "objective_m2": 0.00014832311590480418,
+      "sum_displacement_norms_m": 1.004100432994874,
+      "relative_component_length_excess": 0.43778485197895767,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 40,
+      "residual_evaluations": 1095,
+      "optimality": 3.1884357182143815e-10,
+      "velocity_signature_rmse_m_s": 0.07666377187745321,
+      "maximum_activation_difference_s": 0.11129309052607539,
+      "maximum_completion_difference_s": 0.028187044592147714,
+      "maximum_displacement_vector_difference_m": 0.10970387335984154,
+      "trajectory_difference_rmse_m": 0.0020808218048363014,
+      "maximum_trajectory_difference_m": 0.004877899839313146,
+      "activation": [
+        18.0,
+        18.884625431579884,
+        19.243118563661866,
+        19.341526284477457
+      ],
+      "completion": [
+        18.32039144636216,
+        20.69384347853153,
+        20.01652434839816,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01188188433039937,
+          -0.0028075234139964727,
+          0.011166813295913477
+        ],
+        [
+          0.29425486271377194,
+          -0.03398405289525832,
+          0.1065694970267668
+        ],
+        [
+          -0.010188252478290773,
+          -0.28820515458027396,
+          -0.35630867460416993
+        ],
+        [
+          -0.18987529386321333,
+          0.09244622906610345,
+          -0.036794955302403176
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753033871169698,
+      "velocity_rmse_m_s": 0.12467309949295464,
+      "max_position_error_m": 0.02210090388500741,
+      "opposition_cost_m2": 1.018931072791291,
+      "objective_m2": 0.00014832311590477504,
+      "sum_displacement_norms_m": 1.0041005761008719,
+      "relative_component_length_excess": 0.4377849246435278,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 39,
+      "residual_evaluations": 1230,
+      "optimality": 6.056816003873356e-11,
+      "velocity_signature_rmse_m_s": 0.0766637305297411,
+      "maximum_activation_difference_s": 0.1112929575851318,
+      "maximum_completion_difference_s": 0.02818703931034605,
+      "maximum_displacement_vector_difference_m": 0.1097038208205567,
+      "trajectory_difference_rmse_m": 0.0020808210026435794,
+      "maximum_trajectory_difference_m": 0.004877897223188181,
+      "activation": [
+        18.0,
+        18.884625504517516,
+        19.24311856437962,
+        19.341526151536513
+      ],
+      "completion": [
+        18.32039216077372,
+        20.693843483813332,
+        20.01652434854261,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881885422234735,
+          -0.002807524747008283,
+          0.011166818142263855
+        ],
+        [
+          0.294254953850832,
+          -0.03398404686273006,
+          0.10656947103279947
+        ],
+        [
+          -0.010188272214267479,
+          -0.288205169549854,
+          -0.35630865516404653
+        ],
+        [
+          -0.189875366356132,
+          0.09244623933616702,
+          -0.03679495359490961
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01175303445431866,
+      "velocity_rmse_m_s": 0.12467310147951673,
+      "max_position_error_m": 0.02210090689120303,
+      "opposition_cost_m2": 1.018929702039699,
+      "objective_m2": 0.00014832311590479852,
+      "sum_displacement_norms_m": 1.0041003265517787,
+      "relative_component_length_excess": 0.43778478909025725,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 44,
+      "residual_evaluations": 1235,
+      "optimality": 2.371913793152591e-10,
+      "velocity_signature_rmse_m_s": 0.07666380839611067,
+      "maximum_activation_difference_s": 0.11129310891217514,
+      "maximum_completion_difference_s": 0.028187209989642525,
+      "maximum_displacement_vector_difference_m": 0.10970392360071428,
+      "trajectory_difference_rmse_m": 0.002080822124617035,
+      "maximum_trajectory_difference_m": 0.0048779007595793605,
+      "activation": [
+        18.0,
+        18.884625450094592,
+        19.24311857333863,
+        19.341526302863556
+      ],
+      "completion": [
+        18.320391714745742,
+        20.693843313134035,
+        20.016524338901284,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881884314808818,
+          -0.002807523849455564,
+          0.011166815089478536
+        ],
+        [
+          0.29425484120488454,
+          -0.033984059306755604,
+          0.10656944434096753
+        ],
+        [
+          -0.010188279514027737,
+          -0.28820514306518163,
+          -0.3563086579819266
+        ],
+        [
+          -0.18987524530299837,
+          0.09244622439796751,
+          -0.036794921032412276
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 1e-05,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.011753034767473311,
+      "velocity_rmse_m_s": 0.12467310406066806,
+      "max_position_error_m": 0.022100907961231337,
+      "opposition_cost_m2": 1.0189289659376672,
+      "objective_m2": 0.00014832311590481307,
+      "sum_displacement_norms_m": 1.0041001961317377,
+      "relative_component_length_excess": 0.43778471957399323,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 40,
+      "residual_evaluations": 1095,
+      "optimality": 2.52375280366587e-10,
+      "velocity_signature_rmse_m_s": 0.07666384816429342,
+      "maximum_activation_difference_s": 0.11129333350112347,
+      "maximum_completion_difference_s": 0.02818715011416728,
+      "maximum_displacement_vector_difference_m": 0.10970396722356944,
+      "trajectory_difference_rmse_m": 0.0020808225166071208,
+      "maximum_trajectory_difference_m": 0.004877901974059664,
+      "activation": [
+        18.0,
+        18.88462538497035,
+        19.243118574764182,
+        19.341526527452505
+      ],
+      "completion": [
+        18.320391591431324,
+        20.69384337300951,
+        20.0165243313508,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.011881883837941632,
+          -0.0028075240785776874,
+          0.011166814476023593
+        ],
+        [
+          0.29425479113962466,
+          -0.033984035905917226,
+          0.10656942303392752
+        ],
+        [
+          -0.01018828363869246,
+          -0.28820513820278776,
+          -0.356308648197691
+        ],
+        [
+          -0.18987519063620661,
+          0.09244619636385737,
+          -0.036794908896152945
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939154382382,
+      "velocity_rmse_m_s": 0.13700270864610675,
+      "max_position_error_m": 0.03668659812689496,
+      "opposition_cost_m2": 0.05583809279388802,
+      "objective_m2": 0.00018928128498266986,
+      "sum_displacement_norms_m": 0.6176162824161322,
+      "relative_component_length_excess": 0.1499742568543068,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 36,
+      "residual_evaluations": 1193,
+      "optimality": 5.073998212124025e-10,
+      "velocity_signature_rmse_m_s": 0.23859000616057324,
+      "maximum_activation_difference_s": 0.9002467580750668,
+      "maximum_completion_difference_s": 0.6167170994830826,
+      "maximum_displacement_vector_difference_m": 0.30852674557597365,
+      "trajectory_difference_rmse_m": 0.00916206464546568,
+      "maximum_trajectory_difference_m": 0.020913047073865973,
+      "activation": [
+        18.0,
+        18.875101977796934,
+        19.25609197702198,
+        20.130479952026448
+      ],
+      "completion": [
+        18.270088835383138,
+        20.105313423640595,
+        19.97401964182643,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441228912868321,
+          -0.00039547116239746683,
+          0.008911256579663313
+        ],
+        [
+          0.0900490508754368,
+          -0.05298975435203338,
+          0.06672354088123837
+        ],
+        [
+          0.05025970564623857,
+          -0.21951337941712018,
+          -0.3505338637488132
+        ],
+        [
+          -0.04667678473187645,
+          0.040348103108125755,
+          -0.0004682532959813246
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566387253005633,
+      "velocity_rmse_m_s": 0.134984098409229,
+      "max_position_error_m": 0.03742001459489585,
+      "opposition_cost_m2": 0.002607629879919835,
+      "objective_m2": 0.00018412509199491133,
+      "sum_displacement_norms_m": 0.5471948421886249,
+      "relative_component_length_excess": 0.030861189663063615,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 20,
+      "residual_evaluations": 701,
+      "optimality": 5.088841706439698e-10,
+      "velocity_signature_rmse_m_s": 0.27706684809902826,
+      "maximum_activation_difference_s": 0.9306118485305745,
+      "maximum_completion_difference_s": 1.250082828841098,
+      "maximum_displacement_vector_difference_m": 0.3726248422083697,
+      "trajectory_difference_rmse_m": 0.009891907584438605,
+      "maximum_trajectory_difference_m": 0.021640037397237844,
+      "activation": [
+        18.0,
+        19.03962512505608,
+        19.232719633554932,
+        20.160845042481956
+      ],
+      "completion": [
+        18.269474628609657,
+        19.47194769428258,
+        19.982129922233806,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012945820121709799,
+          -0.0009570989252460514,
+          0.00822319874966911
+        ],
+        [
+          0.029558945897476808,
+          -0.012307440614677503,
+          0.034926881792760475
+        ],
+        [
+          0.10880116778486194,
+          -0.2583694211372231,
+          -0.31897974092857845
+        ],
+        [
+          -0.04523273310138132,
+          0.03908345885372139,
+          0.0004623408022560449
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939334208229,
+      "velocity_rmse_m_s": 0.13700270962903532,
+      "max_position_error_m": 0.03668659535104916,
+      "opposition_cost_m2": 0.05583792859053143,
+      "objective_m2": 0.00018928128498269648,
+      "sum_displacement_norms_m": 0.6176162494592778,
+      "relative_component_length_excess": 0.14997419779442325,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 30,
+      "residual_evaluations": 983,
+      "optimality": 6.478061043350084e-10,
+      "velocity_signature_rmse_m_s": 0.23859000388880422,
+      "maximum_activation_difference_s": 0.9002466428981037,
+      "maximum_completion_difference_s": 0.616717006293964,
+      "maximum_displacement_vector_difference_m": 0.3085267579780483,
+      "trajectory_difference_rmse_m": 0.009162063180631818,
+      "maximum_trajectory_difference_m": 0.020913044399489312,
+      "activation": [
+        18.0,
+        18.875101838395732,
+        19.256091985833223,
+        20.130479836849485
+      ],
+      "completion": [
+        18.27008900469067,
+        20.105313516829714,
+        19.974019639329967,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441227708876623,
+          -0.0003954713225868169,
+          0.008911257089846204
+        ],
+        [
+          0.09004904499751037,
+          -0.052989739914006156,
+          0.06672351437317024
+        ],
+        [
+          0.0502597149006558,
+          -0.21951339773175685,
+          -0.3505338368544269
+        ],
+        [
+          -0.046676786904375545,
+          0.04034810714492454,
+          -0.00046825419248236466
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566387264359067,
+      "velocity_rmse_m_s": 0.13498410321788262,
+      "max_position_error_m": 0.0374200170133466,
+      "opposition_cost_m2": 0.002607619611592168,
+      "objective_m2": 0.00018412509199491165,
+      "sum_displacement_norms_m": 0.5471948150225663,
+      "relative_component_length_excess": 0.030861167948917977,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 5.130830080018766e-10,
+      "velocity_signature_rmse_m_s": 0.2770668509018404,
+      "maximum_activation_difference_s": 0.9306119704689664,
+      "maximum_completion_difference_s": 1.2500828044823606,
+      "maximum_displacement_vector_difference_m": 0.3726248438827055,
+      "trajectory_difference_rmse_m": 0.009891908168559786,
+      "maximum_trajectory_difference_m": 0.021640039637022768,
+      "activation": [
+        18.0,
+        19.039625062626822,
+        19.232719673332916,
+        20.160845164420348
+      ],
+      "completion": [
+        18.269474744031175,
+        19.471947718641317,
+        19.982129894777835,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012945819938858915,
+          -0.0009570980378164002,
+          0.008223199233866394
+        ],
+        [
+          0.02955894911804508,
+          -0.012307452392213467,
+          0.034926870065428516
+        ],
+        [
+          0.10880116341544924,
+          -0.2583694058788691,
+          -0.3189797284622108
+        ],
+        [
+          -0.04523273176968601,
+          0.03908345448547368,
+          0.00046233957902308553
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013566387274127564,
+      "velocity_rmse_m_s": 0.13498410663568952,
+      "max_position_error_m": 0.037420017455867934,
+      "opposition_cost_m2": 0.0026076107769540287,
+      "objective_m2": 0.00018412509199491892,
+      "sum_displacement_norms_m": 0.547194795427517,
+      "relative_component_length_excess": 0.03086114741847975,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 5.307747650215967e-10,
+      "velocity_signature_rmse_m_s": 0.2770668523299332,
+      "maximum_activation_difference_s": 0.9306119961507626,
+      "maximum_completion_difference_s": 1.2500827917099713,
+      "maximum_displacement_vector_difference_m": 0.37262484573273,
+      "trajectory_difference_rmse_m": 0.009891908138269305,
+      "maximum_trajectory_difference_m": 0.021640040046319118,
+      "activation": [
+        18.0,
+        19.039624997735224,
+        19.232719704903484,
+        20.160845190102144
+      ],
+      "completion": [
+        18.269474766085406,
+        19.471947731413707,
+        19.982129873710015,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012945819433868624,
+          -0.0009570972892941782,
+          0.008223199217729458
+        ],
+        [
+          0.02955895127142266,
+          -0.012307460744419407,
+          0.034926860303767585
+        ],
+        [
+          0.10880116135923845,
+          -0.2583693968313988,
+          -0.3189797176258405
+        ],
+        [
+          -0.04523273136186251,
+          0.03908345304168709,
+          0.0004623385204506336
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939260466908,
+      "velocity_rmse_m_s": 0.13700270961697156,
+      "max_position_error_m": 0.03668659751712529,
+      "opposition_cost_m2": 0.055837995925141916,
+      "objective_m2": 0.00018928128498267406,
+      "sum_displacement_norms_m": 0.6176162590953492,
+      "relative_component_length_excess": 0.14997421704218403,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 38,
+      "residual_evaluations": 1331,
+      "optimality": 5.218626201577518e-10,
+      "velocity_signature_rmse_m_s": 0.23859001032830734,
+      "maximum_activation_difference_s": 0.9002467215867327,
+      "maximum_completion_difference_s": 0.6167170302562468,
+      "maximum_displacement_vector_difference_m": 0.30852675936512086,
+      "trajectory_difference_rmse_m": 0.009162064314078379,
+      "maximum_trajectory_difference_m": 0.020913046480675962,
+      "activation": [
+        18.0,
+        18.875101863497175,
+        19.256091982043017,
+        20.130479915538114
+      ],
+      "completion": [
+        18.270088820416902,
+        20.10531349286743,
+        19.97401963900114,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441227966980377,
+          -0.00039547069501733793,
+          0.008911255995358126
+        ],
+        [
+          0.09004903988277715,
+          -0.052989748485949624,
+          0.0667235278070768
+        ],
+        [
+          0.05025971881159349,
+          -0.21951338705127058,
+          -0.3505338494084559
+        ],
+        [
+          -0.0466767859586838,
+          0.04034810440881226,
+          -0.0004682539778718686
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939163229067,
+      "velocity_rmse_m_s": 0.13700270666141867,
+      "max_position_error_m": 0.03668659236526415,
+      "opposition_cost_m2": 0.055838084718149925,
+      "objective_m2": 0.0001892812849827427,
+      "sum_displacement_norms_m": 0.617616306110206,
+      "relative_component_length_excess": 0.14997424321325484,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 40,
+      "residual_evaluations": 1401,
+      "optimality": 6.804162813564496e-10,
+      "velocity_signature_rmse_m_s": 0.2385899811989006,
+      "maximum_activation_difference_s": 0.900246496195372,
+      "maximum_completion_difference_s": 0.6167168412377215,
+      "maximum_displacement_vector_difference_m": 0.30852672400541176,
+      "trajectory_difference_rmse_m": 0.009162061449481689,
+      "maximum_trajectory_difference_m": 0.020913041296124906,
+      "activation": [
+        18.0,
+        18.875101787186697,
+        19.25609197532788,
+        20.130479690146753
+      ],
+      "completion": [
+        18.27008878453005,
+        20.105313681885956,
+        19.974019647992932,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441226424284368,
+          -0.0003954719450846233,
+          0.008911256037107431
+        ],
+        [
+          0.09004907199022515,
+          -0.05298973598990453,
+          0.06672353847286473
+        ],
+        [
+          0.05025969423738467,
+          -0.21951340677820033,
+          -0.35053385768728296
+        ],
+        [
+          -0.04667679194922694,
+          0.0403481128897642,
+          -0.00046825640658204604
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939208868712,
+      "velocity_rmse_m_s": 0.1370027082002757,
+      "max_position_error_m": 0.036686595202932396,
+      "opposition_cost_m2": 0.05583804304191131,
+      "objective_m2": 0.00018928128498270241,
+      "sum_displacement_norms_m": 0.6176162821639614,
+      "relative_component_length_excess": 0.14997423168018434,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 39,
+      "residual_evaluations": 1366,
+      "optimality": 5.933226732708755e-10,
+      "velocity_signature_rmse_m_s": 0.23858999673183007,
+      "maximum_activation_difference_s": 0.9002466209731459,
+      "maximum_completion_difference_s": 0.6167169484037487,
+      "maximum_displacement_vector_difference_m": 0.3085267422738739,
+      "trajectory_difference_rmse_m": 0.009162063026741447,
+      "maximum_trajectory_difference_m": 0.020913044150313625,
+      "activation": [
+        18.0,
+        18.87510183621044,
+        19.256091978633844,
+        20.130479814924527
+      ],
+      "completion": [
+        18.270088804853984,
+        20.10531357471993,
+        19.974019643302597,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441227324545497,
+          -0.00039547129719381415,
+          0.008911256052402191
+        ],
+        [
+          0.09004905529724194,
+          -0.05298974317130484,
+          0.06672353356871086
+        ],
+        [
+          0.05025970669786163,
+          -0.2195133955546142,
+          -0.3505338541615724
+        ],
+        [
+          -0.046676788616981824,
+          0.04034810819968754,
+          -0.00046825504343345203
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.013696939203180068,
+      "velocity_rmse_m_s": 0.13700270784598326,
+      "max_position_error_m": 0.03668659439922668,
+      "opposition_cost_m2": 0.05583804823673224,
+      "objective_m2": 0.000189281284982713,
+      "sum_displacement_norms_m": 0.6176162871700523,
+      "relative_component_length_excess": 0.14997423231860058,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 38,
+      "residual_evaluations": 1331,
+      "optimality": 6.177746751013924e-10,
+      "velocity_signature_rmse_m_s": 0.23858999279878002,
+      "maximum_activation_difference_s": 0.900246585048766,
+      "maximum_completion_difference_s": 0.6167169152477356,
+      "maximum_displacement_vector_difference_m": 0.3085267381993736,
+      "trajectory_difference_rmse_m": 0.009162062580518892,
+      "maximum_trajectory_difference_m": 0.020913043343269704,
+      "activation": [
+        18.0,
+        18.875101815944777,
+        19.256091978058937,
+        20.130479779000147
+      ],
+      "completion": [
+        18.270088798589835,
+        20.105313607875942,
+        19.974019644390175,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012441227023451724,
+          -0.00039547144341251357,
+          0.008911256013103143
+        ],
+        [
+          0.09004905912351235,
+          -0.052989740870881714,
+          0.06672353407263924
+        ],
+        [
+          0.050259704146714095,
+          -0.21951339905456493,
+          -0.3505338542166958
+        ],
+        [
+          -0.04667678959101093,
+          0.040348109545433886,
+          -0.0004682554529393812
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 3e-05,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": false,
+      "eligible": true,
+      "position_rmse_m": 0.01356638725580189,
+      "velocity_rmse_m_s": 0.1349840969630592,
+      "max_position_error_m": 0.037420010778347036,
+      "opposition_cost_m2": 0.0026076273506361997,
+      "objective_m2": 0.000184125091994903,
+      "sum_displacement_norms_m": 0.547194845955771,
+      "relative_component_length_excess": 0.03086117931250847,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 2.3446493823646843e-10,
+      "velocity_signature_rmse_m_s": 0.2770668456460031,
+      "maximum_activation_difference_s": 0.9306116679664456,
+      "maximum_completion_difference_s": 1.2500828713739836,
+      "maximum_displacement_vector_difference_m": 0.37262484403999524,
+      "trajectory_difference_rmse_m": 0.009891906232809392,
+      "maximum_trajectory_difference_m": 0.021640033844749655,
+      "activation": [
+        18.0,
+        19.03962513548987,
+        19.23271963444038,
+        20.160844861917827
+      ],
+      "completion": [
+        18.269474583578333,
+        19.471947651749694,
+        19.982129926014085,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01294581979193614,
+          -0.0009570990022243534,
+          0.00822319860441612
+        ],
+        [
+          0.029558945100137485,
+          -0.01230743879307879,
+          0.03492687876914287
+        ],
+        [
+          0.10880117058860014,
+          -0.25836942814930813,
+          -0.31897973776049
+        ],
+        [
+          -0.045232734778006545,
+          0.03908346412118596,
+          0.000462340803038197
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 0,
+      "initialization": "uniform_0",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891092288219,
+      "velocity_rmse_m_s": 0.1379334810089639,
+      "max_position_error_m": 0.03693048854349592,
+      "opposition_cost_m2": 0.006275596302097949,
+      "objective_m2": 0.00019059564649208776,
+      "sum_displacement_norms_m": 0.606113960193331,
+      "relative_component_length_excess": 0.13950447405199798,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 32,
+      "residual_evaluations": 1053,
+      "optimality": 6.727739561435684e-10,
+      "velocity_signature_rmse_m_s": 0.2417522013534435,
+      "maximum_activation_difference_s": 0.909305399427879,
+      "maximum_completion_difference_s": 0.63695155311866,
+      "maximum_displacement_vector_difference_m": 0.31181691077154655,
+      "trajectory_difference_rmse_m": 0.009320719719615693,
+      "maximum_trajectory_difference_m": 0.021183715618679568,
+      "activation": [
+        18.0,
+        18.899382879294915,
+        19.264158325240857,
+        20.13953859337926
+      ],
+      "completion": [
+        18.283185824359556,
+        20.085078970005018,
+        19.970479702665546,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694352877302828,
+          -0.00021259734644334322,
+          0.009391491441220036
+        ],
+        [
+          0.09166967951011298,
+          -0.061506353473932164,
+          0.05758876214268594
+        ],
+        [
+          0.04800964911856193,
+          -0.2107756367303386,
+          -0.34208115810571865
+        ],
+        [
+          -0.046300480803310506,
+          0.0399440857272888,
+          -0.00026641506208013865
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 1,
+      "initialization": "uniform_1",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.01356828211405913,
+      "velocity_rmse_m_s": 0.13504680427610216,
+      "max_position_error_m": 0.03738745592463775,
+      "opposition_cost_m2": 0.0017436026443760466,
+      "objective_m2": 0.0001842726397911345,
+      "sum_displacement_norms_m": 0.5454107757648872,
+      "relative_component_length_excess": 0.028076700547966314,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 20,
+      "residual_evaluations": 701,
+      "optimality": 2.832869937656907e-10,
+      "velocity_signature_rmse_m_s": 0.2772820973455312,
+      "maximum_activation_difference_s": 0.9300933207043727,
+      "maximum_completion_difference_s": 1.2591430403952408,
+      "maximum_displacement_vector_difference_m": 0.37297775395181604,
+      "trajectory_difference_rmse_m": 0.009866928498202986,
+      "maximum_trajectory_difference_m": 0.021608839426044205,
+      "activation": [
+        18.0,
+        19.04540412034299,
+        19.234954424808873,
+        20.160326514655754
+      ],
+      "completion": [
+        18.270117638056327,
+        19.462887482728437,
+        19.98137271718423,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012928810063158028,
+          -0.0009271116453700368,
+          0.008295317516955144
+        ],
+        [
+          0.02967554842730821,
+          -0.012883598816826656,
+          0.033737298027482016
+        ],
+        [
+          0.10872739847150781,
+          -0.2578445575000834,
+          -0.31783263246484966
+        ],
+        [
+          -0.045258556259306804,
+          0.039104766138854774,
+          0.0004326973365196829
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 2,
+      "initialization": "uniform_2",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891104126442,
+      "velocity_rmse_m_s": 0.1379334819327169,
+      "max_position_error_m": 0.03693048918473812,
+      "opposition_cost_m2": 0.006275593038822587,
+      "objective_m2": 0.0001905956464920901,
+      "sum_displacement_norms_m": 0.6061139792712624,
+      "relative_component_length_excess": 0.13950449058237271,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 31,
+      "residual_evaluations": 1018,
+      "optimality": 6.049267478783381e-10,
+      "velocity_signature_rmse_m_s": 0.24175220189674831,
+      "maximum_activation_difference_s": 0.9093053795013155,
+      "maximum_completion_difference_s": 0.6369514787804178,
+      "maximum_displacement_vector_difference_m": 0.31181690392201666,
+      "trajectory_difference_rmse_m": 0.009320719860166426,
+      "maximum_trajectory_difference_m": 0.021183716156004565,
+      "activation": [
+        18.0,
+        18.899382877173164,
+        19.26415833264632,
+        20.139538573452697
+      ],
+      "completion": [
+        18.28318591911091,
+        20.08507904434326,
+        19.970479697870182,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694353607727077,
+          -0.00021259637665116212,
+          0.009391491583776586
+        ],
+        [
+          0.09166968917266517,
+          -0.0615063806666581,
+          0.05758877037566903
+        ],
+        [
+          0.04800964075631265,
+          -0.21077561125045657,
+          -0.34208116555960594
+        ],
+        [
+          -0.046300482834037676,
+          0.039944086470340534,
+          -0.0002664159837325042
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 3,
+      "initialization": "uniform_3",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.01356828205746801,
+      "velocity_rmse_m_s": 0.13504679789938842,
+      "max_position_error_m": 0.03738745829459496,
+      "opposition_cost_m2": 0.0017436180015012758,
+      "objective_m2": 0.00018427263979115845,
+      "sum_displacement_norms_m": 0.5454108120363396,
+      "relative_component_length_excess": 0.0280767516460856,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 6.966117968567682e-10,
+      "velocity_signature_rmse_m_s": 0.2772820957062127,
+      "maximum_activation_difference_s": 0.9300934259749027,
+      "maximum_completion_difference_s": 1.2591430142487532,
+      "maximum_displacement_vector_difference_m": 0.3729777475082655,
+      "trajectory_difference_rmse_m": 0.009866929694128918,
+      "maximum_trajectory_difference_m": 0.02160884162708072,
+      "activation": [
+        18.0,
+        19.045404238141618,
+        19.234954358804067,
+        20.160326619926284
+      ],
+      "completion": [
+        18.270117581119955,
+        19.462887508874925,
+        19.981372757952258,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.01292881116721002,
+          -0.000927113163865189,
+          0.008295317547739748
+        ],
+        [
+          0.02967554575432496,
+          -0.012883583369988884,
+          0.03373732066289454
+        ],
+        [
+          0.10872739934971286,
+          -0.25784456982401355,
+          -0.317832657351746
+        ],
+        [
+          -0.045258555568580605,
+          0.03910476453444234,
+          0.000432699557218863
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 4,
+      "initialization": "uniform_4",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013568282051854254,
+      "velocity_rmse_m_s": 0.13504679743957848,
+      "max_position_error_m": 0.037387458852232644,
+      "opposition_cost_m2": 0.0017436195249671195,
+      "objective_m2": 0.00018427263979116699,
+      "sum_displacement_norms_m": 0.5454108148204238,
+      "relative_component_length_excess": 0.028076757480006712,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "residual_evaluations": 736,
+      "optimality": 7.751232555215984e-10,
+      "velocity_signature_rmse_m_s": 0.2772820955029335,
+      "maximum_activation_difference_s": 0.930093452255143,
+      "maximum_completion_difference_s": 1.2591430080400947,
+      "maximum_displacement_vector_difference_m": 0.37297774690395874,
+      "trajectory_difference_rmse_m": 0.00986692989369522,
+      "maximum_trajectory_difference_m": 0.02160884214062812,
+      "activation": [
+        18.0,
+        19.045404254883508,
+        19.234954353099255,
+        20.160326646206524
+      ],
+      "completion": [
+        18.270117636100085,
+        19.462887515083583,
+        19.98137276150844,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012928811519893469,
+          -0.0009271133389632111,
+          0.00829531783358286
+        ],
+        [
+          0.029675545583578218,
+          -0.012883582428333156,
+          0.0337373226218979
+        ],
+        [
+          0.1087273989452911,
+          -0.25784456996583555,
+          -0.3178326598427598
+        ],
+        [
+          -0.04525855534609555,
+          0.03910476390970663,
+          0.00043269980338622727
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 5,
+      "initialization": "speed_minimum_seed_0",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891103275898,
+      "velocity_rmse_m_s": 0.13793348273792255,
+      "max_position_error_m": 0.03693049213130294,
+      "opposition_cost_m2": 0.006275593272937224,
+      "objective_m2": 0.0001905956464920556,
+      "sum_displacement_norms_m": 0.6061139470028523,
+      "relative_component_length_excess": 0.13950446805685165,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 26,
+      "residual_evaluations": 911,
+      "optimality": 4.836526316155557e-10,
+      "velocity_signature_rmse_m_s": 0.24175221786475695,
+      "maximum_activation_difference_s": 0.9093055361271674,
+      "maximum_completion_difference_s": 0.6369515891443562,
+      "maximum_displacement_vector_difference_m": 0.3118169277372709,
+      "trajectory_difference_rmse_m": 0.009320721557349263,
+      "maximum_trajectory_difference_m": 0.02118371911995698,
+      "activation": [
+        18.0,
+        18.89938287540141,
+        19.264158327882775,
+        20.13953873007855
+      ],
+      "completion": [
+        18.28318572820948,
+        20.08507893397932,
+        19.970479697810408,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694353406858217,
+          -0.00021259612739400434,
+          0.00939149039548415
+        ],
+        [
+          0.09166966165980199,
+          -0.061506366223837976,
+          0.05758876641010901
+        ],
+        [
+          0.04800966459807959,
+          -0.2107756203829225,
+          -0.34208116178814935
+        ],
+        [
+          -0.046300478962072567,
+          0.03994408091072921,
+          -0.00026641460133663974
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 6,
+      "initialization": "speed_minimum_seed_1",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891101990028,
+      "velocity_rmse_m_s": 0.137933482489636,
+      "max_position_error_m": 0.03693049180273023,
+      "opposition_cost_m2": 0.006275593627411544,
+      "objective_m2": 0.00019059564649205705,
+      "sum_displacement_norms_m": 0.6061139452552997,
+      "relative_component_length_excess": 0.1395044665737905,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 29,
+      "residual_evaluations": 1016,
+      "optimality": 5.06377103444093e-10,
+      "velocity_signature_rmse_m_s": 0.24175221652441872,
+      "maximum_activation_difference_s": 0.9093055310434082,
+      "maximum_completion_difference_s": 0.6369516005104074,
+      "maximum_displacement_vector_difference_m": 0.3118169273392911,
+      "trajectory_difference_rmse_m": 0.009320721405324695,
+      "maximum_trajectory_difference_m": 0.021183718814405676,
+      "activation": [
+        18.0,
+        18.89938288064438,
+        19.264158326669353,
+        20.13953872499479
+      ],
+      "completion": [
+        18.283185751112136,
+        20.08507892261327,
+        19.97047969884074,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694353367783713,
+          -0.00021259638801541278,
+          0.00939149060200842
+        ],
+        [
+          0.0916696618703896,
+          -0.06150636160607264,
+          0.05758876469048056
+        ],
+        [
+          0.048009664193146645,
+          -0.2107756249124103,
+          -0.3420811604070308
+        ],
+        [
+          -0.04630047872865273,
+          0.03994408108307307,
+          -0.0002664144693509951
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 7,
+      "initialization": "speed_minimum_seed_2",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891098671151,
+      "velocity_rmse_m_s": 0.1379334821378858,
+      "max_position_error_m": 0.03693049132858797,
+      "opposition_cost_m2": 0.0062755945423169845,
+      "objective_m2": 0.00019059564649206022,
+      "sum_displacement_norms_m": 0.6061139430740599,
+      "relative_component_length_excess": 0.13950446439276848,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 27,
+      "residual_evaluations": 946,
+      "optimality": 5.380317162525768e-10,
+      "velocity_signature_rmse_m_s": 0.24175221470144426,
+      "maximum_activation_difference_s": 0.909305521919034,
+      "maximum_completion_difference_s": 0.6369516125698595,
+      "maximum_displacement_vector_difference_m": 0.31181692678522543,
+      "trajectory_difference_rmse_m": 0.009320721194704621,
+      "maximum_trajectory_difference_m": 0.02118371836949112,
+      "activation": [
+        18.0,
+        18.89938288374249,
+        19.264158324995243,
+        20.139538715870415
+      ],
+      "completion": [
+        18.283185753114854,
+        20.08507891055382,
+        19.97047970025272,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694353215752083,
+          -0.0002125967115124461,
+          0.00939149073704802
+        ],
+        [
+          0.09166966203090388,
+          -0.06150635525412316,
+          0.057588762655357555
+        ],
+        [
+          0.04800966395052819,
+          -0.21077563125468593,
+          -0.3420811586508306
+        ],
+        [
+          -0.046300478494516906,
+          0.03994408139689626,
+          -0.00026641432546781196
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 8,
+      "initialization": "speed_minimum_seed_3",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013782891106986562,
+      "velocity_rmse_m_s": 0.13793348300728384,
+      "max_position_error_m": 0.036930492702404484,
+      "opposition_cost_m2": 0.006275592250018325,
+      "objective_m2": 0.00019059564649205108,
+      "sum_displacement_norms_m": 0.606113944677246,
+      "relative_component_length_excess": 0.13950446740035274,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 28,
+      "residual_evaluations": 981,
+      "optimality": 4.560027185273503e-10,
+      "velocity_signature_rmse_m_s": 0.24175222030260868,
+      "maximum_activation_difference_s": 0.90930555998413,
+      "maximum_completion_difference_s": 0.6369516002464657,
+      "maximum_displacement_vector_difference_m": 0.31181693028046326,
+      "trajectory_difference_rmse_m": 0.009320721836100204,
+      "maximum_trajectory_difference_m": 0.021183719681976635,
+      "activation": [
+        18.0,
+        18.89938288117989,
+        19.264158328254453,
+        20.13953875393551
+      ],
+      "completion": [
+        18.28318575684934,
+        20.085078922877212,
+        19.97047969711175,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012694353630608621,
+          -0.00021259600066394994,
+          0.009391490458718756
+        ],
+        [
+          0.09166965917293887,
+          -0.061506368067789176,
+          0.05758876655938895
+        ],
+        [
+          0.048009666446378434,
+          -0.2107756178228259,
+          -0.3420811621300755
+        ],
+        [
+          -0.04630047854725869,
+          0.039944080067853716,
+          -0.0002664144719250472
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weight": 0.0001,
+      "index": 9,
+      "initialization": "speed_minimum_seed_4",
+      "reused_saved_fit": true,
+      "eligible": true,
+      "position_rmse_m": 0.013568282106891883,
+      "velocity_rmse_m_s": 0.13504679790203086,
+      "max_position_error_m": 0.03738744553873682,
+      "opposition_cost_m2": 0.0017436045894436002,
+      "objective_m2": 0.0001842726397911468,
+      "sum_displacement_norms_m": 0.545410805336179,
+      "relative_component_length_excess": 0.028076693259311364,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 22,
+      "residual_evaluations": 771,
+      "optimality": 4.869516114832794e-10,
+      "velocity_signature_rmse_m_s": 0.27728208935227233,
+      "maximum_activation_difference_s": 0.9300928218776043,
+      "maximum_completion_difference_s": 1.2591431513393871,
+      "maximum_displacement_vector_difference_m": 0.372977757787891,
+      "trajectory_difference_rmse_m": 0.009866924883932817,
+      "maximum_trajectory_difference_m": 0.021608829793381756,
+      "activation": [
+        18.0,
+        19.04540417624929,
+        19.234954395647982,
+        20.160326015828986
+      ],
+      "completion": [
+        18.27011764902243,
+        19.46288737178429,
+        19.981372745142647,
+        21.0
+      ],
+      "displacements": [
+        [
+          0.012928810022800009,
+          -0.0009271127464338337,
+          0.008295317267881677
+        ],
+        [
+          0.029675542971832097,
+          -0.01288358459401729,
+          0.033737300341561784
+        ],
+        [
+          0.10872740873120977,
+          -0.2578445857123801,
+          -0.3178326352608174
+        ],
+        [
+          -0.04525856102317463,
+          0.03910478122940597,
+          0.0004326980674811409
+        ]
+      ],
+      "alignment_to_reference": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "limitations": [
+    "Fixed arbitrary length scale and one clip window",
+    "Local finite-budget optimization",
+    "Not a proof of continuity, uniqueness or physiological interpretation",
+    "No automatic weight or component-count selection"
+  ]
+}

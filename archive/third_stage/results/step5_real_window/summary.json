@@ -1,0 +1,47 @@
+{
+  "source": "results/wrist_trajectory.npz",
+  "source_sha256": "28c29d7fabc79ce7ca6183d784e00f0ff5e1e8054a1e58b091d13b9171dea15d",
+  "window_s": [
+    18.0,
+    21.0
+  ],
+  "source_frame_indices_inclusive": [
+    2160,
+    2520
+  ],
+  "samples": 361,
+  "duration_s": 3.0,
+  "coordinate_frame": "Original global XYZ in meters; no recentering",
+  "selection_reason": "Previously inspected region with relatively steady portions around a clear position change; debugging window, not representative validation",
+  "velocity_definition": "numpy.gradient on full original clip, edge_order=2, then crop",
+  "start_position_m": [
+    -0.2627083361148834,
+    0.4410591721534729,
+    1.1704418659210205
+  ],
+  "end_position_m": [
+    -0.1566351354122162,
+    0.2085086703300476,
+    0.8950745463371277
+  ],
+  "endpoint_speeds_m_s": [
+    0.031689687151197514,
+    0.07311186902764863
+  ],
+  "speed_range_m_s": [
+    0.0077208214633504805,
+    1.0866184568069934
+  ],
+  "coordinate_ranges_m": [
+    0.16474150121212006,
+    0.3063632845878601,
+    0.3147895932197571
+  ],
+  "crop_only_derivative_max_endpoint_difference_m_s": 0.04782177682501466,
+  "limitations": [
+    "Crop endpoints are not validated movement boundaries or zero-speed states",
+    "Completed minimum-jerk components imply zero endpoint velocity; fixed positions alone do not remove this mismatch",
+    "No smoothing, component count selection, reconstruction, timing optimization, or penalty applied",
+    "One selected short window cannot validate the complete clip or movement-unit interpretation"
+  ]
+}

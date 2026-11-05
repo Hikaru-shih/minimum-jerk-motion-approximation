@@ -1,0 +1,518 @@
+{
+  "scope": "Fixed timing synthetic penalty verification only; no real-data penalized timing fit",
+  "formula": "mean ||p_hat-p||^2 + lambda/N * sum_t sum_i<j [(T^2/L)*max(0,-v_i dot v_j)]^2",
+  "length_scale_m": 0.3,
+  "length_scale_reason": "Prescribed toy scale, not calibrated for real motion",
+  "weights": [
+    0,
+    1e-06,
+    0.0001,
+    0.01,
+    1
+  ],
+  "timing_optimized": false,
+  "source_position": "Original pairwise dot-product penalty experiment; not a reproduction of Liao and Kirsch equations",
+  "cases": [
+    {
+      "case": "near_identical_times",
+      "weight": 0,
+      "position_rmse_m": 0.0005834794060502243,
+      "opposition_cost_m2": 1231501.0881945312,
+      "objective_m2": 3.4044821728472255e-07,
+      "sum_displacement_norms_m": 17.683838376462546,
+      "initial_error_m": 0.0,
+      "final_error_m": 7.216449660063518e-16,
+      "success": true,
+      "message": "Endpoint-constrained linear solution",
+      "nfev": 0,
+      "displacements_m": [
+        [
+          8.991919188231273,
+          -0.0,
+          -0.0
+        ],
+        [
+          -8.691919188231273,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.2001
+      ],
+      "completion_s": [
+        2.2,
+        2.2001
+      ]
+    },
+    {
+      "case": "near_identical_times",
+      "weight": 1e-06,
+      "position_rmse_m": 0.0007062161838906191,
+      "opposition_cost_m2": 1.8043261259693685e-05,
+      "objective_m2": 4.987593416502884e-07,
+      "sum_displacement_norms_m": 0.30198783562550907,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 11,
+      "displacements_m": [
+        [
+          0.30099391781275453,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0009939178127545412,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.2001
+      ],
+      "completion_s": [
+        2.2,
+        2.2001
+      ]
+    },
+    {
+      "case": "near_identical_times",
+      "weight": 0.0001,
+      "position_rmse_m": 0.0007062415595272454,
+      "opposition_cost_m2": 1.8284826610306864e-09,
+      "objective_m2": 4.987773232517419e-07,
+      "sum_displacement_norms_m": 0.30002007660652813,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 11,
+      "displacements_m": [
+        [
+          0.30001003830326406,
+          -0.0,
+          -0.0
+        ],
+        [
+          -1.0038303264070514e-05,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.2001
+      ],
+      "completion_s": [
+        2.2,
+        2.2001
+      ]
+    },
+    {
+      "case": "near_identical_times",
+      "weight": 0.01,
+      "position_rmse_m": 0.000706241815630326,
+      "opposition_cost_m2": 2.1520705908237485e-13,
+      "objective_m2": 4.9877750429689e-07,
+      "sum_displacement_norms_m": 0.3000002178148647,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 21,
+      "displacements_m": [
+        [
+          0.30000010890743234,
+          -0.0,
+          -0.0
+        ],
+        [
+          -1.089074323501471e-07,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.2001
+      ],
+      "completion_s": [
+        2.2,
+        2.2001
+      ]
+    },
+    {
+      "case": "near_identical_times",
+      "weight": 1,
+      "position_rmse_m": 0.0007062418184007964,
+      "opposition_cost_m2": 4.0461171081347684e-17,
+      "objective_m2": 4.987775060985246e-07,
+      "sum_displacement_norms_m": 0.30000000298661084,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 21,
+      "displacements_m": [
+        [
+          0.3000000014933054,
+          -0.0,
+          -0.0
+        ],
+        [
+          -1.4933054237609156e-09,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.2001
+      ],
+      "completion_s": [
+        2.2,
+        2.2001
+      ]
+    },
+    {
+      "case": "genuine_opposing_components",
+      "weight": 0,
+      "position_rmse_m": 1.78611672881535e-16,
+      "opposition_cost_m2": 0.292601401074181,
+      "objective_m2": 3.190212968954046e-32,
+      "sum_displacement_norms_m": 0.49999999999999967,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "Endpoint-constrained linear solution",
+      "nfev": 0,
+      "displacements_m": [
+        [
+          0.39999999999999986,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999981,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.4
+      ],
+      "completion_s": [
+        2.2,
+        2.4
+      ]
+    },
+    {
+      "case": "genuine_opposing_components",
+      "weight": 1e-06,
+      "position_rmse_m": 3.9857063540808555e-05,
+      "opposition_cost_m2": 0.28941271021983367,
+      "objective_m2": 2.9100129573392973e-07,
+      "sum_displacement_norms_m": 0.49912502784063884,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 4,
+      "displacements_m": [
+        [
+          0.39956251392031944,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0995625139203194,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.4
+      ],
+      "completion_s": [
+        2.2,
+        2.4
+      ]
+    },
+    {
+      "case": "genuine_opposing_components",
+      "weight": 0.0001,
+      "position_rmse_m": 0.0024456378956574003,
+      "opposition_cost_m2": 0.13628052150346498,
+      "objective_m2": 1.960919686702206e-05,
+      "sum_displacement_norms_m": 0.44631152221268644,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 8,
+      "displacements_m": [
+        [
+          0.37315576110634324,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0731557611063432,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.4
+      ],
+      "completion_s": [
+        2.2,
+        2.4
+      ]
+    },
+    {
+      "case": "genuine_opposing_components",
+      "weight": 0.01,
+      "position_rmse_m": 0.00869161733687223,
+      "opposition_cost_m2": 0.0003586424990825211,
+      "objective_m2": 7.913063692144314e-05,
+      "sum_displacement_norms_m": 0.3091950958254768,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 7,
+      "displacements_m": [
+        [
+          0.3045975479127384,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0045975479127383645,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.4
+      ],
+      "completion_s": [
+        2.2,
+        2.4
+      ]
+    },
+    {
+      "case": "genuine_opposing_components",
+      "weight": 1,
+      "position_rmse_m": 0.009105886103314934,
+      "opposition_cost_m2": 4.1786495996876454e-08,
+      "objective_m2": 8.29589482225409e-05,
+      "sum_displacement_norms_m": 0.30010075708275863,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 6,
+      "displacements_m": [
+        [
+          0.30005037854137934,
+          -0.0,
+          -0.0
+        ],
+        [
+          -5.037854137929232e-05,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        0.4
+      ],
+      "completion_s": [
+        2.2,
+        2.4
+      ]
+    },
+    {
+      "case": "sequential_return",
+      "weight": 0,
+      "position_rmse_m": 1.8081288443523862e-16,
+      "opposition_cost_m2": 0.0,
+      "objective_m2": 3.269329917779096e-32,
+      "sum_displacement_norms_m": 0.49999999999999956,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "Endpoint-constrained linear solution",
+      "nfev": 0,
+      "displacements_m": [
+        [
+          0.3999999999999998,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999976,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        1.8
+      ],
+      "completion_s": [
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "case": "sequential_return",
+      "weight": 1e-06,
+      "position_rmse_m": 1.8081288443523862e-16,
+      "opposition_cost_m2": 0.0,
+      "objective_m2": 3.269329917779096e-32,
+      "sum_displacement_norms_m": 0.49999999999999956,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 1,
+      "displacements_m": [
+        [
+          0.3999999999999998,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999976,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        1.8
+      ],
+      "completion_s": [
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "case": "sequential_return",
+      "weight": 0.0001,
+      "position_rmse_m": 1.8081288443523862e-16,
+      "opposition_cost_m2": 0.0,
+      "objective_m2": 3.269329917779096e-32,
+      "sum_displacement_norms_m": 0.49999999999999956,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 1,
+      "displacements_m": [
+        [
+          0.3999999999999998,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999976,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        1.8
+      ],
+      "completion_s": [
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "case": "sequential_return",
+      "weight": 0.01,
+      "position_rmse_m": 1.8081288443523862e-16,
+      "opposition_cost_m2": 0.0,
+      "objective_m2": 3.269329917779096e-32,
+      "sum_displacement_norms_m": 0.49999999999999956,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 1,
+      "displacements_m": [
+        [
+          0.3999999999999998,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999976,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        1.8
+      ],
+      "completion_s": [
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "case": "sequential_return",
+      "weight": 1,
+      "position_rmse_m": 1.8081288443523862e-16,
+      "opposition_cost_m2": 0.0,
+      "objective_m2": 3.269329917779096e-32,
+      "sum_displacement_norms_m": 0.49999999999999956,
+      "initial_error_m": 0.0,
+      "final_error_m": 0.0,
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 1,
+      "displacements_m": [
+        [
+          0.3999999999999998,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.09999999999999976,
+          0.0,
+          0.0
+        ]
+      ],
+      "activation_s": [
+        0.2,
+        1.8
+      ],
+      "completion_s": [
+        1.6,
+        3.2
+      ]
+    }
+  ],
+  "limitations": [
+    "Penalizes genuine simultaneous opposing corrections too",
+    "Nonlinear local displacement solve; no global guarantee",
+    "Weight and length scale not selected for real data",
+    "Discrete sample penalty may miss behavior between samples"
+  ]
+}

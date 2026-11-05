@@ -1,0 +1,16 @@
+{
+  "docx_sha256": "eac9f4063f39b41d75712c4ee5287c4a76cf657bf95e2faa8c61c9e1778105c8",
+  "pages_in_word_image_preview": 10,
+  "editable_equations": 13,
+  "unique_figures": 6,
+  "tables": 2,
+  "main_table_matches_source": true,
+  "velocity_table_matches_source": true,
+  "format_reference": "archive/report_revisions/before_condensing_user_format_9455611a8f.docx",
+  "format_reference_sha256": "9455611a8fa5995a57aa4403a1b99b875854e2fb06faab12a3b4084ecf225f76",
+  "styles_preserved": true,
+  "figure_pixels_and_order_preserved": true,
+  "page_geometry_preserved": true,
+  "pdf_generated_by_audit": false,
+  "visual_review": "Report reviewed via page images; audit verifies data, styles, geometry and figure pixels."
+}

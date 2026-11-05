@@ -1,0 +1,9 @@
+# References and implementation attribution
+
+- Sato, H., Mitake, H., and Hasegawa, S. (2025). *Artist-Directable Motion Generation Using Overlapping Minimum Jerk Trajectories for Interactive Embodied Social Agent Adapting to Dynamic Environments*. Computer Animation and Virtual Worlds, 36, e70075. [DOI](https://doi.org/10.1002/cav.70075). Overlapping minimum-jerk representation.
+- Flash, T., and Hogan, N. (1985). *The coordination of arm movements: An experimentally confirmed mathematical model*. Journal of Neuroscience, 5(7), 1688–1703. [DOI](https://doi.org/10.1523/JNEUROSCI.05-07-01688.1985). Classical minimum-jerk point-to-point model.
+- Liao, J. Y., and Kirsch, R. F. (2014). *Characterizing and Predicting Submovements during Human Three-Dimensional Arm Reaches*. PLOS ONE, 9(7), e103387. [Full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC4110007/). Related fitted-submovement and cancellation considerations; the historical custom penalty was not a reproduction and is not used by the current main method.
+- Mahmood, N., Ghorbani, N., Troje, N. F., Pons-Moll, G., and Black, M. J. (2019). *AMASS: Archive of Motion Capture as Surface Shapes*. ICCV, 5442–5451. [Dataset](https://amass.is.tue.mpg.de/).
+- SciPy 1.15.2 documentation: [least_squares](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.optimize.least_squares.html), [savgol_filter](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.signal.savgol_filter.html), [find_peaks](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.signal.find_peaks.html).
+
+The fixed-endpoint algebra, peak-count proposal, local timing neighborhoods and sensitivity settings are this project's explicit implementation choices. They are not claimed as published physiological constants. More extensive historical literature and discarded prototypes remain in [archived notes](../archive/third_stage/docs/references.md).

@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "conditions": 8,
+  "runs": 32,
+  "source_mainline_unchanged": true,
+  "checks": [
+    "reconstruction",
+    "metrics",
+    "objective",
+    "bounds",
+    "endpoints",
+    "best selection",
+    "CSV/NPZ",
+    "zero controls"
+  ]
+}

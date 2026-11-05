@@ -1,0 +1,57 @@
+{
+  "docx": "report/final_motion_decomposition_report.docx",
+  "figures": [
+    {
+      "number": 1,
+      "caption": "Figure 1. Detection speed and candidate boundaries at the nominal setting. Retained peaks propose four components in 18\u201321 s and three in 30\u201333 s; red dotted lines mark intervening speed minima.",
+      "embedded_part": "word/media/image1.png",
+      "sha256": "b7ce14ad176bbca1d25a15ad49422aaf2b5c22789eca237ce93b35ed96ce45c0"
+    },
+    {
+      "number": 2,
+      "caption": "Figure 2. Overview of the final method. Speed structure proposes the count and intervals; timing and displacement are fitted, then evaluated against matched-count uniform baselines and parameter sensitivity.",
+      "embedded_part": "word/media/image2.png",
+      "sha256": "027511c990746ec3e20eb5a7454a1f8b46d68e7258d67febaab3bc5c23588dd8"
+    },
+    {
+      "number": 3,
+      "caption": "Figure 3. First-window XYZ position and velocity comparison at K=4. The fitted trajectory reduces average position error but introduces a sharp velocity excursion near the high-speed candidate boundary.",
+      "embedded_part": "word/media/image3.png",
+      "sha256": "d80e02aa2fa009d1c42a71575aafb8447d754308b04e5f09903a865c0b31e7c1"
+    },
+    {
+      "number": 4,
+      "caption": "Figure 4. Second-window XYZ position and velocity comparison at K=3. The method captures the major Y and Z movement better than the same-count controls but still misses the X-position excursion and some earlier details.",
+      "embedded_part": "word/media/image4.png",
+      "sha256": "525e9e805438e18ed0abcb96e9d7bddc3554f07708330674aa51e36981ba598d"
+    },
+    {
+      "number": 5,
+      "caption": "Figure 5. Position and velocity errors across distinct speed-based partitions and uniform baselines at the same K. Stars mark the nominal proposals. Changing prominence changes both count and boundaries, so this is not a count-only causal comparison.",
+      "embedded_part": "word/media/image5.png",
+      "sha256": "3e9aee4030b5a4ffb8b1d244e964d33176f96ec59cc8a83ab09fab3bedb5c3ab"
+    },
+    {
+      "number": 6,
+      "caption": "Figure 6. Timing-neighborhood sensitivity with fixed counts and candidate boundaries. Narrow, nominal and wide use (\u03b1,\u03b2)=(0.30,0.10), (0.45,0.20) and (0.60,0.30), respectively. The vertical scales differ between windows.",
+      "embedded_part": "word/media/image6.png",
+      "sha256": "aacd7a390541f4e8abc4f7a87fe5cc5df3942debbf729f2aded66e6da1561da0"
+    }
+  ],
+  "equations": 13,
+  "tables": 2,
+  "source_sha256": {
+    "results/mainline/summary.json": "be2d7b4c221963bd5b8d5beee4371efe06baf56742d7a9453e414a84f58c6c12",
+    "results/mainline/goals.csv": "6ca6327a23db3e5c126a38acfb446c7bde00c7f748a907a5c33122c6e3ddfcfe",
+    "results/timing_bound_sensitivity/summary.json": "239c78e7aeca35a8593eeb9ccb3b5e8978d2b7dbd9682310813ca8cdb150a0e0",
+    "results/timing_bound_sensitivity/audit.json": "523703e0ab8a7e8af8678d7356da64eb25a0f130facd0272106f087f57b62235",
+    "results/final_pipeline/summary.json": "011681abda1c6e1459ef39ceaa90a51f6d0a4e79717ee6d37fe17a090d19c205",
+    "archive/third_stage/results/movement_unit_validation/summary.json": "48840ff701efae5a3e2898dab8c2f7ceacb30ac67fd82177e7a84a45fe86cfef",
+    "results/velocity_objective/summary.json": "b4ce783dee7331d5791495ea7ab96a290502f3895535b2cb408dda51503eba21"
+  },
+  "format_reference": "archive/report_revisions/before_condensing_user_format_9455611a8f.docx",
+  "scope": "Current author-formatted report, joint-objective supplement and author-exported PDF reviewed.",
+  "supplementary_source": "results/velocity_objective/summary.json",
+  "pdf": "report/final_motion_decomposition_report.pdf",
+  "pdf_sha256": "db9a55553e8ba129320be99ef48b3b385475b0a4a167ccb5d757b7616334e2f3"
+}

@@ -1,0 +1,31 @@
+{
+  "verified": true,
+  "mainline_comparisons": 30,
+  "mainline_runs": 56,
+  "sensitivity_comparisons": 6,
+  "sensitivity_runs": 24,
+  "goals": 7,
+  "nominal_reproduced": true,
+  "scope": "Source and code hashes, original targets, independent polynomial reconstruction, metrics, endpoints, time bounds, count partitions, CSVs and goals checked. This is numerical consistency, not physiological validation.",
+  "evidence_sha256": {
+    "results/mainline/components_18_21.png": "a4599718c044b3d3e3ae2a4ebd2cbfe2555309c54ebc0279df6f41e5adcc6c7c",
+    "results/mainline/components_30_33.png": "f20f67b8313a5d7e91e5aebe0afb9629508c744ad1e370957f854cf9a844b8d3",
+    "results/mainline/count_sweep.csv": "db727760aec99df645a5271dbd0ff0f48cc0218ee9ac5b5bbf94cf4d3f177a8e",
+    "results/mainline/errors_vs_count.png": "75e9cdd5f64efc429babeca4010b0e605b71e685da66969d20fc21e007b400bb",
+    "results/mainline/fits.npz": "aa2345f2b2baab0d0e287374368cde662b915f42ac5a26e86cfe37f7c18993c4",
+    "results/mainline/goals.csv": "6ca6327a23db3e5c126a38acfb446c7bde00c7f748a907a5c33122c6e3ddfcfe",
+    "results/mainline/metrics.csv": "542d6e5ba869fa209da63deb9c284a1fe5ee935aa2fb0a3459d3311c0259db7e",
+    "results/mainline/protocol.json": "d947033040d3ab66ef631481a65bf78e220323492a3b128d31006d6d7ccb2b86",
+    "results/mainline/summary.json": "be2d7b4c221963bd5b8d5beee4371efe06baf56742d7a9453e414a84f58c6c12",
+    "results/mainline/trajectories_18_21.png": "2d69e8ffdeba09a5a543e51f2f024b8167715ac98c3ec439182d087113522ab7",
+    "results/mainline/trajectories_30_33.png": "d76529d37df2792e43b8b1bcb3432d94082532af34a1aaa2fa1f6298fb4238ac",
+    "results/timing_bound_sensitivity/fits.npz": "c79499d0352f7f5b4bc2c0fd4beff8f9ccfd96216c9d3983b5f373e1ea09be40",
+    "results/timing_bound_sensitivity/metrics.csv": "289193d86aa319bfc4534dbe6e06c337fd4875dce2b5157f8efdc492dc905339",
+    "results/timing_bound_sensitivity/protocol.json": "385c86ced0307d3c1d6e7d2af05c6275c590d6156d46daf2dff5a02ef4cfa53f",
+    "results/timing_bound_sensitivity/runs.csv": "3afd2fd7292cf214de84734bccb2927dab6e0aa9810cd0fa7422bd559860205a",
+    "results/timing_bound_sensitivity/sensitivity.png": "7b9e25084db7e6b6626acea53c9307f4f7605f7cde7d4a884f709ddc35394b59",
+    "results/timing_bound_sensitivity/summary.json": "239c78e7aeca35a8593eeb9ccb3b5e8978d2b7dbd9682310813ca8cdb150a0e0",
+    "results/timing_bound_sensitivity/trajectories_18_21.png": "32dc05bcf248a299baa76ebc872d354a21f142d4302d751b30156ec8f1961383",
+    "results/timing_bound_sensitivity/trajectories_30_33.png": "b64f4d6dfb913142341093ce50a092807b5a85d0ea152dd2a678c07131eb4c60"
+  }
+}

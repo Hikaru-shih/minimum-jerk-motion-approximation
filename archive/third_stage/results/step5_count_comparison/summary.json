@@ -1,0 +1,2850 @@
+{
+  "scope": "Prescribed K=2,3,4 unpenalized fits on the same 18-21 second window",
+  "input_sha256": "4d5f0b18f695ed0ac67cf62fa91a2a9a87a853a0e74762e69d8da1137a6eada8",
+  "objective": "Position squared error, fixed endpoint positions",
+  "settings": {
+    "counts": [
+      2,
+      3,
+      4
+    ],
+    "minimum_duration_s": 0.016666666666666666,
+    "seed": 23,
+    "jitters_per_seed": 4,
+    "jitter_fraction": 0.2,
+    "overlap_fraction": 0.25,
+    "max_nfev_per_run": 1000
+  },
+  "fairness_note": "Same start-generation recipe and ten runs per K, same nfev cap; different dimensions mean different residual-evaluation counts and computational costs",
+  "selection": "Lowest position RMSE among successful finite endpoint-valid results; no cancellation filtering",
+  "diagnostic_note": "Length excess also includes nonparallel motion; opposing pairs alone do not establish unnecessary cancellation",
+  "counts": [
+    {
+      "component_count": 2,
+      "best_index": 4,
+      "best_fixed_index": 4,
+      "best_metrics_and_diagnostics": {
+        "component_count": 2,
+        "index": 4,
+        "initialization": "uniform_4",
+        "success": true,
+        "eligible": true,
+        "position_rmse_m": 0.023803342969305776,
+        "velocity_rmse_m_s": 0.15413300349209225,
+        "max_position_error_m": 0.05518110612203305,
+        "fixed_position_rmse_m": 0.0906259310004831,
+        "fixed_velocity_rmse_m_s": 0.33334366319296355,
+        "fixed_max_position_error_m": 0.21376208406087915,
+        "minimum_duration_s": 0.75462192926501,
+        "sum_displacement_norms_m": 0.48942767248656593,
+        "relative_component_length_excess": 0.0,
+        "opposing_pair_sample_count": 0,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "nfev": 50,
+        "residual_evaluations": 442,
+        "optimality": 8.402625291548033e-08
+      },
+      "eligible_count": 10,
+      "selected_free_basis_condition_number": 1.0,
+      "selected_free_basis_singular_values": [
+        9.146021321757203
+      ],
+      "eligible_position_rmse_range_m": [
+        0.023803342969305776,
+        0.03296283780986492
+      ],
+      "best_fixed_metrics": {
+        "position_rmse_m": 0.0906259310004831,
+        "velocity_rmse_m_s": 0.33334366319296355,
+        "max_position_error_m": 0.21376208406087915
+      },
+      "speed_seed_candidates": [
+        {
+          "knot": 1,
+          "slot_start_s": 18.75,
+          "slot_end_s": 20.25,
+          "candidate_count": 30,
+          "frame": 234,
+          "time_s": 19.95,
+          "fallback_uniform": false
+        }
+      ]
+    },
+    {
+      "component_count": 3,
+      "best_index": 9,
+      "best_fixed_index": 6,
+      "best_metrics_and_diagnostics": {
+        "component_count": 3,
+        "index": 9,
+        "initialization": "speed_minimum_seed_4",
+        "success": true,
+        "eligible": true,
+        "position_rmse_m": 0.014104853472031139,
+        "velocity_rmse_m_s": 0.12092202224636737,
+        "max_position_error_m": 0.023592665455092896,
+        "fixed_position_rmse_m": 0.04538742006242966,
+        "fixed_velocity_rmse_m_s": 0.25604076273900717,
+        "fixed_max_position_error_m": 0.10913666490758604,
+        "minimum_duration_s": 0.8500552084676585,
+        "sum_displacement_norms_m": 1.1410385032803247,
+        "relative_component_length_excess": 0.4836072891521471,
+        "opposing_pair_sample_count": 183,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "nfev": 46,
+        "residual_evaluations": 574,
+        "optimality": 2.1108128253880224e-07
+      },
+      "eligible_count": 10,
+      "selected_free_basis_condition_number": 9.92409976254985,
+      "selected_free_basis_singular_values": [
+        7.7004572322709715,
+        0.775935088977023
+      ],
+      "eligible_position_rmse_range_m": [
+        0.014104853472031139,
+        0.014104853472033928
+      ],
+      "best_fixed_metrics": {
+        "position_rmse_m": 0.031069769741155075,
+        "velocity_rmse_m_s": 0.2083325336694897,
+        "max_position_error_m": 0.0726803699466121
+      },
+      "speed_seed_candidates": [
+        {
+          "knot": 1,
+          "slot_start_s": 18.5,
+          "slot_end_s": 19.5,
+          "candidate_count": 22,
+          "frame": 125,
+          "time_s": 19.041666666666668,
+          "fallback_uniform": false
+        },
+        {
+          "knot": 2,
+          "slot_start_s": 19.5,
+          "slot_end_s": 20.5,
+          "candidate_count": 19,
+          "frame": 234,
+          "time_s": 19.95,
+          "fallback_uniform": false
+        }
+      ]
+    },
+    {
+      "component_count": 4,
+      "best_index": 5,
+      "best_fixed_index": 7,
+      "best_metrics_and_diagnostics": {
+        "component_count": 4,
+        "index": 5,
+        "initialization": "speed_minimum_seed_0",
+        "success": true,
+        "eligible": true,
+        "position_rmse_m": 0.0111077293762957,
+        "velocity_rmse_m_s": 0.12179640241373665,
+        "max_position_error_m": 0.02040771314264092,
+        "fixed_position_rmse_m": 0.023400003941126787,
+        "fixed_velocity_rmse_m_s": 0.18576918972191925,
+        "fixed_max_position_error_m": 0.04867568075227679,
+        "minimum_duration_s": 0.3198980464450436,
+        "sum_displacement_norms_m": 3778.38889536231,
+        "relative_component_length_excess": 0.9998478243353706,
+        "opposing_pair_sample_count": 233,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "nfev": 103,
+        "residual_evaluations": 1351,
+        "optimality": 0.6240219401750932
+      },
+      "eligible_count": 10,
+      "selected_free_basis_condition_number": 115402.32861547964,
+      "selected_free_basis_singular_values": [
+        12.748985641111448,
+        6.283801781342565,
+        0.00011047424947195863
+      ],
+      "eligible_position_rmse_range_m": [
+        0.0111077293762957,
+        0.013565969626140576
+      ],
+      "best_fixed_metrics": {
+        "position_rmse_m": 0.02317916644655825,
+        "velocity_rmse_m_s": 0.18934333316286084,
+        "max_position_error_m": 0.0532794527776862
+      },
+      "speed_seed_candidates": [
+        {
+          "knot": 1,
+          "slot_start_s": 18.375,
+          "slot_end_s": 19.125,
+          "candidate_count": 21,
+          "frame": 45,
+          "time_s": 18.375,
+          "fallback_uniform": false
+        },
+        {
+          "knot": 2,
+          "slot_start_s": 19.125,
+          "slot_end_s": 19.875,
+          "candidate_count": 11,
+          "frame": 142,
+          "time_s": 19.183333333333334,
+          "fallback_uniform": false
+        },
+        {
+          "knot": 3,
+          "slot_start_s": 19.875,
+          "slot_end_s": 20.625,
+          "candidate_count": 17,
+          "frame": 234,
+          "time_s": 19.95,
+          "fallback_uniform": false
+        }
+      ]
+    }
+  ],
+  "details": [
+    {
+      "component_count": 2,
+      "index": 0,
+      "initialization": {
+        "name": "uniform_0",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.5,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.125
+        ],
+        "completion": [
+          19.875,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.88363515797617,
+          18.883639804585258
+        ],
+        "completion": [
+          19.856978780327914,
+          19.85708450152897
+        ],
+        "displacements": [
+          [
+            -28.088703039903912,
+            796.4425716412094,
+            1486.9531046022928
+          ],
+          [
+            28.19477624060658,
+            -796.6751221430328,
+            -1487.2284719218767
+          ]
+        ],
+        "initial_position_rmse_m": 0.09129057337979268,
+        "position_rmse_m": 0.03296283780986492,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 198,
+        "residual_evaluations": 1390,
+        "optimality": 0.9149254892959684,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          26893.868867497735,
+          34.439857117711846,
+          4.66430159221853,
+          0.809388942840831
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          1687.0511190110876,
+          1687.405369403953
+        ],
+        "sum_component_path_lengths_m": 3374.4564884150404,
+        "combined_path_length_m": 0.44740986960885254,
+        "relative_component_length_excess": 0.9998674127607973,
+        "opposing_velocity_sample_count": 116
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 1,
+      "initialization": {
+        "name": "uniform_1",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.616359848394417,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.27044981049302
+        ],
+        "completion": [
+          19.962269886295815,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.017622513082113,
+          19.01766571425836
+        ],
+        "completion": [
+          19.87264791497735,
+          19.87276846483476
+        ],
+        "displacements": [
+          [
+            67.90683896828625,
+            322.0449967974949,
+            743.1717602355347
+          ],
+          [
+            -67.80076576758358,
+            -322.2775472993183,
+            -743.4471275551186
+          ]
+        ],
+        "initial_position_rmse_m": 0.0938020923876483,
+        "position_rmse_m": 0.03288432222756253,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 99,
+        "residual_evaluations": 627,
+        "optimality": 0.12084779486957986,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          9084.688145608576,
+          36.228963152760834,
+          2.765474437610082,
+          1.2269701323341504
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          812.7912397256326,
+          813.1263357270996
+        ],
+        "sum_component_path_lengths_m": 1625.9175754527323,
+        "combined_path_length_m": 0.4518330672990406,
+        "relative_component_length_excess": 0.9997221057979072,
+        "opposing_velocity_sample_count": 102
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 2,
+      "initialization": {
+        "name": "uniform_2",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.584874932526937,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.23109366565867
+        ],
+        "completion": [
+          19.938656199395204,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.02347207877792,
+          19.023510780939073
+        ],
+        "completion": [
+          19.8739794505939,
+          19.87408054091606
+        ],
+        "displacements": [
+          [
+            84.55104831182,
+            364.98943288809727,
+            855.7941562764613
+          ],
+          [
+            -84.44497511111733,
+            -365.2219833899207,
+            -856.0695235960452
+          ]
+        ],
+        "initial_position_rmse_m": 0.09318880076678629,
+        "position_rmse_m": 0.03288552614812024,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 96,
+        "residual_evaluations": 592,
+        "optimality": 0.13806276002471723,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          10278.855572596322,
+          59.036937112110415,
+          2.6773570383155425,
+          1.2466260559774012
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          934.2107276285667,
+          934.5442340180457
+        ],
+        "sum_component_path_lengths_m": 1868.7549616466124,
+        "combined_path_length_m": 0.4519080715670218,
+        "relative_component_length_excess": 0.9997581769248287,
+        "opposing_velocity_sample_count": 102
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 3,
+      "initialization": {
+        "name": "uniform_3",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.27718653459058,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.957889900942934
+        ],
+        "completion": [
+          19.596483168238226,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.30025690194602,
+          19.300544141105668
+        ],
+        "completion": [
+          20.73214869690213,
+          20.73212759627434
+        ],
+        "displacements": [
+          [
+            602.3163728861085,
+            -999.9340929183305,
+            -821.6596349963278
+          ],
+          [
+            -602.2102996854059,
+            999.7015424165071,
+            821.3842676767439
+          ]
+        ],
+        "initial_position_rmse_m": 0.09071496359383138,
+        "position_rmse_m": 0.02668127575734015,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 4,
+        "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+        "nfev": 54,
+        "residual_evaluations": 342,
+        "optimality": 0.126306540071472,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          12405.603493021466,
+          6.719792504174212,
+          0.4278969773541057,
+          0.14694030259214938
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          1427.5076947688326,
+          1427.1415827676683
+        ],
+        "sum_component_path_lengths_m": 2854.649277536501,
+        "combined_path_length_m": 0.5236217970192614,
+        "relative_component_length_excess": 0.9998165722839791,
+        "opposing_velocity_sample_count": 171
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 4,
+      "initialization": {
+        "name": "uniform_4",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.268224830078797,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.9511686225591
+        ],
+        "completion": [
+          19.585281037598495,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.234888763356736,
+          19.99864319944484
+        ],
+        "completion": [
+          19.989510692621746,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.1586262282446444,
+            -0.2778508546279842,
+            -0.27204349107116266
+          ],
+          [
+            -0.05255302754197716,
+            0.04530035280455891,
+            -0.0033238285127301648
+          ]
+        ],
+        "initial_position_rmse_m": 0.0906259310004831,
+        "position_rmse_m": 0.023803342969305776,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 50,
+        "residual_evaluations": 442,
+        "optimality": 8.402625291548033e-08,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          14.431549395397536,
+          1.8779438508729034,
+          1.1638097332296,
+          0.24089342751200243
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.41996605098118633,
+          0.06946213295353165
+        ],
+        "sum_component_path_lengths_m": 0.489428183934718,
+        "combined_path_length_m": 0.489428183934718,
+        "relative_component_length_excess": 0.0,
+        "opposing_velocity_sample_count": 0
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 5,
+      "initialization": {
+        "name": "speed_minimum_seed_0",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.95,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.6875
+        ],
+        "completion": [
+          20.2125,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.234888759343548,
+          19.99864302606277
+        ],
+        "completion": [
+          19.989510702165216,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.1586262315323755,
+            -0.277850860224334,
+            -0.272043491495781
+          ],
+          [
+            -0.052553030829708275,
+            0.04530035840090868,
+            -0.0033238280881118243
+          ]
+        ],
+        "initial_position_rmse_m": 0.09545474125899167,
+        "position_rmse_m": 0.023803342969307556,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 39,
+        "residual_evaluations": 351,
+        "optimality": 9.139582596141452e-08,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          14.431549123427713,
+          1.8779438555806702,
+          1.1638096212705262,
+          0.24089345727497516
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.4199660562009444,
+          0.06946213906959174
+        ],
+        "sum_component_path_lengths_m": 0.48942819527053616,
+        "combined_path_length_m": 0.48942819527053616,
+        "relative_component_length_excess": 0.0,
+        "opposing_velocity_sample_count": 0
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 6,
+      "initialization": {
+        "name": "speed_minimum_seed_1",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          20.014405118960525,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.768006398700656
+        ],
+        "completion": [
+          20.260803839220394,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.300440246241305,
+          19.30060880562269
+        ],
+        "completion": [
+          20.7312502525141,
+          20.73123793872652
+        ],
+        "displacements": [
+          [
+            1025.0928913815012,
+            -1701.850909335572,
+            -1398.1261804093824
+          ],
+          [
+            -1024.9868181807985,
+            1701.6183588337485,
+            1397.8508130897985
+          ]
+        ],
+        "initial_position_rmse_m": 0.09464718207457541,
+        "position_rmse_m": 0.02668130656722344,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 52,
+        "residual_evaluations": 308,
+        "optimality": 0.5539853205351547,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          21162.752360935112,
+          6.73091427123753,
+          1.0723816283285956,
+          0.42902316259194834
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          2429.376541206487,
+          2429.010430634196
+        ],
+        "sum_component_path_lengths_m": 4858.386971840683,
+        "combined_path_length_m": 0.5235791338907523,
+        "relative_component_length_excess": 0.9998922318998207,
+        "opposing_velocity_sample_count": 171
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 7,
+      "initialization": {
+        "name": "speed_minimum_seed_2",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          20.098451984505367,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.87306498063171
+        ],
+        "completion": [
+          20.323838988379023,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.300053094189483,
+          19.300497178681898
+        ],
+        "completion": [
+          20.733054955476067,
+          20.733022149161886
+        ],
+        "displacements": [
+          [
+            390.08982039337053,
+            -647.5919208255265,
+            -532.256566451682
+          ],
+          [
+            -389.98374719266786,
+            647.359370323703,
+            531.9811991320981
+          ]
+        ],
+        "initial_position_rmse_m": 0.09316520466982729,
+        "position_rmse_m": 0.02668127114448335,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 46,
+        "residual_evaluations": 270,
+        "optimality": 0.02602963274210907,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          8028.591500252901,
+          6.717398934632596,
+          0.4269706911114501,
+          0.033363057758597624
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          924.5769171157709,
+          924.2108043256667
+        ],
+        "sum_component_path_lengths_m": 1848.7877214414375,
+        "combined_path_length_m": 0.5236636979796103,
+        "relative_component_length_excess": 0.9997167529338786,
+        "opposing_velocity_sample_count": 171
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 8,
+      "initialization": {
+        "name": "speed_minimum_seed_3",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.82474723646497,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.530934045581212
+        ],
+        "completion": [
+          20.118560427348726,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.014316506038288,
+          19.014380292600517
+        ],
+        "completion": [
+          19.871919468698096,
+          19.87210416253899
+        ],
+        "displacements": [
+          [
+            43.20503697587329,
+            216.03121151715183,
+            494.33955113599876
+          ],
+          [
+            -43.098963775170624,
+            -216.26376201897526,
+            -494.61491845558265
+          ]
+        ],
+        "initial_position_rmse_m": 0.0960022487954176,
+        "position_rmse_m": 0.03288391168619118,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 98,
+        "residual_evaluations": 658,
+        "optimality": 0.037731722510112774,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          6044.629380201527,
+          10.15707255185217,
+          2.8055633756199954,
+          1.222969982991457
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          541.2094600370347,
+          541.5453806244623
+        ],
+        "sum_component_path_lengths_m": 1082.754840661497,
+        "combined_path_length_m": 0.4517901466138523,
+        "relative_component_length_excess": 0.9995827401276379,
+        "opposing_velocity_sample_count": 103
+      }
+    },
+    {
+      "component_count": 2,
+      "index": 9,
+      "initialization": {
+        "name": "speed_minimum_seed_4",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.83156782757601,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          19.53945978447001
+        ],
+        "completion": [
+          20.123675870682007,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          19.016679294638774,
+          19.01669853514821
+        ],
+        "completion": [
+          19.87246164725369,
+          19.872515959698575
+        ],
+        "displacements": [
+          [
+            149.54593734583304,
+            720.9131238060594,
+            1659.2577873122545
+          ],
+          [
+            -149.43986414513037,
+            -721.1456743078828,
+            -1659.5331546318384
+          ]
+        ],
+        "initial_position_rmse_m": 0.09600980897454903,
+        "position_rmse_m": 0.032884185186424275,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 101,
+        "residual_evaluations": 645,
+        "optimality": 1.2857433780100653,
+        "free_displacement_rank": 1,
+        "free_displacement_columns": 1,
+        "timing_jacobian_rank": 4,
+        "timing_parameter_count": 4,
+        "timing_jacobian_singular_values": [
+          22654.52730589311,
+          455.16650603924285,
+          2.891068121239997,
+          1.1606318697522564
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          1815.2737174578579,
+          1815.609075212155
+        ],
+        "sum_component_path_lengths_m": 3630.882792670013,
+        "combined_path_length_m": 0.45179159797454127,
+        "relative_component_length_excess": 0.9998755697653235,
+        "opposing_velocity_sample_count": 102
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 0,
+      "initialization": {
+        "name": "uniform_0",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.0,
+          20.0,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.75,
+          19.75
+        ],
+        "completion": [
+          19.25,
+          20.25,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645495291748,
+          19.201378531575372,
+          19.42776564616047
+        ],
+        "completion": [
+          20.73219837205835,
+          20.051433755940277,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072666301928216,
+            0.006330168521243858,
+            0.24596315302765842
+          ],
+          [
+            -0.03010496850435338,
+            -0.31310274318313464,
+            -0.44713454291409616
+          ],
+          [
+            -0.17108846098580094,
+            0.07422207283846549,
+            -0.07419592969745509
+          ]
+        ],
+        "initial_position_rmse_m": 0.03836840008060762,
+        "position_rmse_m": 0.014104853472032388,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 45,
+        "residual_evaluations": 561,
+        "optimality": 2.4720687128172224e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095451173785,
+          2.982871835224808,
+          1.2624566795281433,
+          0.7455033423660723,
+          0.45902270097709974,
+          0.12587238874651507
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.3936378136122507,
+          0.5466890625998722,
+          0.20071177847414653
+        ],
+        "sum_component_path_lengths_m": 1.1410386546862694,
+        "combined_path_length_m": 0.5892239701644899,
+        "relative_component_length_excess": 0.4836073539274635
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 1,
+      "initialization": {
+        "name": "uniform_1",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.077573232262946,
+          20.05658328835129,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.83282071824086,
+          19.820729110439114
+        ],
+        "completion": [
+          19.32232574628503,
+          20.29243746626347,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.76364549575835,
+          19.201378533467125,
+          19.427765652022085
+        ],
+        "completion": [
+          20.732198338975255,
+          20.051433754188817,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.30726661781862646,
+            0.006330166894601257,
+            0.2459631419470124
+          ],
+          [
+            -0.030104968307395907,
+            -0.31310274171938784,
+            -0.4471345415120249
+          ],
+          [
+            -0.17108844880856333,
+            0.0742220730013613,
+            -0.07419592001888031
+          ]
+        ],
+        "initial_position_rmse_m": 0.03195655017025316,
+        "position_rmse_m": 0.014104853472032093,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 44,
+        "residual_evaluations": 548,
+        "optimality": 2.390108338415841e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095489798759,
+          2.982871833808581,
+          1.2624566740340415,
+          0.7455033278652652,
+          0.45902269354641717,
+          0.1258724079060775
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.3936377970034881,
+          0.5466890606041324,
+          0.20071176457654455
+        ],
+        "sum_component_path_lengths_m": 1.141038622184165,
+        "combined_path_length_m": 0.5892239702314542,
+        "relative_component_length_excess": 0.48360733915950416
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 2,
+      "initialization": {
+        "name": "uniform_2",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.851457689727056,
+          19.845483220052532,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.638593267295292,
+          19.596976837471164
+        ],
+        "completion": [
+          19.06432211215882,
+          20.0939896026339,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645496405573,
+          19.201378532579472,
+          19.427765647958744
+        ],
+        "completion": [
+          20.732198353099633,
+          20.05143375508133,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072666238826877,
+            0.006330167726973969,
+            0.24596314723195867
+          ],
+          [
+            -0.0301049685723705,
+            -0.3131027425582339,
+            -0.44713454231162086
+          ],
+          [
+            -0.17108845460765,
+            0.07422207300783462,
+            -0.07419592450423063
+          ]
+        ],
+        "initial_position_rmse_m": 0.05635805431418358,
+        "position_rmse_m": 0.014104853472032223,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 45,
+        "residual_evaluations": 561,
+        "optimality": 2.4295088303274885e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095474672983,
+          2.9828718394469376,
+          1.2624566758745932,
+          0.745503333744901,
+          0.45902269634878395,
+          0.12587239941226983
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.3936378050525714,
+          0.5466890617530513,
+          0.20071177118022737
+        ],
+        "sum_component_path_lengths_m": 1.1410386379858501,
+        "combined_path_length_m": 0.5892239702533659,
+        "relative_component_length_excess": 0.4836073462915698
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 3,
+      "initialization": {
+        "name": "uniform_3",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          19.061338208533837,
+          20.141382842386065,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.796003656400377,
+          19.92672855298258
+        ],
+        "completion": [
+          19.326672760667297,
+          20.35603713178955,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645605167223,
+          19.201378640838115,
+          19.42776585689159
+        ],
+        "completion": [
+          20.732196338563952,
+          20.05143366153979,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072659443870093,
+            0.006330081005851286,
+            0.24596252409901134
+          ],
+          [
+            -0.030104973671212017,
+            -0.31310267314887674,
+            -0.44713447526298705
+          ],
+          [
+            -0.17108777001313008,
+            0.07422209031960014,
+            -0.07419536841991711
+          ]
+        ],
+        "initial_position_rmse_m": 0.03345729744523851,
+        "position_rmse_m": 0.014104853472031262,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 43,
+        "residual_evaluations": 547,
+        "optimality": 1.4508970980331275e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912097962445522,
+          2.98287223097696,
+          1.2624563013082715,
+          0.745502421550841,
+          0.45902220905909735,
+          0.1258735353798998
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363688390340446,
+          0.5466889674525126,
+          0.20071098846243984
+        ],
+        "sum_component_path_lengths_m": 1.1410368398183568,
+        "combined_path_length_m": 0.5892239789379545,
+        "relative_component_length_excess": 0.4836065248938379
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 4,
+      "initialization": {
+        "name": "uniform_4",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.880711653776164,
+          19.887207454834293,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.660533740332124,
+          19.63558350456976
+        ],
+        "completion": [
+          19.100889567220204,
+          20.138831405098827,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645500625802,
+          19.201378536740407,
+          19.427765655920197
+        ],
+        "completion": [
+          20.732198275653918,
+          20.051433751489196,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072665977959754,
+            0.006330164396334949,
+            0.2459631232977593
+          ],
+          [
+            -0.030104968776521503,
+            -0.3131027398972907,
+            -0.44713453974009254
+          ],
+          [
+            -0.17108842831678667,
+            0.07422207367753048,
+            -0.07419590314155958
+          ]
+        ],
+        "initial_position_rmse_m": 0.05169835393027947,
+        "position_rmse_m": 0.01410485347203161,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 46,
+        "residual_evaluations": 574,
+        "optimality": 2.25357939836937e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095570358217,
+          2.982871854591721,
+          1.2624566615015798,
+          0.7455032985422068,
+          0.4590226775462125,
+          0.12587244307824624
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.3936377696813744,
+          0.5466890581374448,
+          0.20071174112025644
+        ],
+        "sum_component_path_lengths_m": 1.1410385689390756,
+        "combined_path_length_m": 0.5892239705888063,
+        "relative_component_length_excess": 0.48360731474952695
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 5,
+      "initialization": {
+        "name": "speed_minimum_seed_0",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.041666666666668,
+          19.95,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.814583333333335,
+          19.722916666666666
+        ],
+        "completion": [
+          19.26875,
+          20.177083333333332,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.76364550377381,
+          19.201378539821214,
+          19.427765661797274
+        ],
+        "completion": [
+          20.732198218187698,
+          20.05143374883174,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.30726657845542554,
+            0.006330161933528555,
+            0.24596310555671588
+          ],
+          [
+            -0.030104968932315904,
+            -0.31310273793150933,
+            -0.44713453784186963
+          ],
+          [
+            -0.1710884088204424,
+            0.07422207417455551,
+            -0.07419588729873908
+          ]
+        ],
+        "initial_position_rmse_m": 0.037243052168225696,
+        "position_rmse_m": 0.014104853472031182,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 45,
+        "residual_evaluations": 561,
+        "optimality": 2.123128699090237e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095640918514,
+          2.9828718660701345,
+          1.2624566507639414,
+          0.745503272498175,
+          0.4590226636329226,
+          0.12587247548616987
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363774345973923,
+          0.5466890554679062,
+          0.20071171882864383
+        ],
+        "sum_component_path_lengths_m": 1.1410385177562894,
+        "combined_path_length_m": 0.5892239708402396,
+        "relative_component_length_excess": 0.4836072913656978
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 6,
+      "initialization": {
+        "name": "speed_minimum_seed_1",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.12035908438557,
+          19.939354213676502,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.915610302062838,
+          19.73460543135377
+        ],
+        "completion": [
+          19.3251078667083,
+          20.144102995999233,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.76364549919195,
+          19.201378535329404,
+          19.427765653232502
+        ],
+        "completion": [
+          20.73219830191128,
+          20.051433752707332,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072666066378466,
+            0.0063301655259340875,
+            0.24596313141104445
+          ],
+          [
+            -0.030104968707605966,
+            -0.31310274079901695,
+            -0.4471345406121397
+          ],
+          [
+            -0.1710884372275734,
+            0.07422207344965759,
+            -0.07419591038279758
+          ]
+        ],
+        "initial_position_rmse_m": 0.031069769741155075,
+        "position_rmse_m": 0.014104853472031815,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 44,
+        "residual_evaluations": 548,
+        "optimality": 2.3131849238151327e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095538185158,
+          2.9828718495727813,
+          1.2624566663948895,
+          0.7455033105310896,
+          0.45902268396728924,
+          0.12587242825605172
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363778167077346,
+          0.546689059363205,
+          0.20071175130846408
+        ],
+        "sum_component_path_lengths_m": 1.1410385923424426,
+        "combined_path_length_m": 0.5892239704753753,
+        "relative_component_length_excess": 0.4836073254404524
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 7,
+      "initialization": {
+        "name": "speed_minimum_seed_2",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          19.010863968132792,
+          19.895190369047402,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.789782367904138,
+          19.674108768818748
+        ],
+        "completion": [
+          19.231945568361446,
+          20.116271969276056,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645615405615,
+          19.20137865124628,
+          19.427765877325328
+        ],
+        "completion": [
+          20.73219614509146,
+          20.051433652528978,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.30726587894019525,
+            0.006330072652609323,
+            0.2459624641324815
+          ],
+          [
+            -0.030104974116001448,
+            -0.3131026664383349,
+            -0.44713446878393
+          ],
+          [
+            -0.17108770412152657,
+            0.07422209196230029,
+            -0.07419531493244433
+          ]
+        ],
+        "initial_position_rmse_m": 0.0430783156194245,
+        "position_rmse_m": 0.014104853472032825,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 46,
+        "residual_evaluations": 574,
+        "optimality": 1.7482655743502248e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912098200068938,
+          2.9828722673101655,
+          1.2624562655958755,
+          0.745502333956971,
+          0.45902216229160925,
+          0.12587364454575575
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363679521354916,
+          0.5466889583354749,
+          0.20071091313088635
+        ],
+        "sum_component_path_lengths_m": 1.1410366666799105,
+        "combined_path_length_m": 0.5892239797614833,
+        "relative_component_length_excess": 0.4836064458156668
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 8,
+      "initialization": {
+        "name": "speed_minimum_seed_3",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.883200196975544,
+          19.933528706947865,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.66240014773166,
+          19.670946579454785
+        ],
+        "completion": [
+          19.104000246219428,
+          20.196110834440944,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645486035823,
+          19.20137852249964,
+          19.427765628861398
+        ],
+        "completion": [
+          20.732198541071504,
+          20.0514337637713,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072666870804036,
+            0.006330175781274082,
+            0.24596320522983658
+          ],
+          [
+            -0.030104968047606078,
+            -0.3131027489784337,
+            -0.44713454851427753
+          ],
+          [
+            -0.17108851833013028,
+            0.07422207137373432,
+            -0.07419597629945188
+          ]
+        ],
+        "initial_position_rmse_m": 0.048107350495739484,
+        "position_rmse_m": 0.014104853472033928,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 43,
+        "residual_evaluations": 547,
+        "optimality": 2.8557217433274364e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095241236285,
+          2.982871801408581,
+          1.2624567108711893,
+          0.7455034187963823,
+          0.4590227418506266,
+          0.12587229346012258
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363789075193706,
+          0.5466890704733639,
+          0.20071184404049563
+        ],
+        "sum_component_path_lengths_m": 1.1410388052657965,
+        "combined_path_length_m": 0.5892239694291324,
+        "relative_component_length_excess": 0.4836074227187418
+      }
+    },
+    {
+      "component_count": 3,
+      "index": 9,
+      "initialization": {
+        "name": "speed_minimum_seed_4",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.969528024921217,
+          19.90969788702892,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.734485559394294,
+          19.674655421501996
+        ],
+        "completion": [
+          19.20457049044814,
+          20.144740352555843,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.763645504014175,
+          19.201378540110163,
+          19.42776566243191
+        ],
+        "completion": [
+          20.732198212866784,
+          20.05143374857782,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.3072665766176912,
+            0.00633016169838062,
+            0.24596310388249784
+          ],
+          [
+            -0.030104968935453065,
+            -0.3131027377376851,
+            -0.4471345376551017
+          ],
+          [
+            -0.1710884069795709,
+            0.07422207421587917,
+            -0.07419588581128897
+          ]
+        ],
+        "initial_position_rmse_m": 0.04538742006242966,
+        "position_rmse_m": 0.014104853472031139,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 46,
+        "residual_evaluations": 574,
+        "optimality": 2.1108128253880224e-07,
+        "free_displacement_rank": 2,
+        "free_displacement_columns": 2,
+        "timing_jacobian_rank": 6,
+        "timing_parameter_count": 6,
+        "timing_jacobian_singular_values": [
+          13.912095647876717,
+          2.9828718668568874,
+          1.262456649721139,
+          0.7455032701318243,
+          0.4590226624160637,
+          0.12587247846677968
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.39363774097535276,
+          0.5466890552043411,
+          0.2007117167248896
+        ],
+        "sum_component_path_lengths_m": 1.1410385129045835,
+        "combined_path_length_m": 0.5892239708606006,
+        "relative_component_length_excess": 0.4836072891521471
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 0,
+      "initialization": {
+        "name": "uniform_0",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.75,
+          19.5,
+          20.25,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.5625,
+          19.3125,
+          20.0625
+        ],
+        "completion": [
+          18.9375,
+          19.6875,
+          20.4375,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.035182768828147,
+          19.231054479841074,
+          20.16128528644081
+        ],
+        "completion": [
+          18.26906228020216,
+          19.479221195737914,
+          19.982677851575627,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.012960063966920753,
+            -0.0009781163086603996,
+            0.008171367919464507
+          ],
+          [
+            0.029482354221077395,
+            -0.011883943454963852,
+            0.035845682388962644
+          ],
+          [
+            0.10884236863880911,
+            -0.2587532051863463,
+            -0.31986960808709225
+          ],
+          [
+            -0.04521158612414003,
+            0.03906476312654528,
+            0.00048523819477230834
+          ]
+        ],
+        "initial_position_rmse_m": 0.052540259566451995,
+        "position_rmse_m": 0.013565969626140576,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 20,
+        "residual_evaluations": 340,
+        "optimality": 2.6378160727800746e-08,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          9.544951968057884,
+          2.1021235856705105,
+          1.2766913806221902,
+          1.2164945202642905,
+          1.143105202808268,
+          0.2505650112699576,
+          0.19497430568847662,
+          0.15950848924479094
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.015352034648233748,
+          0.04790997340964393,
+          0.42557769599984924,
+          0.05975266533424466
+        ],
+        "sum_component_path_lengths_m": 0.5485923693919715,
+        "combined_path_length_m": 0.5304316020175242,
+        "relative_component_length_excess": 0.033104301823548406
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 1,
+      "initialization": {
+        "name": "uniform_1",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.80817992419721,
+          19.54243746626347,
+          20.138593267295292,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.624615538680644,
+          19.39339851600551,
+          19.989554317037335
+        ],
+        "completion": [
+          18.991744309713773,
+          19.691476416521425,
+          20.28763221755325,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.058453064710616,
+          19.05864131329527,
+          19.230361730529612
+        ],
+        "completion": [
+          18.320106474249126,
+          20.999907156503937,
+          20.999992716267876,
+          20.029156896989065
+        ],
+        "displacements": [
+          [
+            0.011916632614435003,
+            -0.0028683541848794703,
+            0.011123157834961244
+          ],
+          [
+            738.1836544462872,
+            -81.69968683567909,
+            298.38333602496925
+          ],
+          [
+            -738.077841110819,
+            81.78295240671437,
+            -298.292490825359
+          ],
+          [
+            -0.011656767379918165,
+            -0.31294771867382565,
+            -0.37733567702912296
+          ]
+        ],
+        "initial_position_rmse_m": 0.04788202472346455,
+        "position_rmse_m": 0.011107730234495348,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 86,
+        "residual_evaluations": 1110,
+        "optimality": 0.0076104349182774785,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          4794.210692582074,
+          46.22751788977383,
+          13.065541547836476,
+          1.2392913855118615,
+          1.1997426364880168,
+          0.7836152133295005,
+          0.15887984076433262,
+          0.017443925086505854
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.016551620936849535,
+          800.3890139991124,
+          800.2660667783396,
+          0.4903612860936484
+        ],
+        "sum_component_path_lengths_m": 1601.1619936844825,
+        "combined_path_length_m": 0.5749815867911708,
+        "relative_component_length_excess": 0.9996408973051701
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 2,
+      "initialization": {
+        "name": "uniform_2",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.6341124150394,
+          19.546003656400377,
+          20.35603713178955,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.47558431127955,
+          19.343495287553083,
+          20.195046414736936
+        ],
+        "completion": [
+          18.79264051879925,
+          19.74851202524767,
+          20.51702784884216,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.057465030733056,
+          19.058424666960736,
+          19.230356178944593
+        ],
+        "completion": [
+          18.319880936605482,
+          20.999561731926818,
+          20.999999968491295,
+          20.02915098035023
+        ],
+        "displacements": [
+          [
+            0.011906342860740163,
+            -0.0028667101380961684,
+            0.011117063099386357
+          ],
+          [
+            144.4733397374068,
+            -16.00814225215644,
+            58.42536679512149
+          ],
+          [
+            -144.36772979367385,
+            16.091421727284338,
+            -58.334558947460884
+          ],
+          [
+            -0.011443085891016835,
+            -0.3129632668132274,
+            -0.37729223034388326
+          ]
+        ],
+        "initial_position_rmse_m": 0.059796090737300696,
+        "position_rmse_m": 0.011107796571810968,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 113,
+        "residual_evaluations": 1729,
+        "optimality": 1.715889553605354e-06,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          937.7640085269671,
+          13.116720903373896,
+          1.2461222464210087,
+          1.1995517469369157,
+          0.8096910150061627,
+          0.4805670568405026,
+          0.15883827527522854,
+          0.003748731249493967
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.016539814406277872,
+          156.6599164317043,
+          156.53720393396375,
+          0.4903327444737047
+        ],
+        "sum_component_path_lengths_m": 313.70399292454806,
+        "combined_path_length_m": 0.5749797791531901,
+        "relative_component_length_excess": 0.9981671263607681
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 3,
+      "initialization": {
+        "name": "uniform_3",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.660533740332124,
+          19.415405591125722,
+          20.314975390777075,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.495400305249092,
+          19.22668762842732,
+          20.143719238471345
+        ],
+        "completion": [
+          18.825667175415155,
+          19.604123553824124,
+          20.486231543082805,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.000003062064685,
+          18.911750774926862,
+          18.91175430495044,
+          20.194627096693935
+        ],
+        "completion": [
+          18.271036303997207,
+          19.883773734605725,
+          19.883818164224767,
+          20.999999999999545
+        ],
+        "displacements": [
+          [
+            0.013821452363371296,
+            -0.0018277858369281992,
+            0.00661991643427944
+          ],
+          [
+            -778.480485713229,
+            2169.972301614296,
+            3080.5654410578086
+          ],
+          [
+            778.6167338002915,
+            -2170.2403127055445,
+            -3080.847960328849
+          ],
+          [
+            -0.04399633872321829,
+            0.03728837526205098,
+            0.0005320350219335523
+          ]
+        ],
+        "initial_position_rmse_m": 0.05306366694037078,
+        "position_rmse_m": 0.013361844348050348,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 47,
+        "residual_evaluations": 527,
+        "optimality": 6.378230382043129,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          63742.7254336164,
+          862.2201986621617,
+          4.415142590741116,
+          1.2230313493275735,
+          1.1772265336985923,
+          0.6483192882794993,
+          0.1844125999873046,
+          0.15980726824124342
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.015433647588369674,
+          3847.686962516965,
+          3848.09182565463,
+          0.05767483193850402
+        ],
+        "sum_component_path_lengths_m": 7695.851896651122,
+        "combined_path_length_m": 0.5306275126358557,
+        "relative_component_length_excess": 0.9999310501917447
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 4,
+      "initialization": {
+        "name": "uniform_4",
+        "seed_type": "uniform",
+        "knots": [
+          18.0,
+          18.741209901200783,
+          19.474566579192214,
+          20.204744341415285,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.557870731702927,
+          19.292022138636447,
+          20.02219990085952
+        ],
+        "completion": [
+          18.92454907069864,
+          19.65711101974798,
+          20.38728878197105,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.035182706148735,
+          19.231054472100993,
+          20.161285377440457
+        ],
+        "completion": [
+          18.26906197322704,
+          19.479221258337454,
+          19.982677850702668,
+          21.0
+        ],
+        "displacements": [
+          [
+            0.012960062753255938,
+            -0.0009781161088307075,
+            0.008171366581786441
+          ],
+          [
+            0.029482355559603934,
+            -0.011883941918181817,
+            0.035845688754521834
+          ],
+          [
+            0.10884236711719267,
+            -0.2587532047133042,
+            -0.31986961292979915
+          ],
+          [
+            -0.04521158472738529,
+            0.03906476091689143,
+            0.00048523800959804353
+          ]
+        ],
+        "initial_position_rmse_m": 0.04861687799148674,
+        "position_rmse_m": 0.013565969626140104,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 20,
+        "residual_evaluations": 340,
+        "optimality": 2.0594193727899015e-08,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          9.544951721023969,
+          2.102123267364336,
+          1.276691354504135,
+          1.2164951567724156,
+          1.1431052341272565,
+          0.2505650011924453,
+          0.194974287877246,
+          0.1595085563271183
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.015352032877689822,
+          0.047909978620914034,
+          0.4255776989636286,
+          0.05975266283010291
+        ],
+        "sum_component_path_lengths_m": 0.5485923732923355,
+        "combined_path_length_m": 0.53043159819503,
+        "relative_component_length_excess": 0.03310431566577365
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 5,
+      "initialization": {
+        "name": "speed_minimum_seed_0",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.375,
+          19.183333333333334,
+          19.95,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.28125,
+          18.991666666666667,
+          19.758333333333333
+        ],
+        "completion": [
+          18.46875,
+          19.375,
+          20.141666666666666,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.058182079466107,
+          19.058261638223218,
+          19.230329860106174
+        ],
+        "completion": [
+          18.319898046445044,
+          20.999963586802977,
+          20.999999928499605,
+          20.02916869124873
+        ],
+        "displacements": [
+          [
+            0.01192106951804084,
+            -0.0028696312486107332,
+            0.011126958569650975
+          ],
+          [
+            1742.3479667359486,
+            -192.6833902488122,
+            703.8654931185272
+          ],
+          [
+            -1742.2423466894877,
+            192.76672832466835,
+            -703.7747579168116
+          ],
+          [
+            -0.01146791527617097,
+            -0.31301894643095807,
+            -0.37722947986912914
+          ]
+        ],
+        "initial_position_rmse_m": 0.023400003941126787,
+        "position_rmse_m": 0.0111077293762957,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 103,
+        "residual_evaluations": 1351,
+        "optimality": 0.6240219401750932,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          11505.776054974764,
+          693.9740192858924,
+          13.076502714589985,
+          1.2399078115990614,
+          1.2004463834129677,
+          0.7689850078284777,
+          0.15898516674358412,
+          0.03381319314762375
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.016557574336530663,
+          1889.0023609793136,
+          1888.8796388316368,
+          0.49032059234365843
+        ],
+        "sum_component_path_lengths_m": 3778.3888779776307,
+        "combined_path_length_m": 0.5749788387346075,
+        "relative_component_length_excess": 0.9998478243353706
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 6,
+      "initialization": {
+        "name": "speed_minimum_seed_1",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.309578062971553,
+          19.16943095754621,
+          19.889112339077233,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.232183547228665,
+          18.989510612163457,
+          19.70919199369448
+        ],
+        "completion": [
+          18.386972578714442,
+          19.349351302928966,
+          20.069032684459987,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.057459961389917,
+          19.05842910843748,
+          19.230356190516236
+        ],
+        "completion": [
+          18.3198808252581,
+          20.999557385898274,
+          20.99999997119051,
+          20.029151068909343
+        ],
+        "displacements": [
+          [
+            0.011906338752381427,
+            -0.002866706715908874,
+            0.011117061354751328
+          ],
+          [
+            143.05534963578296,
+            -15.850686793958232,
+            57.85206446323019
+          ],
+          [
+            -142.9497395833246,
+            15.933966339450329,
+            -57.76125657265635
+          ],
+          [
+            -0.011443190508060752,
+            -0.31296334059961417,
+            -0.3772922715124878
+          ]
+        ],
+        "initial_position_rmse_m": 0.027319985638046055,
+        "position_rmse_m": 0.011107797541474911,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 4,
+        "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+        "nfev": 104,
+        "residual_evaluations": 1656,
+        "optimality": 1.6939330514632473e-06,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          928.5565227385009,
+          13.116705268323246,
+          1.2460588282845109,
+          1.1995506780408856,
+          0.8094504691736555,
+          0.47595483710432257,
+          0.15883808330905455,
+          0.0037187600453067646
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.01653980967462005,
+          155.12233277378354,
+          154.9996202761117,
+          0.4903328257015982
+        ],
+        "sum_component_path_lengths_m": 310.62882568527147,
+        "combined_path_length_m": 0.5749798941529718,
+        "relative_component_length_excess": 0.9981489808845507
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 7,
+      "initialization": {
+        "name": "speed_minimum_seed_2",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.35836151299359,
+          19.195691331262232,
+          20.006300838902146,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.268771134745194,
+          18.993038954352254,
+          19.803648461992168
+        ],
+        "completion": [
+          18.447951891241985,
+          19.39834370817221,
+          20.208953215812123,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.000000000000007,
+          19.05865544366821,
+          19.058707317629736,
+          19.23020922406073
+        ],
+        "completion": [
+          18.31989638705671,
+          20.99993664352852,
+          20.999959998128496,
+          20.02928404817421
+        ],
+        "displacements": [
+          [
+            0.01188930693498879,
+            -0.0028593483209296837,
+            0.011106802446121208
+          ],
+          [
+            2689.773984522345,
+            -297.5734602794582,
+            1091.4033281077452
+          ],
+          [
+            -2689.667894792543,
+            297.6567152654162,
+            -1091.312048941622
+          ],
+          [
+            -0.011905836034202366,
+            -0.3129461394605073,
+            -0.3777532881533716
+          ]
+        ],
+        "initial_position_rmse_m": 0.023179166446558246,
+        "position_rmse_m": 0.01110781281364964,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 96,
+        "residual_evaluations": 1264,
+        "optimality": 17.2575304076335,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          17626.723595824136,
+          1205.3444381765885,
+          13.068519008018145,
+          1.2398907253813436,
+          1.197668738289012,
+          0.7710289495198142,
+          0.3698656784288101,
+          0.15860375521903983
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.01651938072738677,
+          2917.9779903205763,
+          2917.8545511396505,
+          0.49068772683339423
+        ],
+        "sum_component_path_lengths_m": 5836.339748567787,
+        "combined_path_length_m": 0.5750188613392033,
+        "relative_component_length_excess": 0.9999014761158344
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 8,
+      "initialization": {
+        "name": "speed_minimum_seed_3",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.393712856576734,
+          19.257762699192497,
+          19.802253322438816,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.29528464243255,
+          19.121640043380918,
+          19.666130666627236
+        ],
+        "completion": [
+          18.49214107072092,
+          19.393885355004077,
+          19.938375978250395,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.057458904969664,
+          19.058430056246074,
+          19.230356192755576
+        ],
+        "completion": [
+          18.31988080495574,
+          20.999556464113923,
+          20.99999996580451,
+          20.029151088355174
+        ],
+        "displacements": [
+          [
+            0.011906338039555826,
+            -0.002866705995095833,
+            0.011117061081971583
+          ],
+          [
+            142.76008358436323,
+            -15.817899362772982,
+            57.73268637179391
+          ],
+          [
+            -142.65447350362035,
+            15.90117892314128,
+            -57.64187847035223
+          ],
+          [
+            -0.011443218079762119,
+            -0.3129633561966294,
+            -0.37729228210753973
+          ]
+        ],
+        "initial_position_rmse_m": 0.026956110039091846,
+        "position_rmse_m": 0.011107797748480282,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 118,
+        "residual_evaluations": 1894,
+        "optimality": 1.6894253292558448e-06,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          926.6392520279849,
+          13.116702019790408,
+          1.246045941733699,
+          1.1995504691512346,
+          0.8094027232315218,
+          0.47501857777095136,
+          0.15883804090130768,
+          0.0037122283791605325
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.01653980885166814,
+          154.8021637930209,
+          154.67945128938533,
+          0.4903328444555644
+        ],
+        "sum_component_path_lengths_m": 309.9884877357134,
+        "combined_path_length_m": 0.5749799189779427,
+        "relative_component_length_excess": 0.9981451571857464
+      }
+    },
+    {
+      "component_count": 4,
+      "index": 9,
+      "initialization": {
+        "name": "speed_minimum_seed_4",
+        "seed_type": "speed_minimum_seed",
+        "knots": [
+          18.0,
+          18.398138572459818,
+          19.196232514951678,
+          20.05774457734643,
+          21.0
+        ],
+        "activation": [
+          18.0,
+          18.298603929344864,
+          18.996709029328713,
+          19.842366561747742
+        ],
+        "completion": [
+          18.49767321557477,
+          19.395756000574643,
+          20.273122592945118,
+          21.0
+        ],
+        "valid": true,
+        "invalid_reason": null
+      },
+      "result": {
+        "activation": [
+          18.0,
+          19.05785878944956,
+          19.05834233209098,
+          19.230352404400367
+        ],
+        "completion": [
+          18.319908305908953,
+          20.99977954255699,
+          20.999999978880847,
+          20.029153245573255
+        ],
+        "displacements": [
+          [
+            0.011908216389997573,
+            -0.002866945325383527,
+            0.01111811183824024
+          ],
+          [
+            286.91861481286867,
+            -31.80191461902548,
+            116.02130569981091
+          ],
+          [
+            -286.8129535050764,
+            31.88518906447358,
+            -115.93047926380264
+          ],
+          [
+            -0.011496323479605053,
+            -0.3129580019461393,
+            -0.37731186743040723
+          ]
+        ],
+        "initial_position_rmse_m": 0.02538663688267479,
+        "position_rmse_m": 0.011107748537882269,
+        "initial_error_m": 0.0,
+        "final_error_m": 0.0,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "nfev": 87,
+        "residual_evaluations": 1191,
+        "optimality": 0.0024802871035932293,
+        "free_displacement_rank": 3,
+        "free_displacement_columns": 3,
+        "timing_jacobian_rank": 8,
+        "timing_parameter_count": 8,
+        "timing_jacobian_singular_values": [
+          1862.5622591355757,
+          13.121101029346065,
+          2.4963730332953324,
+          1.2352608183801248,
+          1.199396042825022,
+          0.7837732877728285,
+          0.15883734831982965,
+          0.0006571811425332711
+        ]
+      },
+      "composition": {
+        "component_path_lengths_m": [
+          0.016541910829746966,
+          311.1182971790196,
+          310.9955170403254,
+          0.49034574048713075
+        ],
+        "sum_component_path_lengths_m": 622.6207018706618,
+        "combined_path_length_m": 0.5749771638746248,
+        "relative_component_length_excess": 0.9990765209667023
+      }
+    }
+  ],
+  "limitations": [
+    "No automatic count choice",
+    "Training reconstruction errors only, no held-out validation",
+    "Local optimization, no global-minimum guarantee",
+    "One short selected window",
+    "Velocity not optimized; endpoint velocity mismatch remains"
+  ]
+}

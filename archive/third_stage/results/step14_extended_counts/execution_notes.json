@@ -1,0 +1,9 @@
+{
+  "initial_workers": 2,
+  "resumed_workers": 4,
+  "available_logical_processors": 20,
+  "reason": "Slow unpenalized K=10 fits; resume completed checkpoints with more parallel workers",
+  "numerical_changes": "None: same starts, objective, tolerances, per-fit evaluation cap, single BLAS/OMP thread",
+  "interrupted_iterates": "Unfinished fits were not saved or selected; those starts restart from their original initialization",
+  "timing_limit": "Per-fit elapsed times reflect different concurrency and exclude discarded partial attempts; not a controlled runtime benchmark"
+}

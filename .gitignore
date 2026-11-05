@@ -228,3 +228,7 @@ models/
 # Local body models and document build dependencies
 smplh/
 tmp/
+
+# Local fit caches are reproducible and are not repository deliverables.
+**/checkpoints/
+~$*.docx

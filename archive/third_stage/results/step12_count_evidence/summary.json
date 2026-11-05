@@ -1,0 +1,4701 @@
+{
+  "scope": "Read-only inspection of existing step9 fits; no new fitting or selector",
+  "weight": 1e-06,
+  "source_hashes": {
+    "summary.json": "b39af58d3b689ec508f94304abb74707769945e1d9aa6074aaa24c876b984714",
+    "fits.npz": "385133fc4e4bb478b5f85dfd1c97190fc461eadc58c846fca7f67538bef2d301"
+  },
+  "metrics": [
+    {
+      "window": "18_21",
+      "K": 1,
+      "selected_position_cm": 4.0080685665599995,
+      "selected_velocity_m_s": 0.1698916124652036,
+      "eligible_position_min_cm": 4.0080685665599995,
+      "eligible_position_max_cm": 4.0080685665599995
+    },
+    {
+      "window": "18_21",
+      "K": 2,
+      "selected_position_cm": 2.3803342969302856,
+      "selected_velocity_m_s": 0.1541330043905401,
+      "eligible_position_min_cm": 2.3803342969302856,
+      "eligible_position_max_cm": 3.3120564232103313
+    },
+    {
+      "window": "18_21",
+      "K": 3,
+      "selected_position_cm": 1.4143813290754286,
+      "selected_velocity_m_s": 0.12225586839834833,
+      "eligible_position_min_cm": 1.4143813290754286,
+      "eligible_position_max_cm": 1.4143813651718211
+    },
+    {
+      "window": "18_21",
+      "K": 4,
+      "selected_position_cm": 1.12695472975396,
+      "selected_velocity_m_s": 0.12102152681730155,
+      "eligible_position_min_cm": 1.1269547161977538,
+      "eligible_position_max_cm": 1.356597037700014
+    },
+    {
+      "window": "18_21",
+      "K": 5,
+      "selected_position_cm": 0.7814572979542945,
+      "selected_velocity_m_s": 0.1063648082771315,
+      "eligible_position_min_cm": 0.7814572976441747,
+      "eligible_position_max_cm": 0.9123145653695968
+    },
+    {
+      "window": "18_21",
+      "K": 6,
+      "selected_position_cm": 0.7236884525123942,
+      "selected_velocity_m_s": 0.10517428751847355,
+      "eligible_position_min_cm": 0.7236884525052756,
+      "eligible_position_max_cm": 0.7236884525592033
+    },
+    {
+      "window": "30_33",
+      "K": 1,
+      "selected_position_cm": 5.102450885513668,
+      "selected_velocity_m_s": 0.33029745641334396,
+      "eligible_position_min_cm": 5.102450885513668,
+      "eligible_position_max_cm": 5.102450885513668
+    },
+    {
+      "window": "30_33",
+      "K": 2,
+      "selected_position_cm": 2.8632153697099763,
+      "selected_velocity_m_s": 0.24006141444162693,
+      "eligible_position_min_cm": 2.863215344246664,
+      "eligible_position_max_cm": 3.8564773333740976
+    },
+    {
+      "window": "30_33",
+      "K": 3,
+      "selected_position_cm": 2.3945033713235224,
+      "selected_velocity_m_s": 0.22632432887521237,
+      "eligible_position_min_cm": 2.394503319714448,
+      "eligible_position_max_cm": 2.4910077675696285
+    },
+    {
+      "window": "30_33",
+      "K": 4,
+      "selected_position_cm": 0.6181442761824038,
+      "selected_velocity_m_s": 0.13101272462519753,
+      "eligible_position_min_cm": 0.6181442761824038,
+      "eligible_position_max_cm": 0.6914114484543618
+    },
+    {
+      "window": "30_33",
+      "K": 5,
+      "selected_position_cm": 0.39745608274166033,
+      "selected_velocity_m_s": 0.12928978709760608,
+      "eligible_position_min_cm": 0.3974560662195149,
+      "eligible_position_max_cm": 0.3974560994295982
+    },
+    {
+      "window": "30_33",
+      "K": 6,
+      "selected_position_cm": 0.3236682556537916,
+      "selected_velocity_m_s": 0.12884958720004522,
+      "eligible_position_min_cm": 0.3236682556537916,
+      "eligible_position_max_cm": 0.3697571236194402
+    }
+  ],
+  "sensitivity": [
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "all_10",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": null,
+      "reason": "No positive interior knee",
+      "costs": [
+        0.0016064613634246333,
+        0.00109900005102636,
+        0.00020367393208599544
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": null,
+      "reason": "No positive interior knee",
+      "costs": [
+        0.001606461363424633,
+        0.001096971766189448,
+        0.00020004745728941303
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.00109900005102636,
+        0.00020367393208599544,
+        0.00013125231115745684
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.001096971766189448,
+        0.00020004745728941303,
+        0.0001270026990737369
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.00109900005102636,
+        0.00020367393208599544,
+        0.00013125231115745684,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.001096971766189448,
+        0.00020004745728941303,
+        0.0001270026990737369,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.00109900005102636,
+        0.00020367393208599544,
+        0.00013125231115745684,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "uniform_family",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.001096971766189448,
+        0.00020004745728941303,
+        0.0001270026990737369,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358750537e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755080413363e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358750537e-05,
+        5.2373835047990365e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "speed_family",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755080413363e-05,
+        5.237249763490248e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        6,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_0",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_1",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358750537e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755080413363e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358750537e-05,
+        5.2373835047990365e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_2",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755080413363e-05,
+        5.237249763490248e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_3",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_4",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_5",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599544
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745728941303
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599544,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745728941303,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599544,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745728941303,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599544,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_6",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745728941303,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        1,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743627
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269588555608
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743627,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269588555608,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743627,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_7",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269588555608,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        9,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365143238,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365143237,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365143238,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365143237,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365143238,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365143237,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365143238,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_8",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365143237,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        5,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0016064613634246333,
+        0.0005665991365142597,
+        0.00020367393208599,
+        0.00013125231115743166,
+        6.108624358749922e-05,
+        5.2373835047990284e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "18_21",
+      "recipe": "omit_start_9",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 3,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.001606461363424633,
+        0.0005665991365142598,
+        0.00020004745440371755,
+        0.00012700269629148207,
+        6.106755085260271e-05,
+        5.237249762997839e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        6,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "all_10",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190772
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646422265097
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190772,
+        4.088623775313972e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646422265097,
+        3.821023605905342e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190772,
+        4.088623775313972e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646422265097,
+        3.821023605905342e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190772,
+        4.088623775313972e-05,
+        1.8025479675184895e-05,
+        1.6024258943952673e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "uniform_family",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646422265097,
+        3.821023605905342e-05,
+        1.5797133770834556e-05,
+        1.3672027662948852e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        3,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675185454e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133144368585e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675185454e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7,
+        5,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "speed_family",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133144368585e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        5,
+        8,
+        5,
+        7,
+        5,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_0",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        1,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_1",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675185095e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        4
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.579713345639431e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        4
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675185095e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        4,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_2",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.579713345639431e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        4,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_3",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_4",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190772
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646422265097
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190772,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646422265097,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190772,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646422265097,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190772,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_5",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646422265097,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        3,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_6",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753138115e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.8210235191688094e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753138115e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.8210235191688094e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753138115e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_7",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.8210235191688094e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        8,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040839052,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2620499453041348e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7,
+        2,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_8",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002264677428,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.2135280417559177e-05
+      ],
+      "selected_run_indices": [
+        0,
+        4,
+        5,
+        7,
+        2,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 3,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 3,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 4,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 4,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 5,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 5,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 6,
+      "metric": "objective_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079222,
+        0.0008404780040838994,
+        0.0005826520191190656,
+        4.0886237753137044e-05,
+        1.8025479675184895e-05,
+        1.2240989237340695e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    },
+    {
+      "window": "30_33",
+      "recipe": "omit_start_9",
+      "upper_K": 6,
+      "metric": "position_mse_m2",
+      "selected_K": 2,
+      "reason": "Maximum positive perpendicular distance below endpoint chord; exact tie selects smaller K",
+      "costs": [
+        0.0026035005039079214,
+        0.0008198002253343437,
+        0.0005733646395279715,
+        3.821023461770679e-05,
+        1.5797133770834556e-05,
+        1.047611397179682e-05
+      ],
+      "selected_run_indices": [
+        0,
+        8,
+        5,
+        7,
+        2,
+        8
+      ]
+    }
+  ],
+  "components": [
+    {
+      "window": "18_21",
+      "K": 2,
+      "index": 8,
+      "component": 1,
+      "activation_s": 19.23488877172957,
+      "completion_s": 19.989510673138074,
+      "displacement_norm_m": 0.4199655116168945,
+      "dx_m": 0.1586262170695247,
+      "dy_m": -0.2778508483896963,
+      "dz_m": -0.2720434896390244
+    },
+    {
+      "window": "18_21",
+      "K": 2,
+      "index": 8,
+      "component": 2,
+      "activation_s": 19.998643551101125,
+      "completion_s": 21.0,
+      "displacement_norm_m": 0.06946213913911561,
+      "dx_m": -0.05255301636685747,
+      "dy_m": 0.04530034656627102,
+      "dz_m": -0.003323829944868406
+    },
+    {
+      "window": "18_21",
+      "K": 3,
+      "index": 6,
+      "component": 1,
+      "activation_s": 18.720316838373222,
+      "completion_s": 20.76217260794796,
+      "displacement_norm_m": 0.3490286638988191,
+      "dx_m": 0.2768010999702458,
+      "dy_m": -0.009212857035177631,
+      "dz_m": 0.21240829207803114
+    },
+    {
+      "window": "18_21",
+      "K": 3,
+      "index": 6,
+      "component": 2,
+      "activation_s": 19.210450902421883,
+      "completion_s": 20.040144812926965,
+      "displacement_norm_m": 0.5195221497869269,
+      "dx_m": -0.017048629696113635,
+      "dy_m": -0.29716984705748173,
+      "dz_m": -0.4257965363228638
+    },
+    {
+      "window": "18_21",
+      "K": 3,
+      "index": 6,
+      "component": 3,
+      "activation_s": 19.49059142901147,
+      "completion_s": 21.0,
+      "displacement_norm_m": 0.18141090862412046,
+      "dx_m": -0.15367926957146494,
+      "dy_m": 0.07383220226923409,
+      "dz_m": -0.06197907533906016
+    },
+    {
+      "window": "18_21",
+      "K": 4,
+      "index": 7,
+      "component": 1,
+      "activation_s": 18.0,
+      "completion_s": 18.311350976109082,
+      "displacement_norm_m": 0.016211667622502476,
+      "dx_m": 0.01168840924311193,
+      "dy_m": -0.003052502703112096,
+      "dz_m": 0.010811174021147011
+    },
+    {
+      "window": "18_21",
+      "K": 4,
+      "index": 7,
+      "component": 2,
+      "activation_s": 18.91127414414336,
+      "completion_s": 20.722030523123678,
+      "displacement_norm_m": 0.4135973482444323,
+      "dx_m": 0.3749152120020489,
+      "dy_m": -0.003974945081710493,
+      "dz_m": 0.17460111710949133
+    },
+    {
+      "window": "18_21",
+      "K": 4,
+      "index": 7,
+      "component": 3,
+      "activation_s": 19.227112161979665,
+      "completion_s": 20.035665766624803,
+      "displacement_norm_m": 0.500320605657416,
+      "dx_m": -0.018667083967483858,
+      "dy_m": -0.31800071716825973,
+      "dz_m": -0.38580797335206407
+    },
+    {
+      "window": "18_21",
+      "K": 4,
+      "index": 7,
+      "component": 4,
+      "activation_s": 19.23023319395138,
+      "completion_s": 21.0,
+      "displacement_norm_m": 0.287654778560914,
+      "dx_m": -0.26186333657500976,
+      "dy_m": 0.09247766312965705,
+      "dz_m": -0.07497163736246709
+    },
+    {
+      "window": "30_33",
+      "K": 2,
+      "index": 8,
+      "component": 1,
+      "activation_s": 30.78671491035426,
+      "completion_s": 32.956327126949866,
+      "displacement_norm_m": 0.39480643515103636,
+      "dx_m": -0.13678106264744963,
+      "dy_m": 0.3380976549392929,
+      "dz_m": 0.1511722125995872
+    },
+    {
+      "window": "30_33",
+      "K": 2,
+      "index": 8,
+      "component": 2,
+      "activation_s": 31.49334207568302,
+      "completion_s": 32.24272507526729,
+      "displacement_norm_m": 0.5864054647629746,
+      "dx_m": 0.07854720549260344,
+      "dy_m": -0.5066998831039657,
+      "dz_m": -0.2845293202389
+    },
+    {
+      "window": "30_33",
+      "K": 3,
+      "index": 5,
+      "component": 1,
+      "activation_s": 31.157741205502422,
+      "completion_s": 31.942783314862126,
+      "displacement_norm_m": 0.23140597559422144,
+      "dx_m": -0.09786927975734926,
+      "dy_m": 0.19046933483895237,
+      "dz_m": 0.08770269155788867
+    },
+    {
+      "window": "30_33",
+      "K": 3,
+      "index": 5,
+      "component": 2,
+      "activation_s": 31.434723133837423,
+      "completion_s": 32.192306594066096,
+      "displacement_norm_m": 0.5120992555193096,
+      "dx_m": 0.06083145382137617,
+      "dy_m": -0.4450091214637255,
+      "dz_m": -0.2459919989420226
+    },
+    {
+      "window": "30_33",
+      "K": 3,
+      "index": 5,
+      "component": 3,
+      "activation_s": 32.118676964417396,
+      "completion_s": 32.7807595101641,
+      "displacement_norm_m": 0.0919573285694526,
+      "dx_m": -0.021196031218873104,
+      "dy_m": 0.08593755846010032,
+      "dz_m": 0.024932199744821193
+    },
+    {
+      "window": "30_33",
+      "K": 4,
+      "index": 7,
+      "component": 1,
+      "activation_s": 31.08536865092631,
+      "completion_s": 31.832197423048935,
+      "displacement_norm_m": 0.17294091848334628,
+      "dx_m": -0.04308080294031695,
+      "dy_m": 0.07482012840153998,
+      "dz_m": 0.14984843706177944
+    },
+    {
+      "window": "30_33",
+      "K": 4,
+      "index": 7,
+      "component": 2,
+      "activation_s": 31.422561447043744,
+      "completion_s": 32.00868565506062,
+      "displacement_norm_m": 0.3187407317156289,
+      "dx_m": -0.06745814982603021,
+      "dy_m": 0.009216817806247892,
+      "dz_m": -0.31138417163720733
+    },
+    {
+      "window": "30_33",
+      "K": 4,
+      "index": 7,
+      "component": 3,
+      "activation_s": 31.57467709545459,
+      "completion_s": 32.2546291889207,
+      "displacement_norm_m": 0.4090832331075163,
+      "dx_m": 0.09080926197402664,
+      "dy_m": -0.3981162004082051,
+      "dz_m": 0.02462235817229935
+    },
+    {
+      "window": "30_33",
+      "K": 4,
+      "index": 7,
+      "component": 4,
+      "activation_s": 31.801387074863072,
+      "completion_s": 32.861128431282054,
+      "displacement_norm_m": 0.15052834609799645,
+      "dx_m": -0.03850416636252567,
+      "dy_m": 0.14547702603574442,
+      "dz_m": 0.0035562687638157897
+    }
+  ],
+  "limits": [
+    "Omitting saved starts is not independent replication or a confidence interval",
+    "K=1 starts are identical",
+    "No extrapolation beyond K=6",
+    "Component speed norms do not establish movement-unit meaning",
+    "Later extra-start diagnostics are not substituted into original score curves"
+  ]
+}
