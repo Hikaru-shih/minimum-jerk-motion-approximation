@@ -232,3 +232,6 @@ tmp/
 # Local fit caches are reproducible and are not repository deliverables.
 **/checkpoints/
 ~$*.docx
+
+# Local development notes, retired experiments and report authoring tools.
+/.local_research/

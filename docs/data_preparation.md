@@ -1,6 +1,6 @@
 # Data preparation
 
-The current fitting experiments use `data/wrist_trajectory.npz`. It is the same processed input used before the layout change; its bytes are checked by `scripts/verify_layout_migration.py`.
+The current fitting experiments use `data/wrist_trajectory.npz`. It contains the global right-wrist positions used for all fitting and evaluation.
 
 | Item | Value |
 |---|---|

@@ -6,4 +6,4 @@
 - Mahmood, N., Ghorbani, N., Troje, N. F., Pons-Moll, G., and Black, M. J. (2019). *AMASS: Archive of Motion Capture as Surface Shapes*. ICCV, 5442–5451. [Dataset](https://amass.is.tue.mpg.de/).
 - SciPy 1.15.2 documentation: [least_squares](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.optimize.least_squares.html), [savgol_filter](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.signal.savgol_filter.html), [find_peaks](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.signal.find_peaks.html).
 
-The fixed-endpoint algebra, peak-count proposal, local timing neighborhoods and sensitivity settings are this project's explicit implementation choices. They are not claimed as published physiological constants. More extensive historical literature and discarded prototypes remain in [archived notes](../archive/third_stage/docs/references.md).
+The fixed-endpoint algebra, peak-count proposal, local timing neighborhoods and sensitivity settings are this project's explicit implementation choices. They are not claimed as published physiological constants.

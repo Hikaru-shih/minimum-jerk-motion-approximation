@@ -1,27 +1,51 @@
 # Minimum Jerk Motion Decomposition
 
-Fit overlapping minimum-jerk displacement components to a recorded right-wrist trajectory. The current method proposes component count and movement intervals from speed structure, fits onset and completion near those intervals, and solves goal displacements by endpoint-constrained linear least squares.
+This experiment approximates a recorded right-wrist trajectory with overlapping minimum-jerk displacement components. It asks how motion structure can guide the number and timing of components, while fitting their displacements rather than copying intermediate goals from the recording.
 
-## Report and results
+**[Read the report (PDF)](report/final_motion_decomposition_report.pdf)** | [Editable Word](report/final_motion_decomposition_report.docx)
 
-- **[Current report — PDF](report/final_motion_decomposition_report.pdf)** · [Editable Word](report/final_motion_decomposition_report.docx) — final method, essential equations, main experiments, comparisons, joint position/velocity supplement and limitations.
-- [Detailed method and results](docs/mainline_results.md)
-- [Timing-bound explanation and sensitivity](docs/timing_bound_sensitivity.md)
-- [Position + velocity objective comparison](docs/velocity_objective.md) — exploratory extension; the current report and position-only main results are retained.
-- [Numerical comparison](results/mainline/metrics.csv) · [Count sweep](results/mainline/count_sweep.csv) · [Fitted goals and timing](results/mainline/goals.csv)
+## Method
 
-The experiment uses the right wrist from one AMASS ACCAD conversation-gesture clip, analyzing 18–21 s and 30–33 s separately. The nominal speed detector proposes **4 and 3 components**, respectively. At the same component count, both windows improve position RMSE over uniform baselines; velocity RMSE is worse in the first window and better in the second. Counts and timing neighborhoods remain heuristic and parameter-sensitive. The method does not establish true physiological movement units or complete full-body motion conversion.
+1. Estimate detection speed from the recorded XYZ trajectory and retain prominent speed peaks.
+2. Use the speed minimum between consecutive retained peaks to propose movement intervals and a component count.
+3. Optimize each component's onset and completion near its proposed interval, allowing overlap.
+4. At every timing trial, fit displacement vectors by linear least squares with fixed initial and final positions.
+5. Compare reconstruction errors with uniform baselines at the same component count.
 
-| Window | Components | Position RMSE | Velocity RMSE |
-|---|---:|---:|---:|
-| 18–21 s | 4 | 4.194 cm | 0.3620 m/s |
-| 30–33 s | 3 | 3.022 cm | 0.2631 m/s |
+The main objective minimizes position error. A supplementary experiment jointly fits position and velocity. [Method and evaluation details](docs/method.md) describe the equations, parameter settings and comparisons.
 
-![Position and velocity errors against uniform baselines at matched counts](results/mainline/errors_vs_count.png)
+## Data and results
 
-## Run from the repository root
+The input is the right wrist from the ACCAD **D3 Conversation Gestures** clip in AMASS, extracted using SMPL+H. The analysis uses two separate 3-second windows from the same clip, sampled at 120 Hz. [Data preparation](docs/data_preparation.md) describes the source and coordinates.
 
-The included [processed wrist trajectory](data/wrist_trajectory.npz) is sufficient for the fitting experiments. Repeating extraction from the original AMASS clip requires the separately obtained motion data and SMPL+H model; see [data preparation](docs/data_preparation.md).
+| Window | Components | Method | Position RMSE (cm) | Velocity RMSE (m/s) |
+|---|---:|---|---:|---:|
+| 18-21 s | 4 | Uniform sampled goals | 6.387 | 0.3061 |
+| 18-21 s | 4 | Uniform timing, fitted displacements | 5.254 | 0.3160 |
+| 18-21 s | 4 | Speed intervals, fitted timing and displacements | 4.194 | 0.3620 |
+| 30-33 s | 3 | Uniform sampled goals | 8.969 | 0.4172 |
+| 30-33 s | 3 | Uniform timing, fitted displacements | 7.535 | 0.4201 |
+| 30-33 s | 3 | Speed intervals, fitted timing and displacements | 3.022 | 0.2631 |
+
+The proposed method lowers position RMSE in both windows. Velocity RMSE worsens in the first window and improves in the second. Adding a velocity objective reduces velocity RMSE in both windows at a cost in position accuracy; no universally preferred weight is established.
+
+![Position and velocity errors at different component counts](results/mainline/errors_vs_count.png)
+
+Saved evidence:
+
+- [Main comparisons](results/mainline/metrics.csv), [count sensitivity](results/mainline/count_sweep.csv), and [fitted goals and timing](results/mainline/goals.csv).
+- [Timing-neighborhood sensitivity](results/timing_bound_sensitivity/metrics.csv).
+- [Joint position/velocity comparison](results/velocity_objective/metrics.csv).
+
+## Limitations
+
+Speed-based intervals and counts are heuristic and depend on filtering and peak selection. Changing the count-selection setting also changes the partition, so the count curves do not isolate count alone. Local timing bounds affect the fit. Intermediate cumulative goals need not be visited during overlap, and the model has zero analytical velocity at the crop endpoints even when the recorded wrist is moving. These two windows do not establish physiological movement units, whole-body feasibility or generalization to other clips.
+
+## Reproduce
+
+The tested environment is WSL Ubuntu with Python 3.10.12. The included [processed trajectory](data/wrist_trajectory.npz) is sufficient for fitting; original AMASS and body-model assets are not required unless repeating extraction.
+
+Run from the repository root:
 
 ```bash
 python3 -m venv .venv
@@ -34,54 +58,29 @@ python3 -m motion_decomposition.final_pipeline
 python3 -m motion_decomposition.complete_mainline
 python3 -m motion_decomposition.export_mainline_goals
 python3 -m motion_decomposition.timing_bound_sensitivity
+python3 -m motion_decomposition.velocity_objective
+```
+
+`final_pipeline` prepares the uniform baselines and a separate unrestricted-timing control. `complete_mainline` runs the locally constrained speed-interval method and count comparisons. A fresh run without local checkpoints recomputes the control fits and may take longer.
+
+Check the saved results and run tests:
+
+```bash
 python3 -m motion_decomposition.audit_report_evidence
+python3 scripts/audit_velocity_results.py
 python3 -m unittest discover -s tests -q
 ```
 
-The first command generates uniform baselines and the free-timing control; `complete_mainline` runs the final speed-interval method and count sweep. Saved control checkpoints, when present locally, are reused. A fresh clone recomputes them. All commands use the repository root; no nested research directory is required.
+## Repository
 
-To reproduce the supplementary joint objective and independently audit its saved results:
-
-```bash
-python3 -m motion_decomposition.velocity_objective
-python3 scripts/audit_velocity_results.py
-```
-
-The tested numerical environment is WSL Ubuntu with Python 3.10.12, NumPy 2.1.3, SciPy 1.15.2 and Matplotlib 3.10.1. There are **58 passing tests**. The evidence audit verifies saved reconstructions, metrics, endpoints, bounds, CSV/NPZ consistency and goals. Report generation has separate document dependencies, described in [report/](report/README.md).
-
-## Repository layout
-
-```text
-README.md                 Current research overview and entry points
-motion_decomposition/     Current algorithms, numerical utilities and controls
-scripts/                  Data extraction and layout verification
-tests/                    Numerical regression tests
-data/                     Processed wrist trajectory and provenance
-results/                  Current main experiment, controls and sensitivity
-docs/                     Current method, interpretation and data preparation
-report/                   Current editable report and figure assets
-archive/                  Earlier experiments and the previous research layout
-requirements.txt          Direct numerical dependencies
-```
-
-Earlier experiments are consolidated under **[archive/](archive/README.md)**. They are historical evidence rather than the default implementation or results. The original reports and pre-migration numerical records are retained there.
-
-## Detailed records and implementation notes
-
-The report is written for an external reader. Operational instructions, complete numerical inventories and development history are kept in this repository:
-
-| Record | Location |
+| Directory | Contents |
 |---|---|
-| Complete method settings, fitting procedure and limitations | [Method notes](docs/mainline_results.md) |
-| All count partitions and their errors | [Count sweep CSV](results/mainline/count_sweep.csv) |
-| Fitted component timing, displacement and cumulative goals | [Goals CSV](results/mainline/goals.csv) |
-| Timing-neighborhood coefficients and full sensitivity records | [Sensitivity notes](docs/timing_bound_sensitivity.md) |
-| Solver runs, termination status and source hashes | [Main experiment](results/mainline/summary.json), [sensitivity](results/timing_bound_sensitivity/summary.json) |
-| Numerical consistency and regression checks | [Evidence audit](results/timing_bound_sensitivity/audit.json), [tests](tests/) |
-| Original user-formatted report before condensation | [Report revision archive](archive/report_revisions/README.md) |
+| `motion_decomposition/` | Fitting, count proposals, baselines and evaluation |
+| `data/` | Processed wrist trajectory |
+| `results/` | Reconstructions, figures, metrics and run records |
+| `tests/` | Numerical tests |
+| `scripts/` | Optional data extraction and result checks |
+| `docs/` | Method, data preparation and references |
+| `report/` | Current PDF and editable Word report |
 
-The exploratory sequence moved from uniform sampled goals to error/acceleration heuristics, then to fitted displacement and timing. Free-time fits exposed redundant opposing contributions; the custom opposition penalty and cost-curve count rule also had structural limitations. These findings motivated the current speed-interval association, but they are not combined with the final method's scores. Detailed historical figures, numerical comparisons and diagnostics remain in [archived experiments](archive/README.md).
-
-## References
-
-The representation follows Sato, Mitake and Hasegawa (2025), *Artist-Directable Motion Generation Using Overlapping Minimum Jerk Trajectories for Interactive Embodied Social Agent Adapting to Dynamic Environments*, [DOI](https://doi.org/10.1002/cav.70075). The report and [reference notes](docs/references.md) distinguish published ideas from this project's heuristic settings and historical prototypes.
+The overlapping representation follows Sato, Mitake and Hasegawa (2025), [Artist-Directable Motion Generation Using Overlapping Minimum Jerk Trajectories](https://doi.org/10.1002/cav.70075). See [references](docs/references.md) for the other sources and implementation attribution.

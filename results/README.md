@@ -1,8 +1,10 @@
-# Current experimental results
+# Results
 
-- [mainline/](mainline/): final speed-interval method, 14 count partitions, matched-count uniform comparisons, trajectories and exported goals.
-- [velocity_objective/](velocity_objective/): supplementary joint position/velocity fits at four weights, with unchanged nominal counts and intervals; does not replace the position-only main results.
-- [timing_bound_sensitivity/](timing_bound_sensitivity/): narrower/nominal/wider timing neighborhoods, 24 run records and the independent evidence audit.
-- [final_pipeline/](final_pipeline/): uniform baselines and free-timing control for K=1–12. This control is not the final movement-interval method.
+| Directory | Experiment |
+|---|---|
+| [mainline/](mainline/) | Speed-interval fitting, matched-count baselines, count sensitivity and exported goals |
+| [timing_bound_sensitivity/](timing_bound_sensitivity/) | Narrow, nominal and wide timing neighborhoods at fixed nominal partitions |
+| [velocity_objective/](velocity_objective/) | Joint position/velocity fits at four weights with unchanged nominal partitions |
+| [final_pipeline/](final_pipeline/) | Uniform baselines and a separate unrestricted-timing control; not the final interval-constrained method |
 
-Interpretation: [current results](../docs/mainline_results.md). Earlier result directories are under [archive/third_stage/results/](../archive/third_stage/results/) and [archive/initial_and_followup/results/](../archive/initial_and_followup/results/).
+CSV files contain metrics and exported parameters. JSON files record settings and solver runs; NPZ files contain trajectories and fitted parameters. See the [method](../docs/method.md) and [report](../report/final_motion_decomposition_report.pdf) for interpretation.
